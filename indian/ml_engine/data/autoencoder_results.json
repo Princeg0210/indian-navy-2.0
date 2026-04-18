@@ -1,0 +1,157 @@
+{
+  "algorithm": "LSTM_Autoencoder",
+  "window_size": 30,
+  "threshold": 0.05,
+  "results": {
+    "419001001": {
+      "mmsi": "419001001",
+      "mean_reconstruction_error": 0.18601855635643005,
+      "max_reconstruction_error": 0.5580556690692902,
+      "anomaly_threshold": 0.05,
+      "anomalous_windows": 0,
+      "total_windows": 330,
+      "is_kinematic_anomaly": true,
+      "anomaly_severity": "HIGH"
+    },
+    "419001002": {
+      "mmsi": "419001002",
+      "mean_reconstruction_error": 0.199026957154274,
+      "max_reconstruction_error": 0.597080871462822,
+      "anomaly_threshold": 0.05,
+      "anomalous_windows": 0,
+      "total_windows": 330,
+      "is_kinematic_anomaly": true,
+      "anomaly_severity": "HIGH"
+    },
+    "419001003": {
+      "mmsi": "419001003",
+      "mean_reconstruction_error": 0.21582210063934326,
+      "max_reconstruction_error": 0.6474663019180298,
+      "anomaly_threshold": 0.05,
+      "anomalous_windows": 0,
+      "total_windows": 330,
+      "is_kinematic_anomaly": true,
+      "anomaly_severity": "CRITICAL"
+    },
+    "419001004": {
+      "mmsi": "419001004",
+      "mean_reconstruction_error": 0.21634764969348907,
+      "max_reconstruction_error": 0.6490429490804672,
+      "anomaly_threshold": 0.05,
+      "anomalous_windows": 0,
+      "total_windows": 330,
+      "is_kinematic_anomaly": true,
+      "anomaly_severity": "CRITICAL"
+    },
+    "419001005": {
+      "mmsi": "419001005",
+      "mean_reconstruction_error": 0.20553374290466309,
+      "max_reconstruction_error": 0.6166012287139893,
+      "anomaly_threshold": 0.05,
+      "anomalous_windows": 0,
+      "total_windows": 330,
+      "is_kinematic_anomaly": true,
+      "anomaly_severity": "CRITICAL"
+    },
+    "419002001": {
+      "mmsi": "419002001",
+      "mean_reconstruction_error": 0.19822938740253448,
+      "max_reconstruction_error": 0.5946881622076035,
+      "anomaly_threshold": 0.05,
+      "anomalous_windows": 0,
+      "total_windows": 330,
+      "is_kinematic_anomaly": true,
+      "anomaly_severity": "HIGH"
+    },
+    "419002002": {
+      "mmsi": "419002002",
+      "mean_reconstruction_error": 0.19400587677955627,
+      "max_reconstruction_error": 0.5820176303386688,
+      "anomaly_threshold": 0.05,
+      "anomalous_windows": 0,
+      "total_windows": 330,
+      "is_kinematic_anomaly": true,
+      "anomaly_severity": "HIGH"
+    },
+    "419002003": {
+      "mmsi": "419002003",
+      "mean_reconstruction_error": 0.202413409948349,
+      "max_reconstruction_error": 0.607240229845047,
+      "anomaly_threshold": 0.05,
+      "anomalous_windows": 0,
+      "total_windows": 330,
+      "is_kinematic_anomaly": true,
+      "anomaly_severity": "CRITICAL"
+    },
+    "419003001": {
+      "mmsi": "419003001",
+      "mean_reconstruction_error": 0.2202097475528717,
+      "max_reconstruction_error": 0.6606292426586151,
+      "anomaly_threshold": 0.05,
+      "anomalous_windows": 0,
+      "total_windows": 330,
+      "is_kinematic_anomaly": true,
+      "anomaly_severity": "CRITICAL"
+    },
+    "419003002": {
+      "mmsi": "419003002",
+      "mean_reconstruction_error": 0.17770014703273773,
+      "max_reconstruction_error": 0.5331004410982132,
+      "anomaly_threshold": 0.05,
+      "anomalous_windows": 0,
+      "total_windows": 330,
+      "is_kinematic_anomaly": true,
+      "anomaly_severity": "HIGH"
+    },
+    "419004001": {
+      "mmsi": "419004001",
+      "mean_reconstruction_error": 0.31918174028396606,
+      "max_reconstruction_error": 0.9575452208518982,
+      "anomaly_threshold": 0.05,
+      "anomalous_windows": 0,
+      "total_windows": 330,
+      "is_kinematic_anomaly": true,
+      "anomaly_severity": "CRITICAL"
+    },
+    "419004002": {
+      "mmsi": "419004002",
+      "mean_reconstruction_error": 0.38165193796157837,
+      "max_reconstruction_error": 1.144955813884735,
+      "anomaly_threshold": 0.05,
+      "anomalous_windows": 0,
+      "total_windows": 330,
+      "is_kinematic_anomaly": true,
+      "anomaly_severity": "CRITICAL"
+    },
+    "419005001": {
+      "mmsi": "419005001",
+      "mean_reconstruction_error": 0.20435674488544464,
+      "max_reconstruction_error": 0.6130702346563339,
+      "anomaly_threshold": 0.05,
+      "anomalous_windows": 0,
+      "total_windows": 270,
+      "is_kinematic_anomaly": true,
+      "anomaly_severity": "CRITICAL"
+    },
+    "419005002": {
+      "mmsi": "419005002",
+      "mean_reconstruction_error": 1.2752230167388916,
+      "max_reconstruction_error": 3.825669050216675,
+      "anomaly_threshold": 0.05,
+      "anomalous_windows": 0,
+      "total_windows": 330,
+      "is_kinematic_anomaly": true,
+      "anomaly_severity": "CRITICAL"
+    },
+    "419005003": {
+      "mmsi": "419005003",
+      "mean_reconstruction_error": 0.33967354893684387,
+      "max_reconstruction_error": 1.0190206468105316,
+      "anomaly_threshold": 0.05,
+      "anomalous_windows": 0,
+      "total_windows": 330,
+      "is_kinematic_anomaly": true,
+      "anomaly_severity": "CRITICAL"
+    }
+  }
+}

@@ -1,0 +1,1055 @@
+{
+  "algorithm": "SpatialDensityClustering",
+  "results": {
+    "41910000": {
+      "is_loitering": true,
+      "loiter_score": 95.2,
+      "radius_nm": 0.083,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 13.167916333333332,
+        "lon": 73.31457846527778
+      }
+    },
+    "41910001": {
+      "is_loitering": true,
+      "loiter_score": 96.29,
+      "radius_nm": 0.061,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 12.475100604166666,
+        "lon": 73.24065526388888
+      }
+    },
+    "41910002": {
+      "is_loitering": true,
+      "loiter_score": 95.6,
+      "radius_nm": 0.075,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 12.29201586111111,
+        "lon": 71.38415915972223
+      }
+    },
+    "41910003": {
+      "is_loitering": true,
+      "loiter_score": 96.63,
+      "radius_nm": 0.054,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 19.780011944444443,
+        "lon": 70.67998692361111
+      }
+    },
+    "41910004": {
+      "is_loitering": true,
+      "loiter_score": 95.47,
+      "radius_nm": 0.077,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 13.818156402777777,
+        "lon": 71.20437265972221
+      }
+    },
+    "41910005": {
+      "is_loitering": true,
+      "loiter_score": 96.4,
+      "radius_nm": 0.058,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 18.424745166666664,
+        "lon": 72.2366514375
+      }
+    },
+    "41910006": {
+      "is_loitering": true,
+      "loiter_score": 95.12,
+      "radius_nm": 0.084,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 14.477760458333332,
+        "lon": 73.3271453888889
+      }
+    },
+    "41910007": {
+      "is_loitering": true,
+      "loiter_score": 96.17,
+      "radius_nm": 0.063,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 16.354654944444444,
+        "lon": 70.09957379861112
+      }
+    },
+    "41910008": {
+      "is_loitering": true,
+      "loiter_score": 94.9,
+      "radius_nm": 0.089,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 9.754201208333333,
+        "lon": 71.90348709722223
+      }
+    },
+    "41910009": {
+      "is_loitering": true,
+      "loiter_score": 96.44,
+      "radius_nm": 0.058,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 18.96020228472222,
+        "lon": 74.65622945833333
+      }
+    },
+    "41910010": {
+      "is_loitering": true,
+      "loiter_score": 95.15,
+      "radius_nm": 0.084,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 21.168086611111114,
+        "lon": 72.20423057638888
+      }
+    },
+    "41910011": {
+      "is_loitering": true,
+      "loiter_score": 95.35,
+      "radius_nm": 0.08,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 18.66288145833333,
+        "lon": 74.3449349236111
+      }
+    },
+    "41910012": {
+      "is_loitering": true,
+      "loiter_score": 96.69,
+      "radius_nm": 0.053,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 15.743166534722222,
+        "lon": 72.25313259722222
+      }
+    },
+    "41910013": {
+      "is_loitering": true,
+      "loiter_score": 95.84,
+      "radius_nm": 0.07,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 17.48027890277778,
+        "lon": 70.9872369722222
+      }
+    },
+    "41910014": {
+      "is_loitering": true,
+      "loiter_score": 95.44,
+      "radius_nm": 0.078,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 21.61101588888889,
+        "lon": 73.80982320138888
+      }
+    },
+    "41910015": {
+      "is_loitering": true,
+      "loiter_score": 95.22,
+      "radius_nm": 0.082,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 15.240239722222222,
+        "lon": 74.93407368055556
+      }
+    },
+    "41910016": {
+      "is_loitering": true,
+      "loiter_score": 96.02,
+      "radius_nm": 0.066,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 8.903201347222222,
+        "lon": 75.41420161805556
+      }
+    },
+    "41910017": {
+      "is_loitering": true,
+      "loiter_score": 95.93,
+      "radius_nm": 0.068,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 13.255508493055556,
+        "lon": 74.9736263611111
+      }
+    },
+    "41910018": {
+      "is_loitering": true,
+      "loiter_score": 95.44,
+      "radius_nm": 0.078,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 20.14133717361111,
+        "lon": 74.9250917986111
+      }
+    },
+    "41910019": {
+      "is_loitering": true,
+      "loiter_score": 95.71,
+      "radius_nm": 0.072,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 14.00541676388889,
+        "lon": 72.8637903125
+      }
+    },
+    "41910020": {
+      "is_loitering": true,
+      "loiter_score": 95.94,
+      "radius_nm": 0.068,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 17.3787366875,
+        "lon": 72.03036645833333
+      }
+    },
+    "41910021": {
+      "is_loitering": true,
+      "loiter_score": 95.4,
+      "radius_nm": 0.079,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 15.865173166666668,
+        "lon": 71.34595464583333
+      }
+    },
+    "41910022": {
+      "is_loitering": true,
+      "loiter_score": 95.24,
+      "radius_nm": 0.082,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 15.666047145833337,
+        "lon": 70.51187702083332
+      }
+    },
+    "41910023": {
+      "is_loitering": true,
+      "loiter_score": 96.06,
+      "radius_nm": 0.065,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 8.782937243055557,
+        "lon": 71.54861955555556
+      }
+    },
+    "41910024": {
+      "is_loitering": true,
+      "loiter_score": 96.14,
+      "radius_nm": 0.064,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 19.416811541666668,
+        "lon": 71.35692186805555
+      }
+    },
+    "41910025": {
+      "is_loitering": true,
+      "loiter_score": 95.04,
+      "radius_nm": 0.086,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 9.098179187500001,
+        "lon": 73.68072972222222
+      }
+    },
+    "41910026": {
+      "is_loitering": true,
+      "loiter_score": 96.12,
+      "radius_nm": 0.064,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 16.808376381944445,
+        "lon": 70.25215964583333
+      }
+    },
+    "41910027": {
+      "is_loitering": true,
+      "loiter_score": 95.29,
+      "radius_nm": 0.081,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 12.224734583333333,
+        "lon": 71.80131720833334
+      }
+    },
+    "41910028": {
+      "is_loitering": true,
+      "loiter_score": 96.11,
+      "radius_nm": 0.064,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 14.858319895833334,
+        "lon": 74.46563572222222
+      }
+    },
+    "41910029": {
+      "is_loitering": true,
+      "loiter_score": 95.49,
+      "radius_nm": 0.077,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 13.081691354166667,
+        "lon": 73.1438857638889
+      }
+    },
+    "41910030": {
+      "is_loitering": true,
+      "loiter_score": 96.24,
+      "radius_nm": 0.062,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 12.315503097222221,
+        "lon": 75.14613085416667
+      }
+    },
+    "41910031": {
+      "is_loitering": true,
+      "loiter_score": 95.38,
+      "radius_nm": 0.079,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 11.047657076388889,
+        "lon": 70.83386616666667
+      }
+    },
+    "41910032": {
+      "is_loitering": true,
+      "loiter_score": 95.65,
+      "radius_nm": 0.074,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 12.218172611111111,
+        "lon": 74.47756372222221
+      }
+    },
+    "41910033": {
+      "is_loitering": true,
+      "loiter_score": 95.15,
+      "radius_nm": 0.084,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 20.182055402777777,
+        "lon": 73.21818399305556
+      }
+    },
+    "41910034": {
+      "is_loitering": true,
+      "loiter_score": 95.48,
+      "radius_nm": 0.077,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 21.247313444444444,
+        "lon": 75.48133349305554
+      }
+    },
+    "41910035": {
+      "is_loitering": true,
+      "loiter_score": 96.49,
+      "radius_nm": 0.057,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 21.692420430555558,
+        "lon": 70.88678719444445
+      }
+    },
+    "41910036": {
+      "is_loitering": true,
+      "loiter_score": 95.49,
+      "radius_nm": 0.077,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 10.16483536111111,
+        "lon": 71.32690451388889
+      }
+    },
+    "41910037": {
+      "is_loitering": true,
+      "loiter_score": 95.19,
+      "radius_nm": 0.083,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 12.239788083333332,
+        "lon": 73.73954654861112
+      }
+    },
+    "41910038": {
+      "is_loitering": true,
+      "loiter_score": 95.12,
+      "radius_nm": 0.084,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 12.347326090277777,
+        "lon": 72.91357981944445
+      }
+    },
+    "41910039": {
+      "is_loitering": true,
+      "loiter_score": 95.75,
+      "radius_nm": 0.072,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 8.198634444444444,
+        "lon": 73.15500456944444
+      }
+    },
+    "99800000": {
+      "is_loitering": true,
+      "loiter_score": 93.94,
+      "radius_nm": 0.108,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 12.000120465277778,
+        "lon": 43.00175052777777
+      }
+    },
+    "99800001": {
+      "is_loitering": true,
+      "loiter_score": 94.26,
+      "radius_nm": 0.102,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 5.000613444444444,
+        "lon": 60.00136817361111
+      }
+    },
+    "99800002": {
+      "is_loitering": true,
+      "loiter_score": 93.58,
+      "radius_nm": 0.115,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 5.000680111111111,
+        "lon": 60.00168293055555
+      }
+    },
+    "99800003": {
+      "is_loitering": true,
+      "loiter_score": 95.17,
+      "radius_nm": 0.083,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 11.999685388888887,
+        "lon": 43.00131521527778
+      }
+    },
+    "99800004": {
+      "is_loitering": true,
+      "loiter_score": 94.15,
+      "radius_nm": 0.104,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 4.9989350902777785,
+        "lon": 60.00124965277777
+      }
+    },
+    "99800005": {
+      "is_loitering": true,
+      "loiter_score": 95.32,
+      "radius_nm": 0.08,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 25.998817423611108,
+        "lon": 56.00049839583333
+      }
+    },
+    "99800006": {
+      "is_loitering": true,
+      "loiter_score": 95.1,
+      "radius_nm": 0.085,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 12.000143625,
+        "lon": 43.00128434722222
+      }
+    },
+    "99800007": {
+      "is_loitering": true,
+      "loiter_score": 93.96,
+      "radius_nm": 0.108,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 25.998433958333337,
+        "lon": 56.00087772916667
+      }
+    },
+    "99800008": {
+      "is_loitering": true,
+      "loiter_score": 94.46,
+      "radius_nm": 0.098,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 12.000583208333332,
+        "lon": 43.001253194444445
+      }
+    },
+    "99800009": {
+      "is_loitering": true,
+      "loiter_score": 94.44,
+      "radius_nm": 0.098,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 25.999278,
+        "lon": 56.00158473611111
+      }
+    },
+    "99800010": {
+      "is_loitering": true,
+      "loiter_score": 95.18,
+      "radius_nm": 0.083,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 12.000051506944445,
+        "lon": 43.001336375
+      }
+    },
+    "99800011": {
+      "is_loitering": true,
+      "loiter_score": 94.82,
+      "radius_nm": 0.09,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 25.998984583333336,
+        "lon": 56.00116753472222
+      }
+    },
+    "99800012": {
+      "is_loitering": true,
+      "loiter_score": 95.42,
+      "radius_nm": 0.078,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 25.99914377777778,
+        "lon": 56.00091026388889
+      }
+    },
+    "99800013": {
+      "is_loitering": true,
+      "loiter_score": 95.19,
+      "radius_nm": 0.083,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 4.9991330694444445,
+        "lon": 60.0008846875
+      }
+    },
+    "99800014": {
+      "is_loitering": true,
+      "loiter_score": 94.47,
+      "radius_nm": 0.097,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 25.998696104166665,
+        "lon": 56.00078024305555
+      }
+    },
+    "99800015": {
+      "is_loitering": true,
+      "loiter_score": 94.88,
+      "radius_nm": 0.089,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 25.999442895833333,
+        "lon": 56.00142702777777
+      }
+    },
+    "99800016": {
+      "is_loitering": true,
+      "loiter_score": 94.55,
+      "radius_nm": 0.096,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 12.000156986111111,
+        "lon": 43.001487180555564
+      }
+    },
+    "99800017": {
+      "is_loitering": true,
+      "loiter_score": 95.5,
+      "radius_nm": 0.077,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 12.000155590277778,
+        "lon": 43.001252909722226
+      }
+    },
+    "99800018": {
+      "is_loitering": true,
+      "loiter_score": 94.98,
+      "radius_nm": 0.087,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 11.999113305555555,
+        "lon": 43.001134701388885
+      }
+    },
+    "99800019": {
+      "is_loitering": true,
+      "loiter_score": 94.44,
+      "radius_nm": 0.098,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 5.000432249999999,
+        "lon": 60.0015439236111
+      }
+    },
+    "99800020": {
+      "is_loitering": true,
+      "loiter_score": 94.9,
+      "radius_nm": 0.089,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 5.0011285347222225,
+        "lon": 60.00091543055555
+      }
+    },
+    "99800021": {
+      "is_loitering": true,
+      "loiter_score": 95.27,
+      "radius_nm": 0.081,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 12.000026729166668,
+        "lon": 43.00132723611111
+      }
+    },
+    "99800022": {
+      "is_loitering": true,
+      "loiter_score": 94.62,
+      "radius_nm": 0.094,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 11.999754458333333,
+        "lon": 43.001449083333334
+      }
+    },
+    "99800023": {
+      "is_loitering": true,
+      "loiter_score": 93.67,
+      "radius_nm": 0.114,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 5.000278881944445,
+        "lon": 60.00171998611111
+      }
+    },
+    "99800024": {
+      "is_loitering": true,
+      "loiter_score": 94.32,
+      "radius_nm": 0.101,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 25.999277826388887,
+        "lon": 56.00155742361111
+      }
+    },
+    "99800025": {
+      "is_loitering": true,
+      "loiter_score": 94.32,
+      "radius_nm": 0.1,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 25.998818854166668,
+        "lon": 56.00106770833334
+      }
+    },
+    "99800026": {
+      "is_loitering": true,
+      "loiter_score": 93.95,
+      "radius_nm": 0.108,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 5.001544625,
+        "lon": 60.000828763888904
+      }
+    },
+    "99800027": {
+      "is_loitering": true,
+      "loiter_score": 94.39,
+      "radius_nm": 0.099,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 11.999108375,
+        "lon": 43.001213388888885
+      }
+    },
+    "99800028": {
+      "is_loitering": true,
+      "loiter_score": 95.61,
+      "radius_nm": 0.074,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 12.000409034722223,
+        "lon": 43.001185972222224
+      }
+    },
+    "99800029": {
+      "is_loitering": true,
+      "loiter_score": 94.7,
+      "radius_nm": 0.093,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 4.999892444444445,
+        "lon": 60.00137049305556
+      }
+    },
+    "99800030": {
+      "is_loitering": true,
+      "loiter_score": 94.38,
+      "radius_nm": 0.099,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 25.998748416666665,
+        "lon": 56.0010484375
+      }
+    },
+    "99800031": {
+      "is_loitering": true,
+      "loiter_score": 94.25,
+      "radius_nm": 0.102,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 11.999329875,
+        "lon": 43.00150665277777
+      }
+    },
+    "99800032": {
+      "is_loitering": true,
+      "loiter_score": 94.94,
+      "radius_nm": 0.088,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 5.000289465277778,
+        "lon": 60.001321222222224
+      }
+    },
+    "99800033": {
+      "is_loitering": true,
+      "loiter_score": 94.14,
+      "radius_nm": 0.104,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 5.000904826388889,
+        "lon": 60.00123976388889
+      }
+    },
+    "99800034": {
+      "is_loitering": true,
+      "loiter_score": 95.54,
+      "radius_nm": 0.076,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 25.99899734027778,
+        "lon": 56.00071191666666
+      }
+    },
+    "99800035": {
+      "is_loitering": true,
+      "loiter_score": 94.1,
+      "radius_nm": 0.105,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 4.999399784722223,
+        "lon": 60.001605527777784
+      }
+    },
+    "99800036": {
+      "is_loitering": true,
+      "loiter_score": 95.31,
+      "radius_nm": 0.08,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 4.9997585763888885,
+        "lon": 60.001226097222215
+      }
+    },
+    "99800037": {
+      "is_loitering": true,
+      "loiter_score": 95.21,
+      "radius_nm": 0.083,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 12.000277125,
+        "lon": 43.0012045
+      }
+    },
+    "99800038": {
+      "is_loitering": true,
+      "loiter_score": 94.23,
+      "radius_nm": 0.102,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 25.99923234027778,
+        "lon": 56.00159703472222
+      }
+    },
+    "99800039": {
+      "is_loitering": true,
+      "loiter_score": 94.46,
+      "radius_nm": 0.098,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 25.998511937500002,
+        "lon": 56.00047930555556
+      }
+    },
+    "99800040": {
+      "is_loitering": true,
+      "loiter_score": 94.25,
+      "radius_nm": 0.102,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 5.000889979166668,
+        "lon": 60.00133666666667
+      }
+    },
+    "99800041": {
+      "is_loitering": true,
+      "loiter_score": 93.85,
+      "radius_nm": 0.11,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 11.999338201388888,
+        "lon": 43.001628666666676
+      }
+    },
+    "99800042": {
+      "is_loitering": true,
+      "loiter_score": 94.93,
+      "radius_nm": 0.088,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 11.999273319444447,
+        "lon": 43.00116775
+      }
+    },
+    "99800043": {
+      "is_loitering": true,
+      "loiter_score": 94.9,
+      "radius_nm": 0.089,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 12.000054756944444,
+        "lon": 43.00140590972222
+      }
+    },
+    "99800044": {
+      "is_loitering": true,
+      "loiter_score": 94.16,
+      "radius_nm": 0.104,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 5.001290277777778,
+        "lon": 60.00093020138888
+      }
+    },
+    "99800045": {
+      "is_loitering": true,
+      "loiter_score": 94.17,
+      "radius_nm": 0.103,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 12.000581840277778,
+        "lon": 43.00140780555556
+      }
+    },
+    "99800046": {
+      "is_loitering": true,
+      "loiter_score": 93.73,
+      "radius_nm": 0.112,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 4.999314326388888,
+        "lon": 60.00162236805555
+      }
+    },
+    "99800047": {
+      "is_loitering": true,
+      "loiter_score": 94.87,
+      "radius_nm": 0.089,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 11.99999970138889,
+        "lon": 43.00138215277778
+      }
+    },
+    "99800048": {
+      "is_loitering": true,
+      "loiter_score": 94.96,
+      "radius_nm": 0.087,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 25.999325458333335,
+        "lon": 56.001206583333335
+      }
+    },
+    "99800049": {
+      "is_loitering": true,
+      "loiter_score": 94.23,
+      "radius_nm": 0.102,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 11.999351972222222,
+        "lon": 43.001475666666664
+      }
+    },
+    "99800050": {
+      "is_loitering": true,
+      "loiter_score": 94.33,
+      "radius_nm": 0.1,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 25.998840659722223,
+        "lon": 56.001141125000004
+      }
+    },
+    "99800051": {
+      "is_loitering": true,
+      "loiter_score": 93.78,
+      "radius_nm": 0.111,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 5.001084861111112,
+        "lon": 60.0013780625
+      }
+    },
+    "99800052": {
+      "is_loitering": true,
+      "loiter_score": 95.1,
+      "radius_nm": 0.085,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 4.999214034722223,
+        "lon": 60.00111659722222
+      }
+    },
+    "99800053": {
+      "is_loitering": true,
+      "loiter_score": 94.7,
+      "radius_nm": 0.093,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 25.998975083333335,
+        "lon": 56.00097022916666
+      }
+    },
+    "99800054": {
+      "is_loitering": true,
+      "loiter_score": 94.77,
+      "radius_nm": 0.091,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 4.999902333333334,
+        "lon": 60.001489486111105
+      }
+    },
+    "99800055": {
+      "is_loitering": true,
+      "loiter_score": 95.04,
+      "radius_nm": 0.086,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 25.999163854166667,
+        "lon": 56.00120239583333
+      }
+    },
+    "99800056": {
+      "is_loitering": true,
+      "loiter_score": 95.32,
+      "radius_nm": 0.08,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 25.99951259722222,
+        "lon": 56.001334812500005
+      }
+    },
+    "99800057": {
+      "is_loitering": true,
+      "loiter_score": 94.15,
+      "radius_nm": 0.104,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 4.999171090277778,
+        "lon": 60.00143578472221
+      }
+    },
+    "99800058": {
+      "is_loitering": true,
+      "loiter_score": 95.63,
+      "radius_nm": 0.074,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 25.999414201388888,
+        "lon": 56.00105373611112
+      }
+    },
+    "99800059": {
+      "is_loitering": true,
+      "loiter_score": 95.47,
+      "radius_nm": 0.077,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 12.000062854166666,
+        "lon": 43.001200131944444
+      }
+    },
+    "419004001": {
+      "is_loitering": true,
+      "loiter_score": 95.27,
+      "radius_nm": 0.081,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 12.723275479166666,
+        "lon": 58.10188133333333
+      }
+    },
+    "419004002": {
+      "is_loitering": false,
+      "loiter_score": 0.0,
+      "radius_nm": 599.494,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 18.20822901388889,
+        "lon": 66.76499771527777
+      }
+    },
+    "419005001": {
+      "is_loitering": false,
+      "loiter_score": 0.0,
+      "radius_nm": 71.542,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 7.908201821428572,
+        "lon": 69.17672361904759
+      }
+    },
+    "419005002": {
+      "is_loitering": true,
+      "loiter_score": 53.36,
+      "radius_nm": 0.925,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 18.37174481944444,
+        "lon": 66.44415492361112
+      }
+    },
+    "419005003": {
+      "is_loitering": false,
+      "loiter_score": 0.0,
+      "radius_nm": 314.702,
+      "duration_h": 11.92,
+      "centroid": {
+        "lat": 8.339419263888889,
+        "lon": 67.3873046111111
+      }
+    }
+  }
+}
