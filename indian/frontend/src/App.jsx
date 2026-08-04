@@ -3,14 +3,18 @@ import Map from './components/Map/Map';
 import AlertSidebar from './components/AlertSidebar/AlertSidebar';
 import LinkAnalysis from './components/LinkAnalysis/LinkAnalysis';
 import VesselDetail from './components/VesselDetail/VesselDetail';
+import LockScreen from './components/LockScreen/LockScreen';
 import { 
   Map as MapIcon, Share2, ScanEye, Menu, ShieldAlert, Volume2, 
   VolumeX, Clock, Search, List, AlertTriangle, Shield, ChevronRight, ChevronLeft,
-  Layers as LayersIcon, Filter as FilterIcon, Settings, Target, Eye
+  Layers as LayersIcon, Filter as FilterIcon, Settings, Target, Eye, Lock
 } from 'lucide-react';
 import './App.css';
 
 function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(() => {
+    return sessionStorage.getItem('mda_authenticated') === 'true';
+  });
   const [vessels, setVessels] = useState({});
   const [alerts, setAlerts] = useState([]);
   const [selectedMmsi, setSelectedMmsi] = useState(null);
@@ -137,6 +141,10 @@ function App() {
 
   const [isDetailVisible, setIsDetailVisible] = useState(true);
 
+  if (!isAuthenticated) {
+    return <LockScreen onUnlock={() => setIsAuthenticated(true)} />;
+  }
+
   return (
     <div className={`app-container ${isSidebarOpen ? '' : 'sidebar-closed'} ${hasCriticalThreat && !isAlarmSilenced ? 'alarm-active' : ''}`}>
       {/* Strategic Export Confirmation Modal */}
@@ -222,6 +230,17 @@ function App() {
               <div className="stat-pill critical"><span className="stat-val">{stats.anomalous}</span><span className="stat-label">Risks</span></div>
             </React.Fragment>
           )}
+          <button 
+            className="sidebar-toggle" 
+            onClick={() => {
+              sessionStorage.removeItem('mda_authenticated');
+              setIsAuthenticated(false);
+            }} 
+            title="Lock Terminal"
+            style={{ borderColor: 'rgba(239, 68, 68, 0.4)', background: 'rgba(239, 68, 68, 0.1)', color: '#ef4444' }}
+          >
+            <Lock size={18} />
+          </button>
         </div>
       </header>
 

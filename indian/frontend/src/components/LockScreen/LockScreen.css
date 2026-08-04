@@ -1,0 +1,131 @@
+.simple-lock-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #090d16;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+.simple-lock-card {
+  width: 100%;
+  max-width: 360px;
+  padding: 32px 28px;
+  background: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.lock-icon-circle {
+  width: 48px;
+  height: 48px;
+  background: rgba(56, 189, 248, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.simple-lock-card h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0 0 6px 0;
+}
+
+.lock-sub {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin: 0 0 24px 0;
+}
+
+.simple-lock-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.password-input-group {
+  position: relative;
+  width: 100%;
+}
+
+.password-input-group input {
+  width: 100%;
+  padding: 10px 40px 10px 14px;
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  color: #f8fafc;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.password-input-group input:focus {
+  border-color: #38bdf8;
+}
+
+.toggle-eye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-eye:hover {
+  color: #94a3b8;
+}
+
+.simple-error {
+  font-size: 0.8rem;
+  color: #f87171;
+  text-align: left;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background: #0284c7;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-btn:hover {
+  background: #0369a1;
+}
+
+.simple-hint {
+  margin-top: 20px;
+  font-size: 0.78rem;
+  color: #64748b;
+}
+
+.simple-hint span {
+  color: #38bdf8;
+  font-weight: 600;
+}

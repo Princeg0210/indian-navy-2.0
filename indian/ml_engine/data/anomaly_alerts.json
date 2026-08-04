@@ -21,7 +21,7 @@
       "last_lat": 12.722818,
       "last_lon": 58.102865,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686973+00:00"
+      "generated_at": "2026-08-04T14:28:37.454095+00:00"
     },
     {
       "alert_id": "ALT-5002",
@@ -41,7 +41,7 @@
       "last_lat": 18.372328,
       "last_lon": 66.445084,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688832+00:00"
+      "generated_at": "2026-08-04T14:28:37.455835+00:00"
     },
     {
       "alert_id": "ALT-4002",
@@ -64,7 +64,7 @@
       "last_lat": 19.650269,
       "last_lon": 69.045877,
       "loitering": false,
-      "generated_at": "2026-04-09T14:38:28.686994+00:00"
+      "generated_at": "2026-08-04T14:28:37.454566+00:00"
     },
     {
       "alert_id": "ALT-5003",
@@ -84,7 +84,43 @@
       "last_lat": 8.313522,
       "last_lon": 67.414375,
       "loitering": false,
-      "generated_at": "2026-04-09T14:38:28.687370+00:00"
+      "generated_at": "2026-08-04T14:28:37.454446+00:00"
+    },
+    {
+      "alert_id": "ALT-0012",
+      "mmsi": "41910012",
+      "vessel_name": "REGIONAL_12",
+      "vessel_type": "Cargo",
+      "flag": "IN",
+      "risk_score": 19.3,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 15.74375,
+      "last_lon": 72.25372,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454877+00:00"
+    },
+    {
+      "alert_id": "ALT-0005",
+      "mmsi": "41910005",
+      "vessel_name": "REGIONAL_5",
+      "vessel_type": "Tanker",
+      "flag": "IN",
+      "risk_score": 19.3,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 18.425277,
+      "last_lon": 72.237407,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455543+00:00"
     },
     {
       "alert_id": "ALT-0035",
@@ -104,79 +140,7 @@
       "last_lat": 21.692373,
       "last_lon": 70.885939,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686239+00:00"
-    },
-    {
-      "alert_id": "ALT-0001",
-      "mmsi": "41910001",
-      "vessel_name": "REGIONAL_1",
-      "vessel_type": "Tanker",
-      "flag": "IN",
-      "risk_score": 19.3,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.47431,
-      "last_lon": 73.240426,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686601+00:00"
-    },
-    {
-      "alert_id": "ALT-0005",
-      "mmsi": "41910005",
-      "vessel_name": "REGIONAL_5",
-      "vessel_type": "Tanker",
-      "flag": "IN",
-      "risk_score": 19.3,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 18.425277,
-      "last_lon": 72.237407,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687182+00:00"
-    },
-    {
-      "alert_id": "ALT-0012",
-      "mmsi": "41910012",
-      "vessel_name": "REGIONAL_12",
-      "vessel_type": "Cargo",
-      "flag": "IN",
-      "risk_score": 19.3,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 15.74375,
-      "last_lon": 72.25372,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687480+00:00"
-    },
-    {
-      "alert_id": "ALT-0003",
-      "mmsi": "41910003",
-      "vessel_name": "REGIONAL_3",
-      "vessel_type": "Cargo",
-      "flag": "IN",
-      "risk_score": 19.3,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 19.78038,
-      "last_lon": 70.679176,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687559+00:00"
+      "generated_at": "2026-08-04T14:28:37.455593+00:00"
     },
     {
       "alert_id": "ALT-0009",
@@ -196,81 +160,43 @@
       "last_lat": 18.959947,
       "last_lon": 74.655364,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688070+00:00"
+      "generated_at": "2026-08-04T14:28:37.456022+00:00"
     },
     {
-      "alert_id": "ALT-0016",
-      "mmsi": "41910016",
-      "vessel_name": "REGIONAL_16",
-      "vessel_type": "Cargo",
-      "flag": "IN",
-      "risk_score": 19.2,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 8.903875,
-      "last_lon": 75.413399,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686325+00:00"
-    },
-    {
-      "alert_id": "ALT-0023",
-      "mmsi": "41910023",
-      "vessel_name": "REGIONAL_23",
-      "vessel_type": "Fishing",
-      "flag": "IN",
-      "risk_score": 19.2,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [
-        "IUU_Fishing"
-      ],
-      "is_anomalous": true,
-      "last_lat": 8.783246,
-      "last_lon": 71.547646,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686361+00:00"
-    },
-    {
-      "alert_id": "ALT-0028",
-      "mmsi": "41910028",
-      "vessel_name": "REGIONAL_28",
-      "vessel_type": "Pilot",
-      "flag": "IN",
-      "risk_score": 19.2,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 14.857444,
-      "last_lon": 74.464999,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686408+00:00"
-    },
-    {
-      "alert_id": "ALT-0020",
-      "mmsi": "41910020",
-      "vessel_name": "REGIONAL_20",
+      "alert_id": "ALT-0001",
+      "mmsi": "41910001",
+      "vessel_name": "REGIONAL_1",
       "vessel_type": "Tanker",
       "flag": "IN",
-      "risk_score": 19.2,
+      "risk_score": 19.3,
       "severity": "LOW",
       "anomaly_types": [
         "LOITERING_ANOMALY"
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 17.379577,
-      "last_lon": 72.031158,
+      "last_lat": 12.47431,
+      "last_lon": 73.240426,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687015+00:00"
+      "generated_at": "2026-08-04T14:28:37.456107+00:00"
+    },
+    {
+      "alert_id": "ALT-0003",
+      "mmsi": "41910003",
+      "vessel_name": "REGIONAL_3",
+      "vessel_type": "Cargo",
+      "flag": "IN",
+      "risk_score": 19.3,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 19.78038,
+      "last_lon": 70.679176,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.456471+00:00"
     },
     {
       "alert_id": "ALT-0017",
@@ -290,13 +216,13 @@
       "last_lat": 13.25625,
       "last_lon": 74.974303,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687642+00:00"
+      "generated_at": "2026-08-04T14:28:37.453631+00:00"
     },
     {
-      "alert_id": "ALT-0007",
-      "mmsi": "41910007",
-      "vessel_name": "REGIONAL_7",
-      "vessel_type": "Tanker",
+      "alert_id": "ALT-0016",
+      "mmsi": "41910016",
+      "vessel_name": "REGIONAL_16",
+      "vessel_type": "Cargo",
       "flag": "IN",
       "risk_score": 19.2,
       "severity": "LOW",
@@ -305,10 +231,28 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 16.354946,
-      "last_lon": 70.100593,
+      "last_lat": 8.903875,
+      "last_lon": 75.413399,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687886+00:00"
+      "generated_at": "2026-08-04T14:28:37.453783+00:00"
+    },
+    {
+      "alert_id": "ALT-0030",
+      "mmsi": "41910030",
+      "vessel_name": "REGIONAL_30",
+      "vessel_type": "Cargo",
+      "flag": "IN",
+      "risk_score": 19.2,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 12.315084,
+      "last_lon": 75.145333,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.453824+00:00"
     },
     {
       "alert_id": "ALT-0026",
@@ -326,7 +270,63 @@
       "last_lat": 16.808408,
       "last_lon": 70.251043,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688130+00:00"
+      "generated_at": "2026-08-04T14:28:37.454335+00:00"
+    },
+    {
+      "alert_id": "ALT-0028",
+      "mmsi": "41910028",
+      "vessel_name": "REGIONAL_28",
+      "vessel_type": "Pilot",
+      "flag": "IN",
+      "risk_score": 19.2,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 14.857444,
+      "last_lon": 74.464999,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454930+00:00"
+    },
+    {
+      "alert_id": "ALT-0023",
+      "mmsi": "41910023",
+      "vessel_name": "REGIONAL_23",
+      "vessel_type": "Fishing",
+      "flag": "IN",
+      "risk_score": 19.2,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [
+        "IUU_Fishing"
+      ],
+      "is_anomalous": true,
+      "last_lat": 8.783246,
+      "last_lon": 71.547646,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455370+00:00"
+    },
+    {
+      "alert_id": "ALT-0007",
+      "mmsi": "41910007",
+      "vessel_name": "REGIONAL_7",
+      "vessel_type": "Tanker",
+      "flag": "IN",
+      "risk_score": 19.2,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 16.354946,
+      "last_lon": 70.100593,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455764+00:00"
     },
     {
       "alert_id": "ALT-0013",
@@ -346,7 +346,25 @@
       "last_lat": 17.48066,
       "last_lon": 70.988208,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688590+00:00"
+      "generated_at": "2026-08-04T14:28:37.455907+00:00"
+    },
+    {
+      "alert_id": "ALT-0020",
+      "mmsi": "41910020",
+      "vessel_name": "REGIONAL_20",
+      "vessel_type": "Tanker",
+      "flag": "IN",
+      "risk_score": 19.2,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 17.379577,
+      "last_lon": 72.031158,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.456063+00:00"
     },
     {
       "alert_id": "ALT-0024",
@@ -364,297 +382,7 @@
       "last_lat": 19.416304,
       "last_lon": 71.356201,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688710+00:00"
-    },
-    {
-      "alert_id": "ALT-0030",
-      "mmsi": "41910030",
-      "vessel_name": "REGIONAL_30",
-      "vessel_type": "Cargo",
-      "flag": "IN",
-      "risk_score": 19.2,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.315084,
-      "last_lon": 75.145333,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688914+00:00"
-    },
-    {
-      "alert_id": "ALT-0058",
-      "mmsi": "99800058",
-      "vessel_name": "GLOBAL_TRANSIT_58",
-      "vessel_type": "Bulk",
-      "flag": "LR",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.998836,
-      "last_lon": 56.002104,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686209+00:00"
-    },
-    {
-      "alert_id": "ALT-0028",
-      "mmsi": "99800028",
-      "vessel_name": "GLOBAL_TRANSIT_28",
-      "vessel_type": "Cargo",
-      "flag": "LR",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.00073,
-      "last_lon": 43.002354,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686427+00:00"
-    },
-    {
-      "alert_id": "ALT-0014",
-      "mmsi": "41910014",
-      "vessel_name": "REGIONAL_14",
-      "vessel_type": "Cargo",
-      "flag": "IN",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 21.611934,
-      "last_lon": 73.810707,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686459+00:00"
-    },
-    {
-      "alert_id": "ALT-0034",
-      "mmsi": "99800034",
-      "vessel_name": "GLOBAL_TRANSIT_34",
-      "vessel_type": "Bulk",
-      "flag": "SG",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.998112,
-      "last_lon": 56.001512,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686656+00:00"
-    },
-    {
-      "alert_id": "ALT-0021",
-      "mmsi": "99800021",
-      "vessel_name": "GLOBAL_TRANSIT_21",
-      "vessel_type": "Tanker",
-      "flag": "PA",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 11.999921,
-      "last_lon": 43.002613,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686707+00:00"
-    },
-    {
-      "alert_id": "ALT-0021",
-      "mmsi": "41910021",
-      "vessel_name": "REGIONAL_21",
-      "vessel_type": "Fishing",
-      "flag": "IN",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [
-        "IUU_Fishing"
-      ],
-      "is_anomalous": true,
-      "last_lat": 15.864058,
-      "last_lon": 71.346016,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686927+00:00"
-    },
-    {
-      "alert_id": "ALT-0019",
-      "mmsi": "41910019",
-      "vessel_name": "REGIONAL_19",
-      "vessel_type": "Cargo",
-      "flag": "IN",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 14.004507,
-      "last_lon": 72.863207,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686952+00:00"
-    },
-    {
-      "alert_id": "ALT-0034",
-      "mmsi": "41910034",
-      "vessel_name": "REGIONAL_34",
-      "vessel_type": "Cargo",
-      "flag": "IN",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 21.246974,
-      "last_lon": 75.480131,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687143+00:00"
-    },
-    {
-      "alert_id": "ALT-0036",
-      "mmsi": "41910036",
-      "vessel_name": "REGIONAL_36",
-      "vessel_type": "Pilot",
-      "flag": "IN",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 10.165841,
-      "last_lon": 71.327109,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687161+00:00"
-    },
-    {
-      "alert_id": "ALT-0059",
-      "mmsi": "99800059",
-      "vessel_name": "GLOBAL_TRANSIT_59",
-      "vessel_type": "Cargo",
-      "flag": "MH",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.00027,
-      "last_lon": 43.00248,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687341+00:00"
-    },
-    {
-      "alert_id": "ALT-0031",
-      "mmsi": "41910031",
-      "vessel_name": "REGIONAL_31",
-      "vessel_type": "Tanker",
-      "flag": "IN",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 11.048665,
-      "last_lon": 70.834197,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687428+00:00"
-    },
-    {
-      "alert_id": "ALT-0056",
-      "mmsi": "99800056",
-      "vessel_name": "GLOBAL_TRANSIT_56",
-      "vessel_type": "Tanker",
-      "flag": "PA",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.999194,
-      "last_lon": 56.002658,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687512+00:00"
-    },
-    {
-      "alert_id": "ALT-0032",
-      "mmsi": "41910032",
-      "vessel_name": "REGIONAL_32",
-      "vessel_type": "Pilot",
-      "flag": "IN",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.21723,
-      "last_lon": 74.478182,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687534+00:00"
-    },
-    {
-      "alert_id": "ALT-0017",
-      "mmsi": "99800017",
-      "vessel_name": "GLOBAL_TRANSIT_17",
-      "vessel_type": "Tanker",
-      "flag": "LR",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.000334,
-      "last_lon": 43.002369,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687713+00:00"
-    },
-    {
-      "alert_id": "ALT-0036",
-      "mmsi": "99800036",
-      "vessel_name": "GLOBAL_TRANSIT_36",
-      "vessel_type": "Cargo",
-      "flag": "PA",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 4.999497,
-      "last_lon": 60.002418,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687908+00:00"
+      "generated_at": "2026-08-04T14:28:37.456139+00:00"
     },
     {
       "alert_id": "ALT-0004",
@@ -672,14 +400,14 @@
       "last_lat": 13.819261,
       "last_lon": 71.203968,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688195+00:00"
+      "generated_at": "2026-08-04T14:28:37.453446+00:00"
     },
     {
-      "alert_id": "ALT-0027",
-      "mmsi": "41910027",
-      "vessel_name": "REGIONAL_27",
-      "vessel_type": "Tanker",
-      "flag": "IN",
+      "alert_id": "ALT-0034",
+      "mmsi": "99800034",
+      "vessel_name": "GLOBAL_TRANSIT_34",
+      "vessel_type": "Bulk",
+      "flag": "SG",
       "risk_score": 19.1,
       "severity": "LOW",
       "anomaly_types": [
@@ -687,17 +415,17 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 12.223674,
-      "last_lon": 71.800637,
+      "last_lat": 25.998112,
+      "last_lon": 56.001512,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688219+00:00"
+      "generated_at": "2026-08-04T14:28:37.453515+00:00"
     },
     {
-      "alert_id": "ALT-0029",
-      "mmsi": "41910029",
-      "vessel_name": "REGIONAL_29",
+      "alert_id": "ALT-0021",
+      "mmsi": "99800021",
+      "vessel_name": "GLOBAL_TRANSIT_21",
       "vessel_type": "Tanker",
-      "flag": "IN",
+      "flag": "PA",
       "risk_score": 19.1,
       "severity": "LOW",
       "anomaly_types": [
@@ -705,28 +433,10 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 13.082249,
-      "last_lon": 73.144746,
+      "last_lat": 11.999921,
+      "last_lon": 43.002613,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688365+00:00"
-    },
-    {
-      "alert_id": "ALT-0018",
-      "mmsi": "41910018",
-      "vessel_name": "REGIONAL_18",
-      "vessel_type": "Tanker",
-      "flag": "IN",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 20.142145,
-      "last_lon": 74.924082,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688401+00:00"
+      "generated_at": "2026-08-04T14:28:37.453577+00:00"
     },
     {
       "alert_id": "ALT-0005",
@@ -744,7 +454,25 @@
       "last_lat": 25.997739,
       "last_lon": 56.001088,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688508+00:00"
+      "generated_at": "2026-08-04T14:28:37.453673+00:00"
+    },
+    {
+      "alert_id": "ALT-0039",
+      "mmsi": "41910039",
+      "vessel_name": "REGIONAL_39",
+      "vessel_type": "Tanker",
+      "flag": "IN",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 8.199731,
+      "last_lon": 73.155047,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.453714+00:00"
     },
     {
       "alert_id": "ALT-0011",
@@ -764,7 +492,279 @@
       "last_lat": 18.662078,
       "last_lon": 74.343998,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688558+00:00"
+      "generated_at": "2026-08-04T14:28:37.453867+00:00"
+    },
+    {
+      "alert_id": "ALT-0018",
+      "mmsi": "41910018",
+      "vessel_name": "REGIONAL_18",
+      "vessel_type": "Tanker",
+      "flag": "IN",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 20.142145,
+      "last_lon": 74.924082,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.453969+00:00"
+    },
+    {
+      "alert_id": "ALT-0059",
+      "mmsi": "99800059",
+      "vessel_name": "GLOBAL_TRANSIT_59",
+      "vessel_type": "Cargo",
+      "flag": "MH",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 12.00027,
+      "last_lon": 43.00248,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454106+00:00"
+    },
+    {
+      "alert_id": "ALT-0036",
+      "mmsi": "99800036",
+      "vessel_name": "GLOBAL_TRANSIT_36",
+      "vessel_type": "Cargo",
+      "flag": "PA",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 4.999497,
+      "last_lon": 60.002418,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454169+00:00"
+    },
+    {
+      "alert_id": "ALT-0021",
+      "mmsi": "41910021",
+      "vessel_name": "REGIONAL_21",
+      "vessel_type": "Fishing",
+      "flag": "IN",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [
+        "IUU_Fishing"
+      ],
+      "is_anomalous": true,
+      "last_lat": 15.864058,
+      "last_lon": 71.346016,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454254+00:00"
+    },
+    {
+      "alert_id": "ALT-0019",
+      "mmsi": "41910019",
+      "vessel_name": "REGIONAL_19",
+      "vessel_type": "Cargo",
+      "flag": "IN",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 14.004507,
+      "last_lon": 72.863207,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454283+00:00"
+    },
+    {
+      "alert_id": "ALT-0036",
+      "mmsi": "41910036",
+      "vessel_name": "REGIONAL_36",
+      "vessel_type": "Pilot",
+      "flag": "IN",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 10.165841,
+      "last_lon": 71.327109,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454365+00:00"
+    },
+    {
+      "alert_id": "ALT-0029",
+      "mmsi": "41910029",
+      "vessel_name": "REGIONAL_29",
+      "vessel_type": "Tanker",
+      "flag": "IN",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 13.082249,
+      "last_lon": 73.144746,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454393+00:00"
+    },
+    {
+      "alert_id": "ALT-0027",
+      "mmsi": "41910027",
+      "vessel_name": "REGIONAL_27",
+      "vessel_type": "Tanker",
+      "flag": "IN",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 12.223674,
+      "last_lon": 71.800637,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454629+00:00"
+    },
+    {
+      "alert_id": "ALT-0034",
+      "mmsi": "41910034",
+      "vessel_name": "REGIONAL_34",
+      "vessel_type": "Cargo",
+      "flag": "IN",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 21.246974,
+      "last_lon": 75.480131,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454763+00:00"
+    },
+    {
+      "alert_id": "ALT-0058",
+      "mmsi": "99800058",
+      "vessel_name": "GLOBAL_TRANSIT_58",
+      "vessel_type": "Bulk",
+      "flag": "LR",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 25.998836,
+      "last_lon": 56.002104,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454894+00:00"
+    },
+    {
+      "alert_id": "ALT-0014",
+      "mmsi": "41910014",
+      "vessel_name": "REGIONAL_14",
+      "vessel_type": "Cargo",
+      "flag": "IN",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 21.611934,
+      "last_lon": 73.810707,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454969+00:00"
+    },
+    {
+      "alert_id": "ALT-0031",
+      "mmsi": "41910031",
+      "vessel_name": "REGIONAL_31",
+      "vessel_type": "Tanker",
+      "flag": "IN",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 11.048665,
+      "last_lon": 70.834197,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455116+00:00"
+    },
+    {
+      "alert_id": "ALT-0032",
+      "mmsi": "41910032",
+      "vessel_name": "REGIONAL_32",
+      "vessel_type": "Pilot",
+      "flag": "IN",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 12.21723,
+      "last_lon": 74.478182,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455181+00:00"
+    },
+    {
+      "alert_id": "ALT-0017",
+      "mmsi": "99800017",
+      "vessel_name": "GLOBAL_TRANSIT_17",
+      "vessel_type": "Tanker",
+      "flag": "LR",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 12.000334,
+      "last_lon": 43.002369,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455210+00:00"
+    },
+    {
+      "alert_id": "ALT-0056",
+      "mmsi": "99800056",
+      "vessel_name": "GLOBAL_TRANSIT_56",
+      "vessel_type": "Tanker",
+      "flag": "PA",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 25.999194,
+      "last_lon": 56.002658,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455228+00:00"
     },
     {
       "alert_id": "ALT-0002",
@@ -782,7 +782,7 @@
       "last_lat": 12.291456,
       "last_lon": 71.385119,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688812+00:00"
+      "generated_at": "2026-08-04T14:28:37.455512+00:00"
     },
     {
       "alert_id": "ALT-0012",
@@ -800,14 +800,14 @@
       "last_lat": 25.998266,
       "last_lon": 56.001857,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688889+00:00"
+      "generated_at": "2026-08-04T14:28:37.455938+00:00"
     },
     {
-      "alert_id": "ALT-0039",
-      "mmsi": "41910039",
-      "vessel_name": "REGIONAL_39",
-      "vessel_type": "Tanker",
-      "flag": "IN",
+      "alert_id": "ALT-0028",
+      "mmsi": "99800028",
+      "vessel_name": "GLOBAL_TRANSIT_28",
+      "vessel_type": "Cargo",
+      "flag": "LR",
       "risk_score": 19.1,
       "severity": "LOW",
       "anomaly_types": [
@@ -815,28 +815,10 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 8.199731,
-      "last_lon": 73.155047,
+      "last_lat": 12.00073,
+      "last_lon": 43.002354,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688937+00:00"
-    },
-    {
-      "alert_id": "ALT-0000",
-      "mmsi": "41910000",
-      "vessel_name": "REGIONAL_0",
-      "vessel_type": "Cargo",
-      "flag": "IN",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 13.166778,
-      "last_lon": 73.314008,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686174+00:00"
+      "generated_at": "2026-08-04T14:28:37.456322+00:00"
     },
     {
       "alert_id": "ALT-0037",
@@ -854,43 +836,7 @@
       "last_lat": 12.000498,
       "last_lon": 43.002516,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686261+00:00"
-    },
-    {
-      "alert_id": "ALT-0008",
-      "mmsi": "41910008",
-      "vessel_name": "REGIONAL_8",
-      "vessel_type": "Tanker",
-      "flag": "IN",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 9.753816,
-      "last_lon": 71.904839,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686385+00:00"
-    },
-    {
-      "alert_id": "ALT-0054",
-      "mmsi": "99800054",
-      "vessel_name": "GLOBAL_TRANSIT_54",
-      "vessel_type": "Bulk",
-      "flag": "SG",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 4.999923,
-      "last_lon": 60.003017,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686438+00:00"
+      "generated_at": "2026-08-04T14:28:37.453647+00:00"
     },
     {
       "alert_id": "ALT-0048",
@@ -908,263 +854,7 @@
       "last_lat": 25.998661,
       "last_lon": 56.002373,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686616+00:00"
-    },
-    {
-      "alert_id": "ALT-0055",
-      "mmsi": "99800055",
-      "vessel_name": "GLOBAL_TRANSIT_55",
-      "vessel_type": "Cargo",
-      "flag": "PA",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.998546,
-      "last_lon": 56.002371,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686632+00:00"
-    },
-    {
-      "alert_id": "ALT-0015",
-      "mmsi": "99800015",
-      "vessel_name": "GLOBAL_TRANSIT_15",
-      "vessel_type": "Tanker",
-      "flag": "LR",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.999003,
-      "last_lon": 56.002844,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686769+00:00"
-    },
-    {
-      "alert_id": "ALT-0032",
-      "mmsi": "99800032",
-      "vessel_name": "GLOBAL_TRANSIT_32",
-      "vessel_type": "Cargo",
-      "flag": "MH",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 5.00049,
-      "last_lon": 60.002549,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686852+00:00"
-    },
-    {
-      "alert_id": "ALT-0013",
-      "mmsi": "99800013",
-      "vessel_name": "GLOBAL_TRANSIT_13",
-      "vessel_type": "Bulk",
-      "flag": "PA",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 4.998176,
-      "last_lon": 60.001859,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686888+00:00"
-    },
-    {
-      "alert_id": "ALT-0006",
-      "mmsi": "99800006",
-      "vessel_name": "GLOBAL_TRANSIT_6",
-      "vessel_type": "Bulk",
-      "flag": "LR",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.000537,
-      "last_lon": 43.002671,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687046+00:00"
-    },
-    {
-      "alert_id": "ALT-0010",
-      "mmsi": "99800010",
-      "vessel_name": "GLOBAL_TRANSIT_10",
-      "vessel_type": "Tanker",
-      "flag": "PA",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.000165,
-      "last_lon": 43.002747,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687080+00:00"
-    },
-    {
-      "alert_id": "ALT-0006",
-      "mmsi": "41910006",
-      "vessel_name": "REGIONAL_6",
-      "vessel_type": "Fishing",
-      "flag": "IN",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [
-        "IUU_Fishing"
-      ],
-      "is_anomalous": true,
-      "last_lat": 14.477724,
-      "last_lon": 73.32841,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687115+00:00"
-    },
-    {
-      "alert_id": "ALT-0033",
-      "mmsi": "41910033",
-      "vessel_name": "REGIONAL_33",
-      "vessel_type": "Pilot",
-      "flag": "IN",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 20.181321,
-      "last_lon": 73.21692,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687397+00:00"
-    },
-    {
-      "alert_id": "ALT-0020",
-      "mmsi": "99800020",
-      "vessel_name": "GLOBAL_TRANSIT_20",
-      "vessel_type": "Bulk",
-      "flag": "PA",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 5.002355,
-      "last_lon": 60.001742,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687501+00:00"
-    },
-    {
-      "alert_id": "ALT-0015",
-      "mmsi": "41910015",
-      "vessel_name": "REGIONAL_15",
-      "vessel_type": "Fishing",
-      "flag": "IN",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [
-        "IUU_Fishing"
-      ],
-      "is_anomalous": true,
-      "last_lat": 15.239458,
-      "last_lon": 74.933057,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687584+00:00"
-    },
-    {
-      "alert_id": "ALT-0011",
-      "mmsi": "99800011",
-      "vessel_name": "GLOBAL_TRANSIT_11",
-      "vessel_type": "Tanker",
-      "flag": "PA",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.998027,
-      "last_lon": 56.002345,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687608+00:00"
-    },
-    {
-      "alert_id": "ALT-0003",
-      "mmsi": "99800003",
-      "vessel_name": "GLOBAL_TRANSIT_3",
-      "vessel_type": "Tanker",
-      "flag": "MH",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 11.999284,
-      "last_lon": 43.002523,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687670+00:00"
-    },
-    {
-      "alert_id": "ALT-0038",
-      "mmsi": "41910038",
-      "vessel_name": "REGIONAL_38",
-      "vessel_type": "Cargo",
-      "flag": "IN",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.34707,
-      "last_lon": 72.914902,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687742+00:00"
-    },
-    {
-      "alert_id": "ALT-0047",
-      "mmsi": "99800047",
-      "vessel_name": "GLOBAL_TRANSIT_47",
-      "vessel_type": "Cargo",
-      "flag": "MH",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 11.999875,
-      "last_lon": 43.002783,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687832+00:00"
+      "generated_at": "2026-08-04T14:28:37.453744+00:00"
     },
     {
       "alert_id": "ALT-0037",
@@ -1184,14 +874,14 @@
       "last_lat": 12.2409,
       "last_lon": 73.739671,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687855+00:00"
+      "generated_at": "2026-08-04T14:28:37.453900+00:00"
     },
     {
-      "alert_id": "ALT-0022",
-      "mmsi": "41910022",
-      "vessel_name": "REGIONAL_22",
+      "alert_id": "ALT-0055",
+      "mmsi": "99800055",
+      "vessel_name": "GLOBAL_TRANSIT_55",
       "vessel_type": "Cargo",
-      "flag": "IN",
+      "flag": "PA",
       "risk_score": 19.0,
       "severity": "LOW",
       "anomaly_types": [
@@ -1199,64 +889,10 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 15.666795,
-      "last_lon": 70.51285,
+      "last_lat": 25.998546,
+      "last_lon": 56.002371,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687965+00:00"
-    },
-    {
-      "alert_id": "ALT-0042",
-      "mmsi": "99800042",
-      "vessel_name": "GLOBAL_TRANSIT_42",
-      "vessel_type": "Cargo",
-      "flag": "SG",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 11.998483,
-      "last_lon": 43.001881,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687989+00:00"
-    },
-    {
-      "alert_id": "ALT-0025",
-      "mmsi": "41910025",
-      "vessel_name": "REGIONAL_25",
-      "vessel_type": "Pilot",
-      "flag": "IN",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 9.098788,
-      "last_lon": 73.679426,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688109+00:00"
-    },
-    {
-      "alert_id": "ALT-0043",
-      "mmsi": "99800043",
-      "vessel_name": "GLOBAL_TRANSIT_43",
-      "vessel_type": "Cargo",
-      "flag": "SG",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.00012,
-      "last_lon": 43.00287,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688445+00:00"
+      "generated_at": "2026-08-04T14:28:37.453990+00:00"
     },
     {
       "alert_id": "ALT-0010",
@@ -1274,14 +910,34 @@
       "last_lat": 21.167241,
       "last_lon": 72.203237,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688481+00:00"
+      "generated_at": "2026-08-04T14:28:37.454034+00:00"
     },
     {
-      "alert_id": "ALT-0052",
-      "mmsi": "99800052",
-      "vessel_name": "GLOBAL_TRANSIT_52",
-      "vessel_type": "Bulk",
-      "flag": "HK",
+      "alert_id": "ALT-0006",
+      "mmsi": "41910006",
+      "vessel_name": "REGIONAL_6",
+      "vessel_type": "Fishing",
+      "flag": "IN",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [
+        "IUU_Fishing"
+      ],
+      "is_anomalous": true,
+      "last_lat": 14.477724,
+      "last_lon": 73.32841,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454143+00:00"
+    },
+    {
+      "alert_id": "ALT-0022",
+      "mmsi": "41910022",
+      "vessel_name": "REGIONAL_22",
+      "vessel_type": "Cargo",
+      "flag": "IN",
       "risk_score": 19.0,
       "severity": "LOW",
       "anomaly_types": [
@@ -1289,10 +945,82 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 4.998533,
-      "last_lon": 60.002219,
+      "last_lat": 15.666795,
+      "last_lon": 70.51285,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688752+00:00"
+      "generated_at": "2026-08-04T14:28:37.454205+00:00"
+    },
+    {
+      "alert_id": "ALT-0011",
+      "mmsi": "99800011",
+      "vessel_name": "GLOBAL_TRANSIT_11",
+      "vessel_type": "Tanker",
+      "flag": "PA",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 25.998027,
+      "last_lon": 56.002345,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454232+00:00"
+    },
+    {
+      "alert_id": "ALT-0042",
+      "mmsi": "99800042",
+      "vessel_name": "GLOBAL_TRANSIT_42",
+      "vessel_type": "Cargo",
+      "flag": "SG",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 11.998483,
+      "last_lon": 43.001881,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454305+00:00"
+    },
+    {
+      "alert_id": "ALT-0006",
+      "mmsi": "99800006",
+      "vessel_name": "GLOBAL_TRANSIT_6",
+      "vessel_type": "Bulk",
+      "flag": "LR",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 12.000537,
+      "last_lon": 43.002671,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454415+00:00"
+    },
+    {
+      "alert_id": "ALT-0000",
+      "mmsi": "41910000",
+      "vessel_name": "REGIONAL_0",
+      "vessel_type": "Cargo",
+      "flag": "IN",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 13.166778,
+      "last_lon": 73.314008,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454489+00:00"
     },
     {
       "alert_id": "ALT-0018",
@@ -1310,7 +1038,279 @@
       "last_lat": 11.998249,
       "last_lon": 43.002303,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688862+00:00"
+      "generated_at": "2026-08-04T14:28:37.454691+00:00"
+    },
+    {
+      "alert_id": "ALT-0038",
+      "mmsi": "41910038",
+      "vessel_name": "REGIONAL_38",
+      "vessel_type": "Cargo",
+      "flag": "IN",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 12.34707,
+      "last_lon": 72.914902,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454721+00:00"
+    },
+    {
+      "alert_id": "ALT-0020",
+      "mmsi": "99800020",
+      "vessel_name": "GLOBAL_TRANSIT_20",
+      "vessel_type": "Bulk",
+      "flag": "PA",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 5.002355,
+      "last_lon": 60.001742,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454789+00:00"
+    },
+    {
+      "alert_id": "ALT-0043",
+      "mmsi": "99800043",
+      "vessel_name": "GLOBAL_TRANSIT_43",
+      "vessel_type": "Cargo",
+      "flag": "SG",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 12.00012,
+      "last_lon": 43.00287,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454842+00:00"
+    },
+    {
+      "alert_id": "ALT-0015",
+      "mmsi": "41910015",
+      "vessel_name": "REGIONAL_15",
+      "vessel_type": "Fishing",
+      "flag": "IN",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [
+        "IUU_Fishing"
+      ],
+      "is_anomalous": true,
+      "last_lat": 15.239458,
+      "last_lon": 74.933057,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455076+00:00"
+    },
+    {
+      "alert_id": "ALT-0054",
+      "mmsi": "99800054",
+      "vessel_name": "GLOBAL_TRANSIT_54",
+      "vessel_type": "Bulk",
+      "flag": "SG",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 4.999923,
+      "last_lon": 60.003017,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455251+00:00"
+    },
+    {
+      "alert_id": "ALT-0052",
+      "mmsi": "99800052",
+      "vessel_name": "GLOBAL_TRANSIT_52",
+      "vessel_type": "Bulk",
+      "flag": "HK",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 4.998533,
+      "last_lon": 60.002219,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455329+00:00"
+    },
+    {
+      "alert_id": "ALT-0003",
+      "mmsi": "99800003",
+      "vessel_name": "GLOBAL_TRANSIT_3",
+      "vessel_type": "Tanker",
+      "flag": "MH",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 11.999284,
+      "last_lon": 43.002523,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455422+00:00"
+    },
+    {
+      "alert_id": "ALT-0033",
+      "mmsi": "41910033",
+      "vessel_name": "REGIONAL_33",
+      "vessel_type": "Pilot",
+      "flag": "IN",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 20.181321,
+      "last_lon": 73.21692,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455570+00:00"
+    },
+    {
+      "alert_id": "ALT-0015",
+      "mmsi": "99800015",
+      "vessel_name": "GLOBAL_TRANSIT_15",
+      "vessel_type": "Tanker",
+      "flag": "LR",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 25.999003,
+      "last_lon": 56.002844,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455623+00:00"
+    },
+    {
+      "alert_id": "ALT-0010",
+      "mmsi": "99800010",
+      "vessel_name": "GLOBAL_TRANSIT_10",
+      "vessel_type": "Tanker",
+      "flag": "PA",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 12.000165,
+      "last_lon": 43.002747,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455726+00:00"
+    },
+    {
+      "alert_id": "ALT-0013",
+      "mmsi": "99800013",
+      "vessel_name": "GLOBAL_TRANSIT_13",
+      "vessel_type": "Bulk",
+      "flag": "PA",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 4.998176,
+      "last_lon": 60.001859,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.456201+00:00"
+    },
+    {
+      "alert_id": "ALT-0032",
+      "mmsi": "99800032",
+      "vessel_name": "GLOBAL_TRANSIT_32",
+      "vessel_type": "Cargo",
+      "flag": "MH",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 5.00049,
+      "last_lon": 60.002549,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.456235+00:00"
+    },
+    {
+      "alert_id": "ALT-0008",
+      "mmsi": "41910008",
+      "vessel_name": "REGIONAL_8",
+      "vessel_type": "Tanker",
+      "flag": "IN",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 9.753816,
+      "last_lon": 71.904839,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.456413+00:00"
+    },
+    {
+      "alert_id": "ALT-0025",
+      "mmsi": "41910025",
+      "vessel_name": "REGIONAL_25",
+      "vessel_type": "Pilot",
+      "flag": "IN",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 9.098788,
+      "last_lon": 73.679426,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.456439+00:00"
+    },
+    {
+      "alert_id": "ALT-0047",
+      "mmsi": "99800047",
+      "vessel_name": "GLOBAL_TRANSIT_47",
+      "vessel_type": "Cargo",
+      "flag": "MH",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 11.999875,
+      "last_lon": 43.002783,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.456521+00:00"
     },
     {
       "alert_id": "ALT-0039",
@@ -1328,277 +1328,7 @@
       "last_lat": 25.997208,
       "last_lon": 56.000915,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686279+00:00"
-    },
-    {
-      "alert_id": "ALT-0014",
-      "mmsi": "99800014",
-      "vessel_name": "GLOBAL_TRANSIT_14",
-      "vessel_type": "Cargo",
-      "flag": "SG",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.99743,
-      "last_lon": 56.001513,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686676+00:00"
-    },
-    {
-      "alert_id": "ALT-0001",
-      "mmsi": "99800001",
-      "vessel_name": "GLOBAL_TRANSIT_1",
-      "vessel_type": "Cargo",
-      "flag": "HK",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 5.001293,
-      "last_lon": 60.002802,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686733+00:00"
-    },
-    {
-      "alert_id": "ALT-0016",
-      "mmsi": "99800016",
-      "vessel_name": "GLOBAL_TRANSIT_16",
-      "vessel_type": "Bulk",
-      "flag": "HK",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.000454,
-      "last_lon": 43.002875,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686785+00:00"
-    },
-    {
-      "alert_id": "ALT-0040",
-      "mmsi": "99800040",
-      "vessel_name": "GLOBAL_TRANSIT_40",
-      "vessel_type": "Bulk",
-      "flag": "PA",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 5.001879,
-      "last_lon": 60.002652,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687260+00:00"
-    },
-    {
-      "alert_id": "ALT-0031",
-      "mmsi": "99800031",
-      "vessel_name": "GLOBAL_TRANSIT_31",
-      "vessel_type": "Bulk",
-      "flag": "HK",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 11.998678,
-      "last_lon": 43.002777,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687292+00:00"
-    },
-    {
-      "alert_id": "ALT-0009",
-      "mmsi": "99800009",
-      "vessel_name": "GLOBAL_TRANSIT_9",
-      "vessel_type": "Bulk",
-      "flag": "SG",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.998658,
-      "last_lon": 56.003174,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687327+00:00"
-    },
-    {
-      "alert_id": "ALT-0008",
-      "mmsi": "99800008",
-      "vessel_name": "GLOBAL_TRANSIT_8",
-      "vessel_type": "Bulk",
-      "flag": "MH",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.001069,
-      "last_lon": 43.002502,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687773+00:00"
-    },
-    {
-      "alert_id": "ALT-0050",
-      "mmsi": "99800050",
-      "vessel_name": "GLOBAL_TRANSIT_50",
-      "vessel_type": "Bulk",
-      "flag": "SG",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.997687,
-      "last_lon": 56.00213,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687811+00:00"
-    },
-    {
-      "alert_id": "ALT-0029",
-      "mmsi": "99800029",
-      "vessel_name": "GLOBAL_TRANSIT_29",
-      "vessel_type": "Tanker",
-      "flag": "PA",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 4.999794,
-      "last_lon": 60.002909,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687929+00:00"
-    },
-    {
-      "alert_id": "ALT-0027",
-      "mmsi": "99800027",
-      "vessel_name": "GLOBAL_TRANSIT_27",
-      "vessel_type": "Cargo",
-      "flag": "MH",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 11.99817,
-      "last_lon": 43.002249,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688154+00:00"
-    },
-    {
-      "alert_id": "ALT-0053",
-      "mmsi": "99800053",
-      "vessel_name": "GLOBAL_TRANSIT_53",
-      "vessel_type": "Bulk",
-      "flag": "MH",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.997815,
-      "last_lon": 56.002103,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688245+00:00"
-    },
-    {
-      "alert_id": "ALT-0019",
-      "mmsi": "99800019",
-      "vessel_name": "GLOBAL_TRANSIT_19",
-      "vessel_type": "Tanker",
-      "flag": "PA",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 5.000803,
-      "last_lon": 60.003139,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688284+00:00"
-    },
-    {
-      "alert_id": "ALT-0024",
-      "mmsi": "99800024",
-      "vessel_name": "GLOBAL_TRANSIT_24",
-      "vessel_type": "Cargo",
-      "flag": "LR",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.998589,
-      "last_lon": 56.002846,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688326+00:00"
-    },
-    {
-      "alert_id": "ALT-0030",
-      "mmsi": "99800030",
-      "vessel_name": "GLOBAL_TRANSIT_30",
-      "vessel_type": "Tanker",
-      "flag": "SG",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.997411,
-      "last_lon": 56.002085,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688428+00:00"
-    },
-    {
-      "alert_id": "ALT-0025",
-      "mmsi": "99800025",
-      "vessel_name": "GLOBAL_TRANSIT_25",
-      "vessel_type": "Bulk",
-      "flag": "PA",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.997643,
-      "last_lon": 56.002251,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688647+00:00"
+      "generated_at": "2026-08-04T14:28:37.453473+00:00"
     },
     {
       "alert_id": "ALT-0022",
@@ -1616,205 +1346,277 @@
       "last_lat": 11.999626,
       "last_lon": 43.003052,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688676+00:00"
+      "generated_at": "2026-08-04T14:28:37.453924+00:00"
     },
     {
-      "alert_id": "ALT-0041",
-      "mmsi": "99800041",
-      "vessel_name": "GLOBAL_TRANSIT_41",
+      "alert_id": "ALT-0009",
+      "mmsi": "99800009",
+      "vessel_name": "GLOBAL_TRANSIT_9",
       "vessel_type": "Bulk",
-      "flag": "HK",
-      "risk_score": 18.8,
+      "flag": "SG",
+      "risk_score": 18.9,
       "severity": "LOW",
       "anomaly_types": [
         "LOITERING_ANOMALY"
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 11.998628,
-      "last_lon": 43.003246,
+      "last_lat": 25.998658,
+      "last_lon": 56.003174,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686300+00:00"
+      "generated_at": "2026-08-04T14:28:37.454554+00:00"
     },
     {
-      "alert_id": "ALT-0049",
-      "mmsi": "99800049",
-      "vessel_name": "GLOBAL_TRANSIT_49",
-      "vessel_type": "Bulk",
-      "flag": "HK",
-      "risk_score": 18.8,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 11.998597,
-      "last_lon": 43.002934,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686572+00:00"
-    },
-    {
-      "alert_id": "ALT-0035",
-      "mmsi": "99800035",
-      "vessel_name": "GLOBAL_TRANSIT_35",
+      "alert_id": "ALT-0030",
+      "mmsi": "99800030",
+      "vessel_name": "GLOBAL_TRANSIT_30",
       "vessel_type": "Tanker",
-      "flag": "HK",
-      "risk_score": 18.8,
+      "flag": "SG",
+      "risk_score": 18.9,
       "severity": "LOW",
       "anomaly_types": [
         "LOITERING_ANOMALY"
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 4.998796,
-      "last_lon": 60.003033,
+      "last_lat": 25.997411,
+      "last_lon": 56.002085,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686691+00:00"
+      "generated_at": "2026-08-04T14:28:37.454657+00:00"
     },
     {
-      "alert_id": "ALT-0026",
-      "mmsi": "99800026",
-      "vessel_name": "GLOBAL_TRANSIT_26",
+      "alert_id": "ALT-0025",
+      "mmsi": "99800025",
+      "vessel_name": "GLOBAL_TRANSIT_25",
       "vessel_type": "Bulk",
       "flag": "PA",
-      "risk_score": 18.8,
+      "risk_score": 18.9,
       "severity": "LOW",
       "anomaly_types": [
         "LOITERING_ANOMALY"
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 5.00303,
-      "last_lon": 60.001538,
+      "last_lat": 25.997643,
+      "last_lon": 56.002251,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686749+00:00"
+      "generated_at": "2026-08-04T14:28:37.454994+00:00"
     },
     {
-      "alert_id": "ALT-0000",
-      "mmsi": "99800000",
-      "vessel_name": "GLOBAL_TRANSIT_0",
-      "vessel_type": "Cargo",
-      "flag": "HK",
-      "risk_score": 18.8,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.000151,
-      "last_lon": 43.003454,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686820+00:00"
-    },
-    {
-      "alert_id": "ALT-0004",
-      "mmsi": "99800004",
-      "vessel_name": "GLOBAL_TRANSIT_4",
+      "alert_id": "ALT-0008",
+      "mmsi": "99800008",
+      "vessel_name": "GLOBAL_TRANSIT_8",
       "vessel_type": "Bulk",
-      "flag": "PA",
-      "risk_score": 18.8,
+      "flag": "MH",
+      "risk_score": 18.9,
       "severity": "LOW",
       "anomaly_types": [
         "LOITERING_ANOMALY"
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 4.997748,
-      "last_lon": 60.002437,
+      "last_lat": 12.001069,
+      "last_lon": 43.002502,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687230+00:00"
+      "generated_at": "2026-08-04T14:28:37.455048+00:00"
     },
     {
-      "alert_id": "ALT-0033",
-      "mmsi": "99800033",
-      "vessel_name": "GLOBAL_TRANSIT_33",
+      "alert_id": "ALT-0024",
+      "mmsi": "99800024",
+      "vessel_name": "GLOBAL_TRANSIT_24",
+      "vessel_type": "Cargo",
+      "flag": "LR",
+      "risk_score": 18.9,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 25.998589,
+      "last_lon": 56.002846,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455142+00:00"
+    },
+    {
+      "alert_id": "ALT-0050",
+      "mmsi": "99800050",
+      "vessel_name": "GLOBAL_TRANSIT_50",
+      "vessel_type": "Bulk",
+      "flag": "SG",
+      "risk_score": 18.9,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 25.997687,
+      "last_lon": 56.00213,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455437+00:00"
+    },
+    {
+      "alert_id": "ALT-0027",
+      "mmsi": "99800027",
+      "vessel_name": "GLOBAL_TRANSIT_27",
+      "vessel_type": "Cargo",
+      "flag": "MH",
+      "risk_score": 18.9,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 11.99817,
+      "last_lon": 43.002249,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455663+00:00"
+    },
+    {
+      "alert_id": "ALT-0016",
+      "mmsi": "99800016",
+      "vessel_name": "GLOBAL_TRANSIT_16",
+      "vessel_type": "Bulk",
+      "flag": "HK",
+      "risk_score": 18.9,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 12.000454,
+      "last_lon": 43.002875,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455685+00:00"
+    },
+    {
+      "alert_id": "ALT-0001",
+      "mmsi": "99800001",
+      "vessel_name": "GLOBAL_TRANSIT_1",
       "vessel_type": "Cargo",
       "flag": "HK",
-      "risk_score": 18.8,
+      "risk_score": 18.9,
       "severity": "LOW",
       "anomaly_types": [
         "LOITERING_ANOMALY"
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 5.001916,
-      "last_lon": 60.002652,
+      "last_lat": 5.001293,
+      "last_lon": 60.002802,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687444+00:00"
+      "generated_at": "2026-08-04T14:28:37.455815+00:00"
     },
     {
-      "alert_id": "ALT-0051",
-      "mmsi": "99800051",
-      "vessel_name": "GLOBAL_TRANSIT_51",
+      "alert_id": "ALT-0053",
+      "mmsi": "99800053",
+      "vessel_name": "GLOBAL_TRANSIT_53",
+      "vessel_type": "Bulk",
+      "flag": "MH",
+      "risk_score": 18.9,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 25.997815,
+      "last_lon": 56.002103,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455864+00:00"
+    },
+    {
+      "alert_id": "ALT-0029",
+      "mmsi": "99800029",
+      "vessel_name": "GLOBAL_TRANSIT_29",
+      "vessel_type": "Tanker",
+      "flag": "PA",
+      "risk_score": 18.9,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 4.999794,
+      "last_lon": 60.002909,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455985+00:00"
+    },
+    {
+      "alert_id": "ALT-0031",
+      "mmsi": "99800031",
+      "vessel_name": "GLOBAL_TRANSIT_31",
+      "vessel_type": "Bulk",
+      "flag": "HK",
+      "risk_score": 18.9,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 11.998678,
+      "last_lon": 43.002777,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.456175+00:00"
+    },
+    {
+      "alert_id": "ALT-0014",
+      "mmsi": "99800014",
+      "vessel_name": "GLOBAL_TRANSIT_14",
       "vessel_type": "Cargo",
       "flag": "SG",
-      "risk_score": 18.8,
+      "risk_score": 18.9,
       "severity": "LOW",
       "anomaly_types": [
         "LOITERING_ANOMALY"
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 5.002058,
-      "last_lon": 60.002722,
+      "last_lat": 25.99743,
+      "last_lon": 56.001513,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687457+00:00"
+      "generated_at": "2026-08-04T14:28:37.456345+00:00"
     },
     {
-      "alert_id": "ALT-0045",
-      "mmsi": "99800045",
-      "vessel_name": "GLOBAL_TRANSIT_45",
+      "alert_id": "ALT-0019",
+      "mmsi": "99800019",
+      "vessel_name": "GLOBAL_TRANSIT_19",
+      "vessel_type": "Tanker",
+      "flag": "PA",
+      "risk_score": 18.9,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 5.000803,
+      "last_lon": 60.003139,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.456383+00:00"
+    },
+    {
+      "alert_id": "ALT-0040",
+      "mmsi": "99800040",
+      "vessel_name": "GLOBAL_TRANSIT_40",
       "vessel_type": "Bulk",
       "flag": "PA",
-      "risk_score": 18.8,
+      "risk_score": 18.9,
       "severity": "LOW",
       "anomaly_types": [
         "LOITERING_ANOMALY"
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 12.001108,
-      "last_lon": 43.002737,
+      "last_lat": 5.001879,
+      "last_lon": 60.002652,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.687791+00:00"
-    },
-    {
-      "alert_id": "ALT-0007",
-      "mmsi": "99800007",
-      "vessel_name": "GLOBAL_TRANSIT_7",
-      "vessel_type": "Bulk",
-      "flag": "HK",
-      "risk_score": 18.8,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.996782,
-      "last_lon": 56.001654,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688533+00:00"
-    },
-    {
-      "alert_id": "ALT-0044",
-      "mmsi": "99800044",
-      "vessel_name": "GLOBAL_TRANSIT_44",
-      "vessel_type": "Cargo",
-      "flag": "PA",
-      "risk_score": 18.8,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 5.002623,
-      "last_lon": 60.002022,
-      "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688624+00:00"
+      "generated_at": "2026-08-04T14:28:37.456504+00:00"
     },
     {
       "alert_id": "ALT-0038",
@@ -1832,7 +1634,151 @@
       "last_lat": 25.998455,
       "last_lon": 56.003221,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688731+00:00"
+      "generated_at": "2026-08-04T14:28:37.453598+00:00"
+    },
+    {
+      "alert_id": "ALT-0004",
+      "mmsi": "99800004",
+      "vessel_name": "GLOBAL_TRANSIT_4",
+      "vessel_type": "Bulk",
+      "flag": "PA",
+      "risk_score": 18.8,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 4.997748,
+      "last_lon": 60.002437,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454067+00:00"
+    },
+    {
+      "alert_id": "ALT-0026",
+      "mmsi": "99800026",
+      "vessel_name": "GLOBAL_TRANSIT_26",
+      "vessel_type": "Bulk",
+      "flag": "PA",
+      "risk_score": 18.8,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 5.00303,
+      "last_lon": 60.001538,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454472+00:00"
+    },
+    {
+      "alert_id": "ALT-0041",
+      "mmsi": "99800041",
+      "vessel_name": "GLOBAL_TRANSIT_41",
+      "vessel_type": "Bulk",
+      "flag": "HK",
+      "risk_score": 18.8,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 11.998628,
+      "last_lon": 43.003246,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454510+00:00"
+    },
+    {
+      "alert_id": "ALT-0051",
+      "mmsi": "99800051",
+      "vessel_name": "GLOBAL_TRANSIT_51",
+      "vessel_type": "Cargo",
+      "flag": "SG",
+      "risk_score": 18.8,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 5.002058,
+      "last_lon": 60.002722,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454591+00:00"
+    },
+    {
+      "alert_id": "ALT-0045",
+      "mmsi": "99800045",
+      "vessel_name": "GLOBAL_TRANSIT_45",
+      "vessel_type": "Bulk",
+      "flag": "PA",
+      "risk_score": 18.8,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 12.001108,
+      "last_lon": 43.002737,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454808+00:00"
+    },
+    {
+      "alert_id": "ALT-0033",
+      "mmsi": "99800033",
+      "vessel_name": "GLOBAL_TRANSIT_33",
+      "vessel_type": "Cargo",
+      "flag": "HK",
+      "risk_score": 18.8,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 5.001916,
+      "last_lon": 60.002652,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455019+00:00"
+    },
+    {
+      "alert_id": "ALT-0035",
+      "mmsi": "99800035",
+      "vessel_name": "GLOBAL_TRANSIT_35",
+      "vessel_type": "Tanker",
+      "flag": "HK",
+      "risk_score": 18.8,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 4.998796,
+      "last_lon": 60.003033,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455164+00:00"
+    },
+    {
+      "alert_id": "ALT-0000",
+      "mmsi": "99800000",
+      "vessel_name": "GLOBAL_TRANSIT_0",
+      "vessel_type": "Cargo",
+      "flag": "HK",
+      "risk_score": 18.8,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 12.000151,
+      "last_lon": 43.003454,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455288+00:00"
     },
     {
       "alert_id": "ALT-0057",
@@ -1850,25 +1796,61 @@
       "last_lat": 4.998443,
       "last_lon": 60.0029,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.688766+00:00"
+      "generated_at": "2026-08-04T14:28:37.455389+00:00"
     },
     {
-      "alert_id": "ALT-0046",
-      "mmsi": "99800046",
-      "vessel_name": "GLOBAL_TRANSIT_46",
+      "alert_id": "ALT-0007",
+      "mmsi": "99800007",
+      "vessel_name": "GLOBAL_TRANSIT_7",
       "vessel_type": "Bulk",
-      "flag": "SG",
-      "risk_score": 18.7,
+      "flag": "HK",
+      "risk_score": 18.8,
       "severity": "LOW",
       "anomaly_types": [
         "LOITERING_ANOMALY"
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 4.998772,
-      "last_lon": 60.003262,
+      "last_lat": 25.996782,
+      "last_lon": 56.001654,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686337+00:00"
+      "generated_at": "2026-08-04T14:28:37.455472+00:00"
+    },
+    {
+      "alert_id": "ALT-0044",
+      "mmsi": "99800044",
+      "vessel_name": "GLOBAL_TRANSIT_44",
+      "vessel_type": "Cargo",
+      "flag": "PA",
+      "risk_score": 18.8,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 5.002623,
+      "last_lon": 60.002022,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.455784+00:00"
+    },
+    {
+      "alert_id": "ALT-0049",
+      "mmsi": "99800049",
+      "vessel_name": "GLOBAL_TRANSIT_49",
+      "vessel_type": "Bulk",
+      "flag": "HK",
+      "risk_score": 18.8,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 11.998597,
+      "last_lon": 43.002934,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.456259+00:00"
     },
     {
       "alert_id": "ALT-0023",
@@ -1886,7 +1868,25 @@
       "last_lat": 5.000432,
       "last_lon": 60.00324,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686803+00:00"
+      "generated_at": "2026-08-04T14:28:37.453544+00:00"
+    },
+    {
+      "alert_id": "ALT-0046",
+      "mmsi": "99800046",
+      "vessel_name": "GLOBAL_TRANSIT_46",
+      "vessel_type": "Bulk",
+      "flag": "SG",
+      "risk_score": 18.7,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 4.998772,
+      "last_lon": 60.003262,
+      "loitering": true,
+      "generated_at": "2026-08-04T14:28:37.454525+00:00"
     },
     {
       "alert_id": "ALT-0002",
@@ -1904,7 +1904,7 @@
       "last_lat": 5.0015,
       "last_lon": 60.00339,
       "loitering": true,
-      "generated_at": "2026-04-09T14:38:28.686835+00:00"
+      "generated_at": "2026-08-04T14:28:37.456287+00:00"
     },
     {
       "alert_id": "ALT-5001",
@@ -1923,7 +1923,7 @@
       "last_lat": 7.895714,
       "last_lon": 69.184219,
       "loitering": false,
-      "generated_at": "2026-04-09T14:38:28.687406+00:00"
+      "generated_at": "2026-08-04T14:28:37.456216+00:00"
     },
     {
       "alert_id": "ALT-3001",
@@ -1941,25 +1941,7 @@
       "last_lat": null,
       "last_lon": null,
       "loitering": false,
-      "generated_at": "2026-04-09T14:38:28.688075+00:00"
-    },
-    {
-      "alert_id": "ALT-1003",
-      "mmsi": "419001003",
-      "vessel_name": "UNKNOWN",
-      "vessel_type": "UNKNOWN",
-      "flag": "XX",
-      "risk_score": 0.9,
-      "severity": "NORMAL",
-      "anomaly_types": [
-        "KINEMATIC_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": false,
-      "last_lat": null,
-      "last_lon": null,
-      "loitering": false,
-      "generated_at": "2026-04-09T14:38:28.686640+00:00"
+      "generated_at": "2026-08-04T14:28:37.453340+00:00"
     },
     {
       "alert_id": "ALT-1004",
@@ -1977,15 +1959,15 @@
       "last_lat": null,
       "last_lon": null,
       "loitering": false,
-      "generated_at": "2026-04-09T14:38:28.687088+00:00"
+      "generated_at": "2026-08-04T14:28:37.454368+00:00"
     },
     {
-      "alert_id": "ALT-2003",
-      "mmsi": "419002003",
+      "alert_id": "ALT-1003",
+      "mmsi": "419001003",
       "vessel_name": "UNKNOWN",
       "vessel_type": "UNKNOWN",
       "flag": "XX",
-      "risk_score": 0.6,
+      "risk_score": 0.9,
       "severity": "NORMAL",
       "anomaly_types": [
         "KINEMATIC_ANOMALY"
@@ -1995,7 +1977,7 @@
       "last_lat": null,
       "last_lon": null,
       "loitering": false,
-      "generated_at": "2026-04-09T14:38:28.687750+00:00"
+      "generated_at": "2026-08-04T14:28:37.455302+00:00"
     },
     {
       "alert_id": "ALT-1005",
@@ -2013,15 +1995,15 @@
       "last_lat": null,
       "last_lon": null,
       "loitering": false,
-      "generated_at": "2026-04-09T14:38:28.688078+00:00"
+      "generated_at": "2026-08-04T14:28:37.453486+00:00"
     },
     {
-      "alert_id": "ALT-1002",
-      "mmsi": "419001002",
+      "alert_id": "ALT-2003",
+      "mmsi": "419002003",
       "vessel_name": "UNKNOWN",
       "vessel_type": "UNKNOWN",
       "flag": "XX",
-      "risk_score": 0.5,
+      "risk_score": 0.6,
       "severity": "NORMAL",
       "anomaly_types": [
         "KINEMATIC_ANOMALY"
@@ -2031,7 +2013,7 @@
       "last_lat": null,
       "last_lon": null,
       "loitering": false,
-      "generated_at": "2026-04-09T14:38:28.688374+00:00"
+      "generated_at": "2026-08-04T14:28:37.455818+00:00"
     },
     {
       "alert_id": "ALT-2001",
@@ -2049,7 +2031,25 @@
       "last_lat": null,
       "last_lon": null,
       "loitering": false,
-      "generated_at": "2026-04-09T14:38:28.688735+00:00"
+      "generated_at": "2026-08-04T14:28:37.453726+00:00"
+    },
+    {
+      "alert_id": "ALT-1002",
+      "mmsi": "419001002",
+      "vessel_name": "UNKNOWN",
+      "vessel_type": "UNKNOWN",
+      "flag": "XX",
+      "risk_score": 0.5,
+      "severity": "NORMAL",
+      "anomaly_types": [
+        "KINEMATIC_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": false,
+      "last_lat": null,
+      "last_lon": null,
+      "loitering": false,
+      "generated_at": "2026-08-04T14:28:37.454814+00:00"
     },
     {
       "alert_id": "ALT-2002",
@@ -2067,7 +2067,7 @@
       "last_lat": null,
       "last_lon": null,
       "loitering": false,
-      "generated_at": "2026-04-09T14:38:28.687611+00:00"
+      "generated_at": "2026-08-04T14:28:37.455845+00:00"
     },
     {
       "alert_id": "ALT-1001",
@@ -2085,7 +2085,7 @@
       "last_lat": null,
       "last_lon": null,
       "loitering": false,
-      "generated_at": "2026-04-09T14:38:28.687746+00:00"
+      "generated_at": "2026-08-04T14:28:37.456204+00:00"
     },
     {
       "alert_id": "ALT-3002",
@@ -2103,8 +2103,8 @@
       "last_lat": null,
       "last_lon": null,
       "loitering": false,
-      "generated_at": "2026-04-09T14:38:28.687298+00:00"
+      "generated_at": "2026-08-04T14:28:37.455870+00:00"
     }
   ],
-  "generated_at": "2026-04-09T14:38:28.689257+00:00"
+  "generated_at": "2026-08-04T14:28:37.457286+00:00"
 }
