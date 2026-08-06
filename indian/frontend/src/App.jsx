@@ -22,7 +22,7 @@ function App() {
   const [alerts, setAlerts] = useState([]);
   const [selectedMmsi, setSelectedMmsi] = useState(null);
   const [stats, setStats] = useState(null);
-  const [wsStatus, setWsStatus] = useState('CONNECTING');
+  const [wsStatus, setWsStatus] = useState('Connecting');
 
   const [historyHours, setHistoryHours] = useState(0);
   const [historyData, setHistoryData] = useState([]);
@@ -93,8 +93,11 @@ function App() {
     try {
       ws = new WebSocket(`${window.location.protocol === 'https:' ? 'wss:' : 'ws:'}//${window.location.host}/ws/live-feed`);
       ws.onopen = () => {
-        setTimeout(() => setWsStatus('CONNECTED'), 600);
+        // Show connecting animation for ~1 second before indicating Connected
+        setWsStatus('Connecting');
+        setTimeout(() => setWsStatus('Connected'), 1000);
       };
+      ws.onclose = () => setWsStatus('Disconnected');
       ws.onmessage = (e) => {
         try {
           const msg = JSON.parse(e.data);

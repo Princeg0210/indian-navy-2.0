@@ -44,51 +44,42 @@
   background: rgba(255, 255, 255, 0.15);
 }
 
-.server-connection-badge {
+.ws-status {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 5px 12px;
-  border-radius: 6px;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  background: rgba(15, 23, 42, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: none !important;
-  white-space: nowrap;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
 }
 
-.server-connection-badge.connected {
-  border: 1px solid rgba(16, 185, 129, 0.25);
-  background: rgba(16, 185, 129, 0.08);
-  color: #10b981;
-  box-shadow: none !important;
-  text-shadow: none !important;
-}
-
-.server-connection-badge.connecting {
-  border: 1px solid rgba(245, 158, 11, 0.25);
-  background: rgba(245, 158, 11, 0.08);
-  color: #f59e0b;
-  box-shadow: none !important;
-  text-shadow: none !important;
-}
-
-.server-connection-badge .pulse-dot {
-  width: 7px;
-  height: 7px;
+.ws-status .dot {
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
-  background: #10b981;
-  box-shadow: none !important;
+  flex-shrink: 0;
 }
 
-.spin-radar {
-  animation: radarSpin 1.2s linear infinite;
+.indicator-connected .dot,
+.indicator-live .dot {
+  background-color: #10b981;
+  box-shadow: 0 0 10px #10b981;
 }
 
+.indicator-disconnected .dot {
+  background-color: #ef4444;
+}
 
-@keyframes radarSpin {
+.indicator-connecting .dot {
+  background-color: #f59e0b;
+  animation: sandSpin 1s linear infinite;
+}
+
+/* Sand‑spinner animation */
+@keyframes sandSpin {
+  0%   { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
 
