@@ -6,9 +6,64 @@
 }
 
 .custom-vessel-icon {
-  background: transparent;
-  border: none;
+  background: transparent !important;
+  border: none !important;
 }
+
+.vessel-marker-container {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vessel-wake-ring {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1.5px solid #38bdf8;
+  opacity: 0;
+  animation: oceanWakePulse 1.8s infinite ease-out;
+  pointer-events: none;
+}
+
+@keyframes oceanWakePulse {
+  0% { transform: scale(0.4); opacity: 0.8; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+.vessel-directional-hull {
+  width: 12px;
+  height: 18px;
+  clip-path: polygon(50% 0%, 100% 35%, 100% 100%, 0% 100%, 0% 35%);
+  border-radius: 2px;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hull-bow-pointer {
+  width: 3px;
+  height: 3px;
+  background: #ffffff;
+  border-radius: 50%;
+  margin-top: -6px;
+}
+
+.live-motion-vector {
+  stroke-dasharray: 6, 6;
+  animation: motionDashPulse 1.2s linear infinite;
+}
+
+@keyframes motionDashPulse {
+  from { stroke-dashoffset: 12; }
+  to { stroke-dashoffset: 0; }
+}
+
 
 .vessel-popup .leaflet-popup-content-wrapper {
   background: rgba(15, 23, 42, 0.85); /* Premium glass background */

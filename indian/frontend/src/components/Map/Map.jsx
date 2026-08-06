@@ -11,23 +11,29 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
 });
 
-const createVesselIcon = (severity) => {
-  let color = '#1d4ed8'; // deep blue — normal
-  if (severity === 'CRITICAL') color = '#b91c1c';      // deep red
-  else if (severity === 'HIGH') color = '#c2410c';     // deep orange
-  else if (severity === 'MEDIUM') color = '#b45309';   // deep amber
+const createVesselIcon = (severity, cog = 0, sog = 0) => {
+  let color = '#38bdf8'; // crisp cyan blue — normal moving
+  if (severity === 'CRITICAL') color = '#ef4444';
+  else if (severity === 'HIGH') color = '#f97316';
+  else if (severity === 'MEDIUM') color = '#f59e0b';
+  
+  const isMoving = sog > 0.5;
+
   return L.divIcon({
     className: 'custom-vessel-icon',
-    html: `<div style="
-      background-color: ${color};
-      width: 14px; height: 14px;
-      border-radius: 50%;
-      border: 2.5px solid #0f172a;
-      box-shadow: 0 0 6px ${color}, 0 2px 4px rgba(0,0,0,0.4);
-    "></div>`,
-    iconSize: [18, 18], iconAnchor: [9, 9],
+    html: `
+      <div class="vessel-marker-container">
+        ${isMoving ? `<div class="vessel-wake-ring" style="border-color: ${color};"></div>` : ''}
+        <div class="vessel-directional-hull" style="transform: rotate(${cog}deg); background-color: ${color}; box-shadow: 0 0 10px ${color};">
+          <div class="hull-bow-pointer"></div>
+        </div>
+      </div>
+    `,
+    iconSize: [26, 26],
+    iconAnchor: [13, 13],
   });
 };
+
 
 const MapUpdater = ({ center, zoom, selectedMmsi }) => {
   const map = useMap();
@@ -318,9 +324,10 @@ const Map = ({ vessels, alerts, historyData, selectedMmsi, onSelectVessel, activ
           <React.Fragment key={v.mmsi}>
             <Marker 
               position={[lat, lon]} 
-              icon={createVesselIcon(severity)} 
+              icon={createVesselIcon(severity, cog, sog)} 
               eventHandlers={{ click: () => onSelectVessel(v.mmsi) }}
             >
+
                <Tooltip direction="top" offset={[0, -10]} opacity={0.95} className="vessel-hover-tooltip">
                  <div className="vessel-hover-content">
                     <div className="hover-header">
@@ -373,12 +380,13 @@ const Map = ({ vessels, alerts, historyData, selectedMmsi, onSelectVessel, activ
                 }} 
               />
             )}
-            {sog > 1 && (
+            {sog > 0.5 && (
               <Polyline 
-                positions={[[lat, lon], calculatePrediction(lat, lon, sog, cog, 60)]} 
-                pathOptions={{ color: '#ffffff', weight: 1, opacity: 0.3, dashArray: '2, 5' }} 
+                positions={[[lat, lon], calculatePrediction(lat, lon, sog, cog, 45)]} 
+                pathOptions={{ color: '#38bdf8', weight: 2, opacity: 0.85, dashArray: '6, 6', className: 'live-motion-vector' }} 
               />
             )}
+
           </React.Fragment>
         );
       })}
