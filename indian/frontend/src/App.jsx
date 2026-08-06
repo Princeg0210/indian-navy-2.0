@@ -337,12 +337,13 @@ function App() {
                     <button className={mapSideTab === 'PATH' ? 'active' : ''} onClick={() => setMapSideTab('PATH')}><Target size={18}/><span>PATH</span></button>
                     <button className={mapSideTab === 'FILTER' ? 'active' : ''} onClick={() => setMapSideTab('FILTER')}><FilterIcon size={18}/><span>FILTER</span></button>
                     
-                    <div style={{ marginTop: 'auto', borderTop: '1px solid var(--panel-border)' }}>
-                       <button onClick={() => setIsSidebarOpen(false)} style={{ color: '#ef4444' }}>
-                          <ChevronLeft size={18} />
+                    <div className="sidebar-hide-wrapper">
+                       <button className="sidebar-hide-btn" onClick={() => setIsSidebarOpen(false)} title="Hide Layers Drawer">
+                          <ChevronRight size={18} />
                           <span>HIDE</span>
                        </button>
                     </div>
+
                  </div>
                  
                  <div className="tab-content custom-scrollbar">

@@ -846,12 +846,46 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-tabs button:hover { color: #f8fafc; background: rgba(255, 255, 255, 0.05); }
 .sidebar-tabs button.active { color: var(--accent-blue); background: rgba(56, 189, 248, 0.1); border-right: 2px solid var(--accent-blue); }
 
+.sidebar-hide-wrapper {
+  margin-top: auto;
+  width: 100%;
+  border-top: 1px solid var(--panel-border);
+}
+
+.sidebar-hide-btn {
+  width: 100% !important;
+  height: 64px !important;
+  background: rgba(239, 68, 68, 0.08) !important;
+  border: none !important;
+  color: #ef4444 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 4px !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.sidebar-hide-btn:hover {
+  background: rgba(239, 68, 68, 0.2) !important;
+  color: #f87171 !important;
+}
+
+.sidebar-hide-btn span {
+  font-size: 0.62rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.5px !important;
+}
+
 .tab-content {
   flex: 1;
   background: rgba(15, 23, 42, 0.2);
   padding: 1.5rem;
+  padding-bottom: 3rem;
   overflow-y: auto;
 }
+
 
 .tab-title {
   font-size: 0.8rem;
