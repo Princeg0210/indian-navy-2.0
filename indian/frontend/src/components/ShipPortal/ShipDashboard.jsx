@@ -78,17 +78,33 @@ function ShipDashboard({ mmsi, vesselData, alertData, onLogout, onSwitchVessel }
 
   // Load Ship Status, History, Comms, and Convoy Radar dynamically
   useEffect(() => {
-    // 1. Ship status & logs
-    fetch(`/api/vessels/${mmsi}/ship-status`)
-      .then(res => res.json())
-      .then(data => {
-        if (data && data.control_state) {
-          setControlState(prev => ({ ...prev, ...data.control_state }));
-        }
-      })
-      .catch(err => console.error("Ship status fetch error:", err));
+    const fetchStatusAndConvoy = () => {
+      const ts = Date.now();
+      // 1. Ship status & logs
+      fetch(`/api/vessels/${mmsi}/ship-status?_t=${ts}`, { cache: 'no-store' })
+        .then(res => res.json())
+        .then(data => {
+          if (data && data.control_state) {
+            setControlState(prev => ({ ...prev, ...data.control_state }));
+          }
+        })
+        .catch(() => {});
 
-    // 2. Encrypted HQ Comms (with 1s fast background auto-poll for multi-tab sync)
+      // 3. Dynamic Convoy Radar
+      fetch(`/api/vessels/${mmsi}/convoy?_t=${ts}`, { cache: 'no-store' })
+        .then(res => res.json())
+        .then(data => {
+          if (data && Array.isArray(data.convoy_units)) {
+            setConvoyUnits(data.convoy_units);
+          }
+        })
+        .catch(() => {});
+    };
+
+    fetchStatusAndConvoy();
+    const statusInterval = setInterval(fetchStatusAndConvoy, 3000);
+
+    // 2. Encrypted HQ Comms (1s fast background poll for multi-tab sync)
     const fetchComms = () => {
       fetch(`/api/vessels/${mmsi}/comms?_t=${Date.now()}`, { cache: 'no-store' })
         .then(res => res.json())
@@ -103,17 +119,6 @@ function ShipDashboard({ mmsi, vesselData, alertData, onLogout, onSwitchVessel }
     fetchComms();
     const commsInterval = setInterval(fetchComms, 1000);
 
-
-    // 3. Dynamic Convoy Radar
-    fetch(`/api/vessels/${mmsi}/convoy`)
-      .then(res => res.json())
-      .then(data => {
-        if (data && Array.isArray(data.convoy_units)) {
-          setConvoyUnits(data.convoy_units);
-        }
-      })
-      .catch(() => {});
-
     // 4. Live Operational History Track
     fetch(`/api/vessels/history/${mmsi}`)
       .then(res => res.json())
@@ -126,8 +131,12 @@ function ShipDashboard({ mmsi, vesselData, alertData, onLogout, onSwitchVessel }
       })
       .catch(() => {});
 
-    return () => clearInterval(commsInterval);
+    return () => {
+      clearInterval(commsInterval);
+      clearInterval(statusInterval);
+    };
   }, [mmsi]);
+
 
 
   const handleControlAction = async (action, extraData = {}) => {

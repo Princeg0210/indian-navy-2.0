@@ -48,18 +48,28 @@ function App() {
   }, [searchTerm, vessels]);
 
   useEffect(() => {
-    fetch('/api/anomalies/stats').then(res => res.json()).then(setStats).catch(e => console.error("Stats fetch:", e));
-    fetch('/api/anomalies').then(res => res.json()).then(data => setAlerts(data.alerts || [])).catch(e => console.error("Alerts fetch:", e));
-    fetch('/api/vessels').then(res => res.json()).then(data => {
-      const vesselMap = {};
-      const vesselList = Array.isArray(data?.vessels) ? data.vessels : [];
-      vesselList.forEach(v => { if(v?.mmsi) vesselMap[v.mmsi] = v; });
-      setVessels(vesselMap);
-    }).catch(e => console.error("Vessels fetch:", e));
+    const fetchLiveData = () => {
+      const ts = Date.now();
+      fetch(`/api/anomalies/stats?_t=${ts}`, { cache: 'no-store' }).then(res => res.json()).then(setStats).catch(() => {});
+      fetch(`/api/anomalies?_t=${ts}`, { cache: 'no-store' }).then(res => res.json()).then(data => setAlerts(data.alerts || [])).catch(() => {});
+      fetch(`/api/vessels?_t=${ts}`, { cache: 'no-store' }).then(res => res.json()).then(data => {
+        const vesselMap = {};
+        const vesselList = Array.isArray(data) ? data : (Array.isArray(data?.vessels) ? data.vessels : []);
+        vesselList.forEach(v => { if(v?.mmsi) vesselMap[v.mmsi] = v; });
+        setVessels(prev => ({ ...vesselMap, ...prev }));
+      }).catch(() => {});
+    };
+
+    fetchLiveData();
+    const timer = setInterval(fetchLiveData, 3000);
+
     fetch('/api/vessels/layers').then(res => res.json()).then(data => {
       setMapLayers(Array.isArray(data) ? data : []);
     }).catch(e => console.error("Layers fetch:", e));
+
+    return () => clearInterval(timer);
   }, []);
+
 
   useEffect(() => {
     const vesselList = vessels ? Object.values(vessels) : [];
