@@ -66,7 +66,7 @@ function LockScreen({ onUnlock, onOpenShipPortal }) {
             <div className="clean-input-box">
               <input
                 type={showPassword ? 'text' : 'password'}
-                placeholder="Enter Password (e.g. NAVY2026)"
+                placeholder="Enter Security Access Password..."
                 value={password}
                 onChange={(e) => {
                   setPassword(e.target.value);
@@ -91,16 +91,10 @@ function LockScreen({ onUnlock, onOpenShipPortal }) {
             {isLoading ? 'AUTHENTICATING...' : 'LOGIN TO COMMAND CENTER'}
           </button>
         </form>
-
-        {/* Quick Password Hints */}
-        <div className="quick-access-footer">
-          <span className="lbl">Default Keys:</span>
-          <button className="chip" onClick={() => { setPassword('NAVY2026'); setError(''); }}>NAVY2026</button>
-          <button className="chip" onClick={() => { setPassword('0210'); setError(''); }}>0210</button>
-        </div>
       </div>
     </div>
   );
 }
 
 export default LockScreen;
+

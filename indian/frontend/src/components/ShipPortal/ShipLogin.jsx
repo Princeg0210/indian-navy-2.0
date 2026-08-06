@@ -138,7 +138,7 @@ function ShipLogin({ onLogin, onLoginSuccess, onSwitchToMain, onSwitchToMainComm
             <input 
               type="text" 
               className="custom-mmsi-input"
-              placeholder="Enter Custom MMSI (e.g. 419000123)"
+              placeholder="Enter Custom MMSI..."
               value={customMmsi}
               onChange={(e) => {
                 setCustomMmsi(e.target.value);
@@ -155,7 +155,7 @@ function ShipLogin({ onLogin, onLoginSuccess, onSwitchToMain, onSwitchToMainComm
             <div className="clean-input-box">
               <input
                 type={showPin ? 'text' : 'password'}
-                placeholder="Enter Access Key (e.g. SHIP2026)"
+                placeholder="Enter Security Access Key..."
                 value={pin}
                 onChange={(e) => {
                   setPin(e.target.value);
@@ -171,8 +171,8 @@ function ShipLogin({ onLogin, onLoginSuccess, onSwitchToMain, onSwitchToMainComm
                 {showPin ? <EyeOff size={16} /> : <Eye size={16} />}
               </button>
             </div>
-            <div className="key-hint">Default Keys: <strong>SHIP2026</strong> or <strong>0210</strong></div>
           </div>
+
 
           {error && <div className="clean-error">{error}</div>}
 
