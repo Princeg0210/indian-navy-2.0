@@ -8,7 +8,8 @@ import ShipPortal from './components/ShipPortal/ShipPortal';
 import { 
   Map as MapIcon, Share2, ScanEye, Menu, ShieldAlert, Volume2, 
   VolumeX, Clock, Search, List, AlertTriangle, Shield, ChevronRight, ChevronLeft,
-  Layers as LayersIcon, Filter as FilterIcon, Settings, Target, Eye, Lock, Anchor, MessageSquare
+  Layers as LayersIcon, Filter as FilterIcon, Settings, Target, Eye, Lock, Anchor, MessageSquare,
+  Radio, Server
 } from 'lucide-react';
 import './App.css';
 
@@ -21,7 +22,8 @@ function App() {
   const [alerts, setAlerts] = useState([]);
   const [selectedMmsi, setSelectedMmsi] = useState(null);
   const [stats, setStats] = useState(null);
-  const [wsStatus, setWsStatus] = useState('connecting');
+  const [wsStatus, setWsStatus] = useState('CONNECTING');
+
   const [historyHours, setHistoryHours] = useState(0); 
   const [historyData, setHistoryData] = useState([]);
   const [viewMode, setViewMode] = useState('MAP'); 
@@ -90,7 +92,9 @@ function App() {
     let ws;
     try {
       ws = new WebSocket(`${window.location.protocol === 'https:' ? 'wss:' : 'ws:'}//${window.location.host}/ws/live-feed`);
-      ws.onopen = () => setWsStatus('Live');
+      ws.onopen = () => {
+        setTimeout(() => setWsStatus('CONNECTED'), 600);
+      };
       ws.onmessage = (e) => {
         try {
           const msg = JSON.parse(e.data);
@@ -108,6 +112,7 @@ function App() {
     } catch (e) { console.error("WS Connection Failed:", e); }
     return () => ws?.close();
   }, []);
+
 
   const runDeepScan = async () => {
     setIsScanning(true);
@@ -222,8 +227,22 @@ function App() {
         <div className="header-left">
           <button className="icon-btn sidebar-toggle" onClick={() => setIsSidebarOpen(!isSidebarOpen)}><Menu size={20} /></button>
           <h1 className="text-gradient">Indian Navy - NMDA</h1>
-          <span className={`ws-status indicator-${wsStatus.toLowerCase()}`}><span className="dot"></span> {wsStatus}</span>
+          <div className={`server-connection-badge ${wsStatus.toLowerCase()}`}>
+            {wsStatus === 'CONNECTING' ? (
+              <React.Fragment>
+                <Radio size={13} className="spin-radar" color="#fbbf24" />
+                <span>CONNECTING TO MDA SERVER...</span>
+              </React.Fragment>
+            ) : (
+              <React.Fragment>
+                <span className="pulse-dot"></span>
+                <Server size={13} color="#34d399" />
+                <span>NAVIC LINK: ONLINE</span>
+              </React.Fragment>
+            )}
+          </div>
         </div>
+
 
         <div className="header-search">
           <div className="search-input-wrapper">
