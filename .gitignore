@@ -9,9 +9,9 @@ bin/
 obj/
 
 # Build outputs
-/indian/frontend/dist/
 /indian/frontend/build/
 *.pyc
+
 __pycache__/
 
 # Logs
