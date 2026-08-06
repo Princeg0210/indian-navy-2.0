@@ -4,10 +4,11 @@ import AlertSidebar from './components/AlertSidebar/AlertSidebar';
 import LinkAnalysis from './components/LinkAnalysis/LinkAnalysis';
 import VesselDetail from './components/VesselDetail/VesselDetail';
 import LockScreen from './components/LockScreen/LockScreen';
+import ShipPortal from './components/ShipPortal/ShipPortal';
 import { 
   Map as MapIcon, Share2, ScanEye, Menu, ShieldAlert, Volume2, 
   VolumeX, Clock, Search, List, AlertTriangle, Shield, ChevronRight, ChevronLeft,
-  Layers as LayersIcon, Filter as FilterIcon, Settings, Target, Eye, Lock
+  Layers as LayersIcon, Filter as FilterIcon, Settings, Target, Eye, Lock, Anchor, MessageSquare
 } from 'lucide-react';
 import './App.css';
 
@@ -15,6 +16,7 @@ function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(() => {
     return sessionStorage.getItem('mda_authenticated') === 'true';
   });
+  const [portalMode, setPortalMode] = useState('MAIN'); // 'MAIN' | 'SHIP'
   const [vessels, setVessels] = useState({});
   const [alerts, setAlerts] = useState([]);
   const [selectedMmsi, setSelectedMmsi] = useState(null);
@@ -31,6 +33,8 @@ function App() {
   const [mapLayers, setMapLayers] = useState([]);
   const [activeLayers, setActiveLayers] = useState(['shoreline', 'maritime_region']);
   const [searchTerm, setSearchTerm] = useState('');
+  const [isCommsDrawerOpen, setIsCommsDrawerOpen] = useState(false);
+
 
   const searchResults = React.useMemo(() => {
     const term = searchTerm.trim().toLowerCase();
@@ -141,37 +145,68 @@ function App() {
 
   const [isDetailVisible, setIsDetailVisible] = useState(true);
 
+  if (portalMode === 'SHIP') {
+    return <ShipPortal onSwitchToMainPortal={() => setPortalMode('MAIN')} />;
+  }
+
   if (!isAuthenticated) {
-    return <LockScreen onUnlock={() => setIsAuthenticated(true)} />;
+    return (
+      <LockScreen 
+        onUnlock={() => setIsAuthenticated(true)} 
+        onOpenShipPortal={() => setPortalMode('SHIP')}
+      />
+    );
   }
 
   return (
     <div className={`app-container ${isSidebarOpen ? '' : 'sidebar-closed'} ${hasCriticalThreat && !isAlarmSilenced ? 'alarm-active' : ''}`}>
-      {/* Strategic Export Confirmation Modal */}
-      {isExporting && (
-        <div className="modal-overlay">
-           <div className="tactical-modal glass-panel">
-              <div className="modal-header">
-                <Shield size={22} color="#38bdf8" />
-                <h3>Mission Report Confirmation</h3>
+      {/* HQ Comms Fleet Drawer Modal */}
+      {isCommsDrawerOpen && (
+        <div className="modal-overlay" onClick={() => setIsCommsDrawerOpen(false)}>
+          <div className="tactical-modal glass-panel" onClick={(e) => e.stopPropagation()} style={{ maxWidth: '640px', width: '90%' }}>
+            <div className="modal-header">
+              <MessageSquare size={22} color="#38bdf8" />
+              <h3>HQ Fleet Tactical Comms & Directives Console</h3>
+            </div>
+            <div className="modal-body" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+              <p style={{ fontSize: '0.8rem', color: '#94a3b8' }}>
+                Select any registered naval unit to open 2-way direct encrypted link and transmit tactical HQ directives:
+              </p>
+              
+              <div className="custom-scrollbar" style={{ display: 'flex', flexDirection: 'column', gap: '8px', maxHeight: '320px', overflowY: 'auto' }}>
+                {Object.values(vessels || {}).slice(0, 15).map(v => (
+                  <div 
+                    key={v.mmsi} 
+                    style={{
+                      display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                      background: 'rgba(255, 255, 255, 0.04)', border: '1px solid rgba(255, 255, 255, 0.08)',
+                      padding: '10px 14px', borderRadius: '8px', cursor: 'pointer'
+                    }}
+                    onClick={() => {
+                      setSelectedMmsi(v.mmsi);
+                      setIsDetailVisible(true);
+                      setIsCommsDrawerOpen(false);
+                      setViewMode('MAP');
+                    }}
+                  >
+                    <div>
+                      <strong style={{ fontSize: '0.88rem', color: '#f8fafc', display: 'block' }}>{v.name || `UNIT ${v.mmsi}`}</strong>
+                      <span style={{ fontSize: '0.7rem', color: '#94a3b8' }}>MMSI: {v.mmsi} • {v.type || 'Naval Unit'}</span>
+                    </div>
+                    <button style={{ background: 'rgba(56, 189, 248, 0.15)', border: '1px solid #38bdf8', color: '#38bdf8', padding: '4px 10px', borderRadius: '4px', fontSize: '0.72rem', fontWeight: 700 }}>
+                      Open Comms Link
+                    </button>
+                  </div>
+                ))}
               </div>
-              <div className="modal-body">
-                 <p>Preparing regional strategic intelligence export for <strong>{Object.keys(vessels).length} units</strong>.</p>
-                 <div className="report-config-grid">
-                    <div className="config-item"><List size={14} /> Full Fleet Registry</div>
-                    <div className="config-item"><AlertTriangle size={14} /> Critical Risk Analysis</div>
-                    <div className="config-item"><Settings size={14} /> Technical Specifications</div>
-                    <div className="config-item"><Clock size={14} /> Timestamped Activity</div>
-                 </div>
-                 <div className="data-classification">RESTRICTED - OFFICAL USE ONLY</div>
-              </div>
-              <div className="modal-footer">
-                 <button className="cancel-btn" onClick={() => setIsExporting(false)}>CANCEL</button>
-                 <button className="confirm-export-btn" onClick={handleFleetExport}>GENERATE & SAVE PDF</button>
-              </div>
-           </div>
+            </div>
+            <div className="modal-footer">
+              <button className="cancel-btn" onClick={() => setIsCommsDrawerOpen(false)}>CLOSE</button>
+            </div>
+          </div>
         </div>
       )}
+
 
       <header className="app-header glass-panel">
         <div className="header-left">
@@ -220,7 +255,19 @@ function App() {
           <button className={`toggle-btn ${viewMode === 'MAP' ? 'active' : ''}`} onClick={() => setViewMode('MAP')}><MapIcon size={16} /> Geospatial</button>
           <button className={`toggle-btn ${viewMode === 'SEARCH' ? 'active' : ''}`} onClick={() => setViewMode('SEARCH')}><Search size={16} /> Search Engine</button>
           <button className={`toggle-btn ${viewMode === 'LINK' ? 'active' : ''}`} onClick={() => setViewMode('LINK')}><Share2 size={16} /> Analysis</button>
+          <button 
+            className={`toggle-btn comms-btn ${isCommsDrawerOpen ? 'active' : ''}`} 
+            onClick={() => setIsCommsDrawerOpen(!isCommsDrawerOpen)}
+            style={{ color: '#38bdf8', borderColor: 'rgba(56, 189, 248, 0.3)', background: 'rgba(56, 189, 248, 0.1)' }}
+          >
+            <MessageSquare size={16} /> HQ Comms
+          </button>
+          <button className="toggle-btn ship-portal-btn" onClick={() => setPortalMode('SHIP')} style={{ color: '#00f2fe', borderColor: 'rgba(0,242,254,0.3)', background: 'rgba(0,242,254,0.08)' }}>
+            <Anchor size={16} /> Ship Terminal
+          </button>
         </div>
+
+
 
         <div className="header-stats">
           <button className="scan-btn" onClick={runDeepScan} disabled={isScanning}><ScanEye size={18} /> SCAN</button>

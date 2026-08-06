@@ -89,7 +89,7 @@
     {
       "alert_id": "ALT-0012",
       "mmsi": "41910012",
-      "vessel_name": "REGIONAL_12",
+      "vessel_name": "INS Satpura",
       "vessel_type": "Cargo",
       "flag": "IN",
       "risk_score": 19.3,
@@ -107,7 +107,7 @@
     {
       "alert_id": "ALT-0005",
       "mmsi": "41910005",
-      "vessel_name": "REGIONAL_5",
+      "vessel_name": "INS Chennai",
       "vessel_type": "Tanker",
       "flag": "IN",
       "risk_score": 19.3,
@@ -125,7 +125,7 @@
     {
       "alert_id": "ALT-0035",
       "mmsi": "41910035",
-      "vessel_name": "REGIONAL_35",
+      "vessel_name": "SCI Ratna (REGIONAL)",
       "vessel_type": "Fishing",
       "flag": "IN",
       "risk_score": 19.3,
@@ -145,7 +145,7 @@
     {
       "alert_id": "ALT-0009",
       "mmsi": "41910009",
-      "vessel_name": "REGIONAL_9",
+      "vessel_name": "INS Tabar",
       "vessel_type": "Fishing",
       "flag": "IN",
       "risk_score": 19.3,
@@ -165,7 +165,7 @@
     {
       "alert_id": "ALT-0001",
       "mmsi": "41910001",
-      "vessel_name": "REGIONAL_1",
+      "vessel_name": "INS Vikramaditya",
       "vessel_type": "Tanker",
       "flag": "IN",
       "risk_score": 19.3,
@@ -183,7 +183,7 @@
     {
       "alert_id": "ALT-0003",
       "mmsi": "41910003",
-      "vessel_name": "REGIONAL_3",
+      "vessel_name": "INS Surat",
       "vessel_type": "Cargo",
       "flag": "IN",
       "risk_score": 19.3,
@@ -201,7 +201,7 @@
     {
       "alert_id": "ALT-0017",
       "mmsi": "41910017",
-      "vessel_name": "REGIONAL_17",
+      "vessel_name": "INS Sumitra",
       "vessel_type": "Fishing",
       "flag": "IN",
       "risk_score": 19.2,
@@ -221,7 +221,7 @@
     {
       "alert_id": "ALT-0016",
       "mmsi": "41910016",
-      "vessel_name": "REGIONAL_16",
+      "vessel_name": "INS Kavaratti",
       "vessel_type": "Cargo",
       "flag": "IN",
       "risk_score": 19.2,
@@ -239,7 +239,7 @@
     {
       "alert_id": "ALT-0030",
       "mmsi": "41910030",
-      "vessel_name": "REGIONAL_30",
+      "vessel_name": "INS Tarkash",
       "vessel_type": "Cargo",
       "flag": "IN",
       "risk_score": 19.2,
@@ -257,7 +257,7 @@
     {
       "alert_id": "ALT-0026",
       "mmsi": "41910026",
-      "vessel_name": "REGIONAL_26",
+      "vessel_name": "INS Rana",
       "vessel_type": "Pilot",
       "flag": "IN",
       "risk_score": 19.2,
@@ -275,7 +275,7 @@
     {
       "alert_id": "ALT-0028",
       "mmsi": "41910028",
-      "vessel_name": "REGIONAL_28",
+      "vessel_name": "INS Ranvijay",
       "vessel_type": "Pilot",
       "flag": "IN",
       "risk_score": 19.2,
@@ -293,7 +293,7 @@
     {
       "alert_id": "ALT-0023",
       "mmsi": "41910023",
-      "vessel_name": "REGIONAL_23",
+      "vessel_name": "INS Delhi",
       "vessel_type": "Fishing",
       "flag": "IN",
       "risk_score": 19.2,
@@ -313,7 +313,7 @@
     {
       "alert_id": "ALT-0007",
       "mmsi": "41910007",
-      "vessel_name": "REGIONAL_7",
+      "vessel_name": "INS Trikand",
       "vessel_type": "Tanker",
       "flag": "IN",
       "risk_score": 19.2,
@@ -331,7 +331,7 @@
     {
       "alert_id": "ALT-0013",
       "mmsi": "41910013",
-      "vessel_name": "REGIONAL_13",
+      "vessel_name": "INS Kamorta",
       "vessel_type": "Fishing",
       "flag": "IN",
       "risk_score": 19.2,
@@ -351,7 +351,7 @@
     {
       "alert_id": "ALT-0020",
       "mmsi": "41910020",
-      "vessel_name": "REGIONAL_20",
+      "vessel_name": "INS Sagardhwani",
       "vessel_type": "Tanker",
       "flag": "IN",
       "risk_score": 19.2,
@@ -369,7 +369,7 @@
     {
       "alert_id": "ALT-0024",
       "mmsi": "41910024",
-      "vessel_name": "REGIONAL_24",
+      "vessel_name": "INS Mysore",
       "vessel_type": "Tanker",
       "flag": "IN",
       "risk_score": 19.2,
@@ -387,7 +387,7 @@
     {
       "alert_id": "ALT-0004",
       "mmsi": "41910004",
-      "vessel_name": "REGIONAL_4",
+      "vessel_name": "INS Kolkata",
       "vessel_type": "Tanker",
       "flag": "IN",
       "risk_score": 19.1,
@@ -405,7 +405,7 @@
     {
       "alert_id": "ALT-0034",
       "mmsi": "99800034",
-      "vessel_name": "GLOBAL_TRANSIT_34",
+      "vessel_name": "Swarna Yamuna #35",
       "vessel_type": "Bulk",
       "flag": "SG",
       "risk_score": 19.1,
@@ -423,7 +423,7 @@
     {
       "alert_id": "ALT-0021",
       "mmsi": "99800021",
-      "vessel_name": "GLOBAL_TRANSIT_21",
+      "vessel_name": "SCI Godavari #22",
       "vessel_type": "Tanker",
       "flag": "PA",
       "risk_score": 19.1,
@@ -441,7 +441,7 @@
     {
       "alert_id": "ALT-0005",
       "mmsi": "99800005",
-      "vessel_name": "GLOBAL_TRANSIT_5",
+      "vessel_name": "SCI Kundan #6",
       "vessel_type": "Cargo",
       "flag": "HK",
       "risk_score": 19.1,
@@ -459,7 +459,7 @@
     {
       "alert_id": "ALT-0039",
       "mmsi": "41910039",
-      "vessel_name": "REGIONAL_39",
+      "vessel_name": "Swarna Kamal (REGIONAL)",
       "vessel_type": "Tanker",
       "flag": "IN",
       "risk_score": 19.1,
@@ -477,7 +477,7 @@
     {
       "alert_id": "ALT-0011",
       "mmsi": "41910011",
-      "vessel_name": "REGIONAL_11",
+      "vessel_name": "INS Sahyadri",
       "vessel_type": "Fishing",
       "flag": "IN",
       "risk_score": 19.1,
@@ -497,7 +497,7 @@
     {
       "alert_id": "ALT-0018",
       "mmsi": "41910018",
-      "vessel_name": "REGIONAL_18",
+      "vessel_name": "INS Saryu",
       "vessel_type": "Tanker",
       "flag": "IN",
       "risk_score": 19.1,
@@ -515,7 +515,7 @@
     {
       "alert_id": "ALT-0059",
       "mmsi": "99800059",
-      "vessel_name": "GLOBAL_TRANSIT_59",
+      "vessel_name": "SCI Alaknanda #60",
       "vessel_type": "Cargo",
       "flag": "MH",
       "risk_score": 19.1,
@@ -533,7 +533,7 @@
     {
       "alert_id": "ALT-0036",
       "mmsi": "99800036",
-      "vessel_name": "GLOBAL_TRANSIT_36",
+      "vessel_name": "SCI Vikram #37",
       "vessel_type": "Cargo",
       "flag": "PA",
       "risk_score": 19.1,
@@ -551,7 +551,7 @@
     {
       "alert_id": "ALT-0021",
       "mmsi": "41910021",
-      "vessel_name": "REGIONAL_21",
+      "vessel_name": "INS Deepak",
       "vessel_type": "Fishing",
       "flag": "IN",
       "risk_score": 19.1,
@@ -571,7 +571,7 @@
     {
       "alert_id": "ALT-0019",
       "mmsi": "41910019",
-      "vessel_name": "REGIONAL_19",
+      "vessel_name": "INS Sunayna",
       "vessel_type": "Cargo",
       "flag": "IN",
       "risk_score": 19.1,
@@ -589,7 +589,7 @@
     {
       "alert_id": "ALT-0036",
       "mmsi": "41910036",
-      "vessel_name": "REGIONAL_36",
+      "vessel_name": "Swarna Mala (REGIONAL)",
       "vessel_type": "Pilot",
       "flag": "IN",
       "risk_score": 19.1,
@@ -607,7 +607,7 @@
     {
       "alert_id": "ALT-0029",
       "mmsi": "41910029",
-      "vessel_name": "REGIONAL_29",
+      "vessel_name": "INS Teg",
       "vessel_type": "Tanker",
       "flag": "IN",
       "risk_score": 19.1,
@@ -625,7 +625,7 @@
     {
       "alert_id": "ALT-0027",
       "mmsi": "41910027",
-      "vessel_name": "REGIONAL_27",
+      "vessel_name": "INS Ranvir",
       "vessel_type": "Tanker",
       "flag": "IN",
       "risk_score": 19.1,
@@ -643,7 +643,7 @@
     {
       "alert_id": "ALT-0034",
       "mmsi": "41910034",
-      "vessel_name": "REGIONAL_34",
+      "vessel_name": "INS Kora",
       "vessel_type": "Cargo",
       "flag": "IN",
       "risk_score": 19.1,
@@ -661,7 +661,7 @@
     {
       "alert_id": "ALT-0058",
       "mmsi": "99800058",
-      "vessel_name": "GLOBAL_TRANSIT_58",
+      "vessel_name": "Desh Vishal #59",
       "vessel_type": "Bulk",
       "flag": "LR",
       "risk_score": 19.1,
@@ -679,7 +679,7 @@
     {
       "alert_id": "ALT-0014",
       "mmsi": "41910014",
-      "vessel_name": "REGIONAL_14",
+      "vessel_name": "INS Kadmatt",
       "vessel_type": "Cargo",
       "flag": "IN",
       "risk_score": 19.1,
@@ -697,7 +697,7 @@
     {
       "alert_id": "ALT-0031",
       "mmsi": "41910031",
-      "vessel_name": "REGIONAL_31",
+      "vessel_name": "INS Khukri",
       "vessel_type": "Tanker",
       "flag": "IN",
       "risk_score": 19.1,
@@ -715,7 +715,7 @@
     {
       "alert_id": "ALT-0032",
       "mmsi": "41910032",
-      "vessel_name": "REGIONAL_32",
+      "vessel_name": "INS Kirpan",
       "vessel_type": "Pilot",
       "flag": "IN",
       "risk_score": 19.1,
@@ -733,7 +733,7 @@
     {
       "alert_id": "ALT-0017",
       "mmsi": "99800017",
-      "vessel_name": "GLOBAL_TRANSIT_17",
+      "vessel_name": "Desh Prem #18",
       "vessel_type": "Tanker",
       "flag": "LR",
       "risk_score": 19.1,
@@ -751,7 +751,7 @@
     {
       "alert_id": "ALT-0056",
       "mmsi": "99800056",
-      "vessel_name": "GLOBAL_TRANSIT_56",
+      "vessel_name": "Desh Gaurav #57",
       "vessel_type": "Tanker",
       "flag": "PA",
       "risk_score": 19.1,
@@ -769,7 +769,7 @@
     {
       "alert_id": "ALT-0002",
       "mmsi": "41910002",
-      "vessel_name": "REGIONAL_2",
+      "vessel_name": "INS Visakhapatnam",
       "vessel_type": "Cargo",
       "flag": "IN",
       "risk_score": 19.1,
@@ -787,7 +787,7 @@
     {
       "alert_id": "ALT-0012",
       "mmsi": "99800012",
-      "vessel_name": "GLOBAL_TRANSIT_12",
+      "vessel_name": "SCI Mukta #13",
       "vessel_type": "Bulk",
       "flag": "MH",
       "risk_score": 19.1,
@@ -805,7 +805,7 @@
     {
       "alert_id": "ALT-0028",
       "mmsi": "99800028",
-      "vessel_name": "GLOBAL_TRANSIT_28",
+      "vessel_name": "SCI Sabarmati #29",
       "vessel_type": "Cargo",
       "flag": "LR",
       "risk_score": 19.1,
@@ -823,7 +823,7 @@
     {
       "alert_id": "ALT-0037",
       "mmsi": "99800037",
-      "vessel_name": "GLOBAL_TRANSIT_37",
+      "vessel_name": "SCI Samudra #38",
       "vessel_type": "Cargo",
       "flag": "PA",
       "risk_score": 19.0,
@@ -841,7 +841,7 @@
     {
       "alert_id": "ALT-0048",
       "mmsi": "99800048",
-      "vessel_name": "GLOBAL_TRANSIT_48",
+      "vessel_name": "m.v. Kavaratti #49",
       "vessel_type": "Tanker",
       "flag": "HK",
       "risk_score": 19.0,
@@ -859,7 +859,7 @@
     {
       "alert_id": "ALT-0037",
       "mmsi": "41910037",
-      "vessel_name": "REGIONAL_37",
+      "vessel_name": "Swarna Pushp (REGIONAL)",
       "vessel_type": "Fishing",
       "flag": "IN",
       "risk_score": 19.0,
@@ -879,7 +879,7 @@
     {
       "alert_id": "ALT-0055",
       "mmsi": "99800055",
-      "vessel_name": "GLOBAL_TRANSIT_55",
+      "vessel_name": "Desh Shanti #56",
       "vessel_type": "Cargo",
       "flag": "PA",
       "risk_score": 19.0,
@@ -897,7 +897,7 @@
     {
       "alert_id": "ALT-0010",
       "mmsi": "41910010",
-      "vessel_name": "REGIONAL_10",
+      "vessel_name": "INS Shivalik",
       "vessel_type": "Cargo",
       "flag": "IN",
       "risk_score": 19.0,
@@ -915,7 +915,7 @@
     {
       "alert_id": "ALT-0006",
       "mmsi": "41910006",
-      "vessel_name": "REGIONAL_6",
+      "vessel_name": "INS Arihant",
       "vessel_type": "Fishing",
       "flag": "IN",
       "risk_score": 19.0,
@@ -935,7 +935,7 @@
     {
       "alert_id": "ALT-0022",
       "mmsi": "41910022",
-      "vessel_name": "REGIONAL_22",
+      "vessel_name": "INS Shakti",
       "vessel_type": "Cargo",
       "flag": "IN",
       "risk_score": 19.0,
@@ -953,7 +953,7 @@
     {
       "alert_id": "ALT-0011",
       "mmsi": "99800011",
-      "vessel_name": "GLOBAL_TRANSIT_11",
+      "vessel_name": "SCI Ahimsa #12",
       "vessel_type": "Tanker",
       "flag": "PA",
       "risk_score": 19.0,
@@ -971,7 +971,7 @@
     {
       "alert_id": "ALT-0042",
       "mmsi": "99800042",
-      "vessel_name": "GLOBAL_TRANSIT_42",
+      "vessel_name": "Swarna Pushp #43",
       "vessel_type": "Cargo",
       "flag": "SG",
       "risk_score": 19.0,
@@ -989,7 +989,7 @@
     {
       "alert_id": "ALT-0006",
       "mmsi": "99800006",
-      "vessel_name": "GLOBAL_TRANSIT_6",
+      "vessel_name": "SCI Yamuna #7",
       "vessel_type": "Bulk",
       "flag": "LR",
       "risk_score": 19.0,
@@ -1007,7 +1007,7 @@
     {
       "alert_id": "ALT-0000",
       "mmsi": "41910000",
-      "vessel_name": "REGIONAL_0",
+      "vessel_name": "INS Vikrant",
       "vessel_type": "Cargo",
       "flag": "IN",
       "risk_score": 19.0,
@@ -1025,7 +1025,7 @@
     {
       "alert_id": "ALT-0018",
       "mmsi": "99800018",
-      "vessel_name": "GLOBAL_TRANSIT_18",
+      "vessel_name": "Desh Vishal #19",
       "vessel_type": "Bulk",
       "flag": "LR",
       "risk_score": 19.0,
@@ -1043,7 +1043,7 @@
     {
       "alert_id": "ALT-0038",
       "mmsi": "41910038",
-      "vessel_name": "REGIONAL_38",
+      "vessel_name": "Swarna Jayanti (REGIONAL)",
       "vessel_type": "Cargo",
       "flag": "IN",
       "risk_score": 19.0,
@@ -1061,7 +1061,7 @@
     {
       "alert_id": "ALT-0020",
       "mmsi": "99800020",
-      "vessel_name": "GLOBAL_TRANSIT_20",
+      "vessel_name": "SCI Ganga #21",
       "vessel_type": "Bulk",
       "flag": "PA",
       "risk_score": 19.0,
@@ -1079,7 +1079,7 @@
     {
       "alert_id": "ALT-0043",
       "mmsi": "99800043",
-      "vessel_name": "GLOBAL_TRANSIT_43",
+      "vessel_name": "Swarna Jayanti #44",
       "vessel_type": "Cargo",
       "flag": "SG",
       "risk_score": 19.0,
@@ -1097,7 +1097,7 @@
     {
       "alert_id": "ALT-0015",
       "mmsi": "41910015",
-      "vessel_name": "REGIONAL_15",
+      "vessel_name": "INS Kiltan",
       "vessel_type": "Fishing",
       "flag": "IN",
       "risk_score": 19.0,
@@ -1117,7 +1117,7 @@
     {
       "alert_id": "ALT-0054",
       "mmsi": "99800054",
-      "vessel_name": "GLOBAL_TRANSIT_54",
+      "vessel_name": "Desh Bhakta #55",
       "vessel_type": "Bulk",
       "flag": "SG",
       "risk_score": 19.0,
@@ -1135,7 +1135,7 @@
     {
       "alert_id": "ALT-0052",
       "mmsi": "99800052",
-      "vessel_name": "GLOBAL_TRANSIT_52",
+      "vessel_name": "SCI Mukta #53",
       "vessel_type": "Bulk",
       "flag": "HK",
       "risk_score": 19.0,
@@ -1153,7 +1153,7 @@
     {
       "alert_id": "ALT-0003",
       "mmsi": "99800003",
-      "vessel_name": "GLOBAL_TRANSIT_3",
+      "vessel_name": "Swarna Jayanti #4",
       "vessel_type": "Tanker",
       "flag": "MH",
       "risk_score": 19.0,
@@ -1171,7 +1171,7 @@
     {
       "alert_id": "ALT-0033",
       "mmsi": "41910033",
-      "vessel_name": "REGIONAL_33",
+      "vessel_name": "INS Khanjar",
       "vessel_type": "Pilot",
       "flag": "IN",
       "risk_score": 19.0,
@@ -1189,7 +1189,7 @@
     {
       "alert_id": "ALT-0015",
       "mmsi": "99800015",
-      "vessel_name": "GLOBAL_TRANSIT_15",
+      "vessel_name": "Desh Shanti #16",
       "vessel_type": "Tanker",
       "flag": "LR",
       "risk_score": 19.0,
@@ -1207,7 +1207,7 @@
     {
       "alert_id": "ALT-0010",
       "mmsi": "99800010",
-      "vessel_name": "GLOBAL_TRANSIT_10",
+      "vessel_name": "m.v. Corals #11",
       "vessel_type": "Tanker",
       "flag": "PA",
       "risk_score": 19.0,
@@ -1225,7 +1225,7 @@
     {
       "alert_id": "ALT-0013",
       "mmsi": "99800013",
-      "vessel_name": "GLOBAL_TRANSIT_13",
+      "vessel_name": "SCI Saraswati #14",
       "vessel_type": "Bulk",
       "flag": "PA",
       "risk_score": 19.0,
@@ -1243,7 +1243,7 @@
     {
       "alert_id": "ALT-0032",
       "mmsi": "99800032",
-      "vessel_name": "GLOBAL_TRANSIT_32",
+      "vessel_name": "Swarna Narmada #33",
       "vessel_type": "Cargo",
       "flag": "MH",
       "risk_score": 19.0,
@@ -1261,7 +1261,7 @@
     {
       "alert_id": "ALT-0008",
       "mmsi": "41910008",
-      "vessel_name": "REGIONAL_8",
+      "vessel_name": "INS Talwar",
       "vessel_type": "Tanker",
       "flag": "IN",
       "risk_score": 19.0,
@@ -1279,7 +1279,7 @@
     {
       "alert_id": "ALT-0025",
       "mmsi": "41910025",
-      "vessel_name": "REGIONAL_25",
+      "vessel_name": "INS Mumbai",
       "vessel_type": "Pilot",
       "flag": "IN",
       "risk_score": 19.0,
@@ -1297,7 +1297,7 @@
     {
       "alert_id": "ALT-0047",
       "mmsi": "99800047",
-      "vessel_name": "GLOBAL_TRANSIT_47",
+      "vessel_name": "SCI Narmada #48",
       "vessel_type": "Cargo",
       "flag": "MH",
       "risk_score": 19.0,
@@ -1315,7 +1315,7 @@
     {
       "alert_id": "ALT-0039",
       "mmsi": "99800039",
-      "vessel_name": "GLOBAL_TRANSIT_39",
+      "vessel_name": "SCI Nalanda #40",
       "vessel_type": "Bulk",
       "flag": "MH",
       "risk_score": 18.9,
@@ -1333,7 +1333,7 @@
     {
       "alert_id": "ALT-0022",
       "mmsi": "99800022",
-      "vessel_name": "GLOBAL_TRANSIT_22",
+      "vessel_name": "SCI Mahanadi #23",
       "vessel_type": "Bulk",
       "flag": "LR",
       "risk_score": 18.9,
@@ -1351,7 +1351,7 @@
     {
       "alert_id": "ALT-0009",
       "mmsi": "99800009",
-      "vessel_name": "GLOBAL_TRANSIT_9",
+      "vessel_name": "m.v. Swaraj Dweep #10",
       "vessel_type": "Bulk",
       "flag": "SG",
       "risk_score": 18.9,
@@ -1369,7 +1369,7 @@
     {
       "alert_id": "ALT-0030",
       "mmsi": "99800030",
-      "vessel_name": "GLOBAL_TRANSIT_30",
+      "vessel_name": "Swarna Godavari #31",
       "vessel_type": "Tanker",
       "flag": "SG",
       "risk_score": 18.9,
@@ -1387,7 +1387,7 @@
     {
       "alert_id": "ALT-0025",
       "mmsi": "99800025",
-      "vessel_name": "GLOBAL_TRANSIT_25",
+      "vessel_name": "SCI Indus #26",
       "vessel_type": "Bulk",
       "flag": "PA",
       "risk_score": 18.9,
@@ -1405,7 +1405,7 @@
     {
       "alert_id": "ALT-0008",
       "mmsi": "99800008",
-      "vessel_name": "GLOBAL_TRANSIT_8",
+      "vessel_name": "m.v. Kavaratti #9",
       "vessel_type": "Bulk",
       "flag": "MH",
       "risk_score": 18.9,
@@ -1423,7 +1423,7 @@
     {
       "alert_id": "ALT-0024",
       "mmsi": "99800024",
-      "vessel_name": "GLOBAL_TRANSIT_24",
+      "vessel_name": "SCI Kaveri #25",
       "vessel_type": "Cargo",
       "flag": "LR",
       "risk_score": 18.9,
@@ -1441,7 +1441,7 @@
     {
       "alert_id": "ALT-0050",
       "mmsi": "99800050",
-      "vessel_name": "GLOBAL_TRANSIT_50",
+      "vessel_name": "m.v. Corals #51",
       "vessel_type": "Bulk",
       "flag": "SG",
       "risk_score": 18.9,
@@ -1459,7 +1459,7 @@
     {
       "alert_id": "ALT-0027",
       "mmsi": "99800027",
-      "vessel_name": "GLOBAL_TRANSIT_27",
+      "vessel_name": "SCI Tista #28",
       "vessel_type": "Cargo",
       "flag": "MH",
       "risk_score": 18.9,
@@ -1477,7 +1477,7 @@
     {
       "alert_id": "ALT-0016",
       "mmsi": "99800016",
-      "vessel_name": "GLOBAL_TRANSIT_16",
+      "vessel_name": "Desh Gaurav #17",
       "vessel_type": "Bulk",
       "flag": "HK",
       "risk_score": 18.9,
@@ -1495,7 +1495,7 @@
     {
       "alert_id": "ALT-0001",
       "mmsi": "99800001",
-      "vessel_name": "GLOBAL_TRANSIT_1",
+      "vessel_name": "Swarna Mala #2",
       "vessel_type": "Cargo",
       "flag": "HK",
       "risk_score": 18.9,
@@ -1513,7 +1513,7 @@
     {
       "alert_id": "ALT-0053",
       "mmsi": "99800053",
-      "vessel_name": "GLOBAL_TRANSIT_53",
+      "vessel_name": "SCI Saraswati #54",
       "vessel_type": "Bulk",
       "flag": "MH",
       "risk_score": 18.9,
@@ -1531,7 +1531,7 @@
     {
       "alert_id": "ALT-0029",
       "mmsi": "99800029",
-      "vessel_name": "GLOBAL_TRANSIT_29",
+      "vessel_name": "Swarna Sindhu #30",
       "vessel_type": "Tanker",
       "flag": "PA",
       "risk_score": 18.9,
@@ -1549,7 +1549,7 @@
     {
       "alert_id": "ALT-0031",
       "mmsi": "99800031",
-      "vessel_name": "GLOBAL_TRANSIT_31",
+      "vessel_name": "Swarna Kaveri #32",
       "vessel_type": "Bulk",
       "flag": "HK",
       "risk_score": 18.9,
@@ -1567,7 +1567,7 @@
     {
       "alert_id": "ALT-0014",
       "mmsi": "99800014",
-      "vessel_name": "GLOBAL_TRANSIT_14",
+      "vessel_name": "Desh Bhakta #15",
       "vessel_type": "Cargo",
       "flag": "SG",
       "risk_score": 18.9,
@@ -1585,7 +1585,7 @@
     {
       "alert_id": "ALT-0019",
       "mmsi": "99800019",
-      "vessel_name": "GLOBAL_TRANSIT_19",
+      "vessel_name": "SCI Alaknanda #20",
       "vessel_type": "Tanker",
       "flag": "PA",
       "risk_score": 18.9,
@@ -1603,7 +1603,7 @@
     {
       "alert_id": "ALT-0040",
       "mmsi": "99800040",
-      "vessel_name": "GLOBAL_TRANSIT_40",
+      "vessel_name": "SCI Ratna #41",
       "vessel_type": "Bulk",
       "flag": "PA",
       "risk_score": 18.9,
@@ -1621,7 +1621,7 @@
     {
       "alert_id": "ALT-0038",
       "mmsi": "99800038",
-      "vessel_name": "GLOBAL_TRANSIT_38",
+      "vessel_name": "SCI Sagar #39",
       "vessel_type": "Cargo",
       "flag": "LR",
       "risk_score": 18.8,
@@ -1639,7 +1639,7 @@
     {
       "alert_id": "ALT-0004",
       "mmsi": "99800004",
-      "vessel_name": "GLOBAL_TRANSIT_4",
+      "vessel_name": "Swarna Kamal #5",
       "vessel_type": "Bulk",
       "flag": "PA",
       "risk_score": 18.8,
@@ -1657,7 +1657,7 @@
     {
       "alert_id": "ALT-0026",
       "mmsi": "99800026",
-      "vessel_name": "GLOBAL_TRANSIT_26",
+      "vessel_name": "SCI Brahmaputra #27",
       "vessel_type": "Bulk",
       "flag": "PA",
       "risk_score": 18.8,
@@ -1675,7 +1675,7 @@
     {
       "alert_id": "ALT-0041",
       "mmsi": "99800041",
-      "vessel_name": "GLOBAL_TRANSIT_41",
+      "vessel_name": "Swarna Mala #42",
       "vessel_type": "Bulk",
       "flag": "HK",
       "risk_score": 18.8,
@@ -1693,7 +1693,7 @@
     {
       "alert_id": "ALT-0051",
       "mmsi": "99800051",
-      "vessel_name": "GLOBAL_TRANSIT_51",
+      "vessel_name": "SCI Ahimsa #52",
       "vessel_type": "Cargo",
       "flag": "SG",
       "risk_score": 18.8,
@@ -1711,7 +1711,7 @@
     {
       "alert_id": "ALT-0045",
       "mmsi": "99800045",
-      "vessel_name": "GLOBAL_TRANSIT_45",
+      "vessel_name": "SCI Kundan #46",
       "vessel_type": "Bulk",
       "flag": "PA",
       "risk_score": 18.8,
@@ -1729,7 +1729,7 @@
     {
       "alert_id": "ALT-0033",
       "mmsi": "99800033",
-      "vessel_name": "GLOBAL_TRANSIT_33",
+      "vessel_name": "Swarna Tapi #34",
       "vessel_type": "Cargo",
       "flag": "HK",
       "risk_score": 18.8,
@@ -1747,7 +1747,7 @@
     {
       "alert_id": "ALT-0035",
       "mmsi": "99800035",
-      "vessel_name": "GLOBAL_TRANSIT_35",
+      "vessel_name": "SCI Harsha #36",
       "vessel_type": "Tanker",
       "flag": "HK",
       "risk_score": 18.8,
@@ -1765,7 +1765,7 @@
     {
       "alert_id": "ALT-0000",
       "mmsi": "99800000",
-      "vessel_name": "GLOBAL_TRANSIT_0",
+      "vessel_name": "SCI Ratna #1",
       "vessel_type": "Cargo",
       "flag": "HK",
       "risk_score": 18.8,
@@ -1783,7 +1783,7 @@
     {
       "alert_id": "ALT-0057",
       "mmsi": "99800057",
-      "vessel_name": "GLOBAL_TRANSIT_57",
+      "vessel_name": "Desh Prem #58",
       "vessel_type": "Cargo",
       "flag": "SG",
       "risk_score": 18.8,
@@ -1801,7 +1801,7 @@
     {
       "alert_id": "ALT-0007",
       "mmsi": "99800007",
-      "vessel_name": "GLOBAL_TRANSIT_7",
+      "vessel_name": "SCI Narmada #8",
       "vessel_type": "Bulk",
       "flag": "HK",
       "risk_score": 18.8,
@@ -1819,7 +1819,7 @@
     {
       "alert_id": "ALT-0044",
       "mmsi": "99800044",
-      "vessel_name": "GLOBAL_TRANSIT_44",
+      "vessel_name": "Swarna Kamal #45",
       "vessel_type": "Cargo",
       "flag": "PA",
       "risk_score": 18.8,
@@ -1837,7 +1837,7 @@
     {
       "alert_id": "ALT-0049",
       "mmsi": "99800049",
-      "vessel_name": "GLOBAL_TRANSIT_49",
+      "vessel_name": "m.v. Swaraj Dweep #50",
       "vessel_type": "Bulk",
       "flag": "HK",
       "risk_score": 18.8,
@@ -1855,7 +1855,7 @@
     {
       "alert_id": "ALT-0023",
       "mmsi": "99800023",
-      "vessel_name": "GLOBAL_TRANSIT_23",
+      "vessel_name": "SCI Tapi #24",
       "vessel_type": "Tanker",
       "flag": "LR",
       "risk_score": 18.7,
@@ -1873,7 +1873,7 @@
     {
       "alert_id": "ALT-0046",
       "mmsi": "99800046",
-      "vessel_name": "GLOBAL_TRANSIT_46",
+      "vessel_name": "SCI Yamuna #47",
       "vessel_type": "Bulk",
       "flag": "SG",
       "risk_score": 18.7,
@@ -1891,7 +1891,7 @@
     {
       "alert_id": "ALT-0002",
       "mmsi": "99800002",
-      "vessel_name": "GLOBAL_TRANSIT_2",
+      "vessel_name": "Swarna Pushp #3",
       "vessel_type": "Cargo",
       "flag": "SG",
       "risk_score": 18.7,

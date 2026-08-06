@@ -1,27 +1,94 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   Shield, Activity, Info, Anchor, Users, Briefcase, 
-  MapPin, Clock, AlertTriangle, ChevronLeft, ChevronRight, Search, List
+  MapPin, Clock, AlertTriangle, ChevronLeft, ChevronRight, Search, List, MessageSquare, Send
 } from 'lucide-react';
 
 const VesselDetail = ({ vessel, alert, onClose, isVisible, onToggleVisible }) => {
-  const [history, setHistory] = React.useState(null);
-  const [loading, setLoading] = React.useState(false);
+  const [activeTab, setActiveTab] = useState('OVERVIEW'); // OVERVIEW | COMMS
+  const [history, setHistory] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [commsMessages, setCommsMessages] = useState([]);
+  const [newHqDirective, setNewHqDirective] = useState('');
+  const [commsLoading, setCommsLoading] = useState(false);
 
-  React.useEffect(() => {
-    if (vessel?.mmsi) {
-      setLoading(true);
-      fetch(`/api/vessels/history/${vessel.mmsi}`)
+  useEffect(() => {
+    if (!vessel?.mmsi) return;
+
+    setLoading(true);
+    fetch(`/api/vessels/history/${vessel.mmsi}`)
+      .then(res => res.json())
+      .then(data => setHistory(data))
+      .catch(err => console.error("History fetch error:", err))
+      .finally(() => setLoading(false));
+
+    const fetchComms = () => {
+      fetch(`/api/vessels/${vessel.mmsi}/comms?_t=${Date.now()}`, { cache: 'no-store' })
         .then(res => res.json())
-        .then(data => setHistory(data))
-        .catch(err => console.error("History fetch error:", err))
-        .finally(() => setLoading(false));
-    }
+        .then(data => {
+          if (data && Array.isArray(data.messages)) {
+            setCommsMessages(data.messages);
+          }
+        })
+        .catch(() => {});
+    };
+
+    fetchComms();
+
+    // Fast 1-second auto polling for zero-delay live sync across tabs
+    const timer = setInterval(fetchComms, 1000);
+
+
+    // Real-time WebSocket connection
+    let ws;
+    try {
+      ws = new WebSocket(`${window.location.protocol === 'https:' ? 'wss:' : 'ws:'}//${window.location.host}/ws/live-feed`);
+      ws.onmessage = (e) => {
+        try {
+          const msg = JSON.parse(e.data);
+          if (msg && msg.type === 'COMMS_MESSAGE' && String(msg.mmsi) === String(vessel.mmsi)) {
+            fetchComms();
+          }
+        } catch (err) {}
+      };
+    } catch (e) {}
+
+    return () => {
+      clearInterval(timer);
+      ws?.close();
+    };
   }, [vessel?.mmsi]);
+
+
+  const handleSendHqDirective = async (e) => {
+    e.preventDefault();
+    if (!newHqDirective.trim() || !vessel?.mmsi) return;
+    setCommsLoading(true);
+    const payload = { sender: 'HQ', text: newHqDirective.trim(), priority: 'ROUTINE' };
+
+    try {
+      const res = await fetch(`/api/vessels/${vessel.mmsi}/comms/send`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      const data = await res.json();
+      if (data && data.message) {
+        setCommsMessages(prev => [data.message, ...prev]);
+      }
+    } catch (err) {
+      setCommsMessages(prev => [
+        { id: Date.now(), time: new Date().toLocaleTimeString(), sender: 'HQ', text: newHqDirective.trim(), priority: 'ROUTINE' },
+        ...prev
+      ]);
+    } finally {
+      setCommsLoading(false);
+      setNewHqDirective('');
+    }
+  };
 
   if (!vessel) return null;
 
-  // Process dynamic data mapping from tactical history API
   const gridStats = [
     { label: 'Activity Baseline', count: history?.activity_baseline || 'NORMAL', icon: Activity },
     { label: 'Tactical Alerts', count: String(history?.tactical_alerts || '00').padStart(2, '0'), icon: Shield },
@@ -32,12 +99,11 @@ const VesselDetail = ({ vessel, alert, onClose, isVisible, onToggleVisible }) =>
   ];
 
   const timeline = history?.events || [];
-  
+
   const handleExportPDF = () => {
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF();
     
-    // Header
     doc.setFillColor(11, 19, 30);
     doc.rect(0, 0, 210, 40, 'F');
     doc.setTextColor(255, 255, 255);
@@ -46,7 +112,6 @@ const VesselDetail = ({ vessel, alert, onClose, isVisible, onToggleVisible }) =>
     doc.setFontSize(10);
     doc.text(`Generated: ${new Date().toLocaleString()}`, 150, 15);
 
-    // Vessel Info
     doc.setTextColor(0, 0, 0);
     doc.setFontSize(16);
     doc.text(`Vessel Identity: ${vessel.name || 'UNKNOWN'}`, 10, 50);
@@ -70,7 +135,6 @@ const VesselDetail = ({ vessel, alert, onClose, isVisible, onToggleVisible }) =>
       headStyles: { fillColor: [56, 189, 248] }
     });
 
-    // Activity Timeline
     doc.setFontSize(14);
     doc.text("MISSION ACTIVITY TIMELINE", 10, doc.lastAutoTable.finalY + 15);
     
@@ -108,7 +172,7 @@ const VesselDetail = ({ vessel, alert, onClose, isVisible, onToggleVisible }) =>
                 </button>
              </div>
           </div>
-          <p style={{ fontSize: '0.7rem', color: '#cbd5e1', fontWeight: 600 }}>IMO: {vessel.imo || '8701260'} | MMSI: {vessel.mmsi}</p>
+          <p style={{ fontSize: '0.7rem', color: '#cbd5e1', fontWeight: 600 }}>IMO: {vessel.imo || '---'} | MMSI: {vessel.mmsi}</p>
           
           <div style={{ display: 'flex', gap: '8px', marginTop: '8px', alignItems: 'center' }}>
             <div className="risk-score-badge" style={{ 
@@ -122,63 +186,139 @@ const VesselDetail = ({ vessel, alert, onClose, isVisible, onToggleVisible }) =>
             <div className="tactical-unit-label" style={{ 
               fontSize: '0.6rem', background: 'rgba(56, 189, 248, 0.1)', border: '1px solid rgba(56, 189, 248, 0.2)', padding: '2px 8px', borderRadius: '4px', width: 'fit-content', color: '#38bdf8'
             }}>
-               SYSTEM UNIT - {String(vessel.type || 'CARGO').toUpperCase()}
+               SYSTEM UNIT - {String(vessel.type || 'NAVY').toUpperCase()}
             </div>
           </div>
         </div>
       </div>
 
-      <button className="scan-btn" onClick={handleExportPDF} style={{ margin: '1rem', width: 'calc(100% - 2rem)', background: 'var(--accent-blue)', color: '#0b131e', fontWeight: 700 }}>
-         EXPORT TACTICAL REPORT
-      </button>
-
-      {/* Grid Stats */}
-      <div className="operational-grid">
-        {gridStats.map((stat, idx) => (
-          <div key={idx} className="grid-item">
-            <span className="count">{stat.count}</span>
-            <span className="label">{stat.label}</span>
-          </div>
-        ))}
+      {/* Tab Selector */}
+      <div style={{ display: 'flex', borderBottom: '1px solid var(--panel-border)', background: 'rgba(15, 23, 42, 0.6)' }}>
+        <button 
+          onClick={() => setActiveTab('OVERVIEW')} 
+          style={{
+            flex: 1, padding: '10px', background: 'transparent', border: 'none',
+            borderBottom: activeTab === 'OVERVIEW' ? '2px solid #38bdf8' : '2px solid transparent',
+            color: activeTab === 'OVERVIEW' ? '#38bdf8' : '#94a3b8',
+            fontWeight: 700, fontSize: '0.78rem', cursor: 'pointer'
+          }}
+        >
+          OVERVIEW
+        </button>
+        <button 
+          onClick={() => setActiveTab('COMMS')} 
+          style={{
+            flex: 1, padding: '10px', background: 'transparent', border: 'none',
+            borderBottom: activeTab === 'COMMS' ? '2px solid #38bdf8' : '2px solid transparent',
+            color: activeTab === 'COMMS' ? '#38bdf8' : '#94a3b8',
+            fontWeight: 700, fontSize: '0.78rem', cursor: 'pointer',
+            display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px'
+          }}
+        >
+          <MessageSquare size={14} /> HQ COMMS ({commsMessages.length})
+        </button>
       </div>
 
-      {/* Static Info Grid */}
-      <div className="static-info-grid">
-        <span className="info-label">FLAG</span> <span className="info-val">{vessel.flag || 'DENMARK'}</span>
-        <span className="info-label">IMO</span> <span className="info-val">{vessel.imo || '8701260'}</span>
-        <span className="info-label">MMSI</span> <span className="info-val">{vessel.mmsi}</span>
-        <span className="info-label">CALL SIGN</span> <span className="info-val">{vessel.call_sign || 'OUVD2'}</span>
-        <span className="info-label">CLASS</span> <span className="info-val">CARGO</span>
-      </div>
+      {activeTab === 'OVERVIEW' ? (
+        <>
+          <button className="scan-btn" onClick={handleExportPDF} style={{ margin: '1rem', width: 'calc(100% - 2rem)', background: 'var(--accent-blue)', color: '#0b131e', fontWeight: 700 }}>
+             EXPORT TACTICAL REPORT
+          </button>
 
-      {/* Activity Timeline */}
-      <div style={{ padding: '1rem', borderTop: '1px solid var(--panel-border)' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
-          <span style={{ fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px' }}>Activity Timeline</span>
-          <Search size={16} color="#94a3b8" />
-        </div>
-        
-        <div className="timeline-container custom-scrollbar" style={{ maxHeight: '200px', overflowY: 'auto' }}>
-          {timeline.map((event, idx) => (
-            <div key={idx} className={`timeline-event ${event.severity === 'ALERT' ? 'risk' : ''}`}>
-              <span className="event-time">{event.time}</span>
-              <div>
-                <div className="event-desc">{event.desc}</div>
-                <div className="event-loc">{event.loc}</div>
+          {/* Grid Stats */}
+          <div className="operational-grid">
+            {gridStats.map((stat, idx) => (
+              <div key={idx} className="grid-item">
+                <span className="count">{stat.count}</span>
+                <span className="label">{stat.label}</span>
               </div>
-            </div>
-          ))}
-        </div>
-      </div>
+            ))}
+          </div>
 
-      {/* Management Section Footer */}
-      <div style={{ padding: '1rem', borderTop: '1px solid var(--panel-border)', fontSize: '0.75rem' }}>
-         <div style={{ marginBottom: '8px', color: 'var(--accent-blue)', fontWeight: 700 }}>OWNERSHIP & MANAGEMENT</div>
-         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <span style={{ color: '#94a3b8' }}>Beneficial Owner</span>
-            <span style={{ fontWeight: 600 }}>{history?.beneficial_owner || 'H. FOLMER & CO.'}</span>
-         </div>
-      </div>
+          {/* Static Info Grid */}
+          <div className="static-info-grid">
+            <span className="info-label">FLAG</span> <span className="info-val">{vessel.flag || 'IN'}</span>
+            <span className="info-label">IMO</span> <span className="info-val">{vessel.imo || '---'}</span>
+            <span className="info-label">MMSI</span> <span className="info-val">{vessel.mmsi}</span>
+            <span className="info-label">LENGTH</span> <span className="info-val">{vessel.length ? `${vessel.length}m` : '---'}</span>
+            <span className="info-label">CLASS</span> <span className="info-val">{vessel.type || 'NAVAL'}</span>
+          </div>
+
+          {/* Activity Timeline */}
+          <div style={{ padding: '1rem', borderTop: '1px solid var(--panel-border)' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+              <span style={{ fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px' }}>Activity Timeline</span>
+              <Search size={16} color="#94a3b8" />
+            </div>
+            
+            <div className="timeline-container custom-scrollbar" style={{ maxHeight: '200px', overflowY: 'auto' }}>
+              {timeline.map((event, idx) => (
+                <div key={idx} className={`timeline-event ${event.severity === 'ALERT' ? 'risk' : ''}`}>
+                  <span className="event-time">{event.time}</span>
+                  <div>
+                    <div className="event-desc">{event.desc}</div>
+                    <div className="event-loc">{event.loc}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </>
+      ) : (
+        /* HQ COMMS TAB */
+        <div style={{ padding: '1rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          <div style={{ fontSize: '0.75rem', color: '#94a3b8', background: 'rgba(56, 189, 248, 0.08)', padding: '8px 12px', borderRadius: '6px', border: '1px solid rgba(56, 189, 248, 0.2)' }}>
+             Direct 2-Way Encrypted Link with <strong>{vessel.name || `UNIT ${vessel.mmsi}`}</strong>
+          </div>
+
+          <form onSubmit={handleSendHqDirective} style={{ display: 'flex', gap: '8px' }}>
+            <input 
+              type="text" 
+              placeholder="Send HQ tactical directive..." 
+              value={newHqDirective}
+              onChange={(e) => setNewHqDirective(e.target.value)}
+              style={{
+                flex: 1, background: '#1e293b', border: '1px solid rgba(255, 255, 255, 0.12)',
+                borderRadius: '6px', padding: '8px 12px', color: '#f8fafc', fontSize: '0.8rem', outline: 'none'
+              }}
+            />
+            <button 
+              type="submit" 
+              disabled={commsLoading}
+              style={{
+                background: '#0284c7', border: 'none', color: '#ffffff', padding: '8px 14px',
+                borderRadius: '6px', fontWeight: 700, fontSize: '0.78rem', cursor: 'pointer',
+                display: 'flex', alignItems: 'center', gap: '6px'
+              }}
+            >
+              <Send size={14} /> Send HQ Order
+            </button>
+          </form>
+
+          <div className="custom-scrollbar" style={{ display: 'flex', flexDirection: 'column', gap: '8px', maxHeight: '280px', overflowY: 'auto' }}>
+            {commsMessages.map((msg) => (
+              <div 
+                key={msg.id} 
+                style={{
+                  padding: '8px 12px', borderRadius: '6px', fontSize: '0.8rem',
+                  background: msg.sender === 'HQ' ? 'rgba(56, 189, 248, 0.15)' : 'rgba(2, 132, 199, 0.25)',
+                  border: `1px solid ${msg.sender === 'HQ' ? 'rgba(56, 189, 248, 0.3)' : 'rgba(2, 132, 199, 0.4)'}`,
+                  alignSelf: msg.sender === 'HQ' ? 'flex-start' : 'flex-end',
+                  width: '85%'
+                }}
+              >
+                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.68rem', fontWeight: 800, marginBottom: '2px' }}>
+                  <span style={{ color: msg.sender === 'HQ' ? '#38bdf8' : '#00f2fe' }}>
+                    {msg.sender === 'HQ' ? '🛡️ NMDA COMMAND HQ' : `⚓ ${vessel.name || vessel.mmsi}`}
+                  </span>
+                  <span style={{ color: '#64748b' }}>{msg.time}</span>
+                </div>
+                <div style={{ color: '#f8fafc' }}>{msg.text}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       <div style={{ padding: '1rem', backgroundColor: 'rgba(0,0,0,0.2)' }}>
          <button 

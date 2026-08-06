@@ -41,12 +41,32 @@ LON_SPAN   = 50.0   # Expanded: 40 to 90
 # Generating a large fleet of background global traffic
 GLOBAL_FLEET = []
 
+INDIAN_WARSHIPS = [
+    "INS Vikrant", "INS Vikramaditya", "INS Visakhapatnam", "INS Surat",
+    "INS Kolkata", "INS Chennai", "INS Arihant", "INS Trikand",
+    "INS Talwar", "INS Tabar", "INS Shivalik", "INS Sahyadri",
+    "INS Satpura", "INS Kamorta", "INS Kadmatt", "INS Kiltan",
+    "INS Kavaratti", "INS Sumitra", "INS Saryu", "INS Sunayna",
+    "INS Sagardhwani", "INS Deepak", "INS Shakti", "INS Delhi",
+    "INS Mysore", "INS Mumbai", "INS Rana", "INS Ranvir"
+]
+
+INDIAN_COMMERCIAL = [
+    "SCI Ratna", "Swarna Mala", "Swarna Pushp", "Swarna Jayanti",
+    "Swarna Kamal", "SCI Kundan", "SCI Yamuna", "SCI Narmada",
+    "m.v. Kavaratti", "m.v. Swaraj Dweep", "m.v. Corals", "SCI Ahimsa",
+    "SCI Mukta", "SCI Saraswati", "Desh Bhakta", "Desh Shanti",
+    "Desh Gaurav", "Desh Prem", "Desh Vishal", "SCI Alaknanda"
+]
+
 # India-Centric Traffic (Near Coast)
 for i in range(40):
+    v_name = INDIAN_WARSHIPS[i] if i < len(INDIAN_WARSHIPS) else f"{INDIAN_COMMERCIAL[i % len(INDIAN_COMMERCIAL)]} (IN)"
+    v_type = "Naval Escort" if i < len(INDIAN_WARSHIPS) else random.choice(["Cargo", "Tanker", "Bulk"])
     GLOBAL_FLEET.append({
         "mmsi": f"41910{i:03d}",
-        "name": f"REGIONAL_{i}",
-        "type": random.choice(["Cargo", "Tanker", "Fishing", "Pilot"]),
+        "name": v_name,
+        "type": v_type,
         "flag": "IN",
         "length": random.randint(150, 280),
         "speed_kts": random.uniform(8, 14),
@@ -56,9 +76,10 @@ for i in range(40):
 
 # Global Transit (Passing Through)
 for i in range(60):
+    c_name = INDIAN_COMMERCIAL[i % len(INDIAN_COMMERCIAL)]
     GLOBAL_FLEET.append({
         "mmsi": f"99800{i:03d}",
-        "name": f"GLOBAL_TRANSIT_{i}",
+        "name": f"{c_name} #{i+1}",
         "type": random.choice(["Cargo", "Tanker", "Bulk"]),
         "flag": random.choice(["PA", "MH", "SG", "LR", "HK"]),
         "length": random.randint(200, 320),
@@ -66,6 +87,7 @@ for i in range(60):
         "anomaly": None,
         "region": "GLOBAL_INDIAN_OCEAN"
     })
+
 
 # Current Anomalous Templates
 ANOMALIES = [

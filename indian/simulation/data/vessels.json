@@ -1,7 +1,7 @@
 [
   {
     "mmsi": "41910000",
-    "name": "REGIONAL_0",
+    "name": "INS Vikrant",
     "type": "Cargo",
     "flag": "IN",
     "length_m": 156,
@@ -12,7 +12,7 @@
   },
   {
     "mmsi": "41910001",
-    "name": "REGIONAL_1",
+    "name": "INS Vikramaditya",
     "type": "Tanker",
     "flag": "IN",
     "length_m": 207,
@@ -23,7 +23,7 @@
   },
   {
     "mmsi": "41910002",
-    "name": "REGIONAL_2",
+    "name": "INS Visakhapatnam",
     "type": "Cargo",
     "flag": "IN",
     "length_m": 172,
@@ -34,7 +34,7 @@
   },
   {
     "mmsi": "41910003",
-    "name": "REGIONAL_3",
+    "name": "INS Surat",
     "type": "Cargo",
     "flag": "IN",
     "length_m": 157,
@@ -45,7 +45,7 @@
   },
   {
     "mmsi": "41910004",
-    "name": "REGIONAL_4",
+    "name": "INS Kolkata",
     "type": "Tanker",
     "flag": "IN",
     "length_m": 279,
@@ -56,7 +56,7 @@
   },
   {
     "mmsi": "41910005",
-    "name": "REGIONAL_5",
+    "name": "INS Chennai",
     "type": "Tanker",
     "flag": "IN",
     "length_m": 257,
@@ -67,7 +67,7 @@
   },
   {
     "mmsi": "41910006",
-    "name": "REGIONAL_6",
+    "name": "INS Arihant",
     "type": "Fishing",
     "flag": "IN",
     "length_m": 151,
@@ -78,7 +78,7 @@
   },
   {
     "mmsi": "41910007",
-    "name": "REGIONAL_7",
+    "name": "INS Trikand",
     "type": "Tanker",
     "flag": "IN",
     "length_m": 258,
@@ -89,7 +89,7 @@
   },
   {
     "mmsi": "41910008",
-    "name": "REGIONAL_8",
+    "name": "INS Talwar",
     "type": "Tanker",
     "flag": "IN",
     "length_m": 205,
@@ -100,7 +100,7 @@
   },
   {
     "mmsi": "41910009",
-    "name": "REGIONAL_9",
+    "name": "INS Tabar",
     "type": "Fishing",
     "flag": "IN",
     "length_m": 176,
@@ -111,7 +111,7 @@
   },
   {
     "mmsi": "41910010",
-    "name": "REGIONAL_10",
+    "name": "INS Shivalik",
     "type": "Cargo",
     "flag": "IN",
     "length_m": 241,
@@ -122,7 +122,7 @@
   },
   {
     "mmsi": "41910011",
-    "name": "REGIONAL_11",
+    "name": "INS Sahyadri",
     "type": "Fishing",
     "flag": "IN",
     "length_m": 161,
@@ -133,7 +133,7 @@
   },
   {
     "mmsi": "41910012",
-    "name": "REGIONAL_12",
+    "name": "INS Satpura",
     "type": "Cargo",
     "flag": "IN",
     "length_m": 246,
@@ -144,7 +144,7 @@
   },
   {
     "mmsi": "41910013",
-    "name": "REGIONAL_13",
+    "name": "INS Kamorta",
     "type": "Fishing",
     "flag": "IN",
     "length_m": 242,
@@ -155,7 +155,7 @@
   },
   {
     "mmsi": "41910014",
-    "name": "REGIONAL_14",
+    "name": "INS Kadmatt",
     "type": "Cargo",
     "flag": "IN",
     "length_m": 161,
@@ -166,7 +166,7 @@
   },
   {
     "mmsi": "41910015",
-    "name": "REGIONAL_15",
+    "name": "INS Kiltan",
     "type": "Fishing",
     "flag": "IN",
     "length_m": 170,
@@ -177,7 +177,7 @@
   },
   {
     "mmsi": "41910016",
-    "name": "REGIONAL_16",
+    "name": "INS Kavaratti",
     "type": "Cargo",
     "flag": "IN",
     "length_m": 247,
@@ -188,7 +188,7 @@
   },
   {
     "mmsi": "41910017",
-    "name": "REGIONAL_17",
+    "name": "INS Sumitra",
     "type": "Fishing",
     "flag": "IN",
     "length_m": 191,
@@ -199,7 +199,7 @@
   },
   {
     "mmsi": "41910018",
-    "name": "REGIONAL_18",
+    "name": "INS Saryu",
     "type": "Tanker",
     "flag": "IN",
     "length_m": 218,
@@ -210,7 +210,7 @@
   },
   {
     "mmsi": "41910019",
-    "name": "REGIONAL_19",
+    "name": "INS Sunayna",
     "type": "Cargo",
     "flag": "IN",
     "length_m": 193,
@@ -221,7 +221,7 @@
   },
   {
     "mmsi": "41910020",
-    "name": "REGIONAL_20",
+    "name": "INS Sagardhwani",
     "type": "Tanker",
     "flag": "IN",
     "length_m": 191,
@@ -232,7 +232,7 @@
   },
   {
     "mmsi": "41910021",
-    "name": "REGIONAL_21",
+    "name": "INS Deepak",
     "type": "Fishing",
     "flag": "IN",
     "length_m": 206,
@@ -243,7 +243,7 @@
   },
   {
     "mmsi": "41910022",
-    "name": "REGIONAL_22",
+    "name": "INS Shakti",
     "type": "Cargo",
     "flag": "IN",
     "length_m": 208,
@@ -254,7 +254,7 @@
   },
   {
     "mmsi": "41910023",
-    "name": "REGIONAL_23",
+    "name": "INS Delhi",
     "type": "Fishing",
     "flag": "IN",
     "length_m": 252,
@@ -265,7 +265,7 @@
   },
   {
     "mmsi": "41910024",
-    "name": "REGIONAL_24",
+    "name": "INS Mysore",
     "type": "Tanker",
     "flag": "IN",
     "length_m": 230,
@@ -276,7 +276,7 @@
   },
   {
     "mmsi": "41910025",
-    "name": "REGIONAL_25",
+    "name": "INS Mumbai",
     "type": "Pilot",
     "flag": "IN",
     "length_m": 251,
@@ -287,7 +287,7 @@
   },
   {
     "mmsi": "41910026",
-    "name": "REGIONAL_26",
+    "name": "INS Rana",
     "type": "Pilot",
     "flag": "IN",
     "length_m": 186,
@@ -298,7 +298,7 @@
   },
   {
     "mmsi": "41910027",
-    "name": "REGIONAL_27",
+    "name": "INS Ranvir",
     "type": "Tanker",
     "flag": "IN",
     "length_m": 217,
@@ -309,7 +309,7 @@
   },
   {
     "mmsi": "41910028",
-    "name": "REGIONAL_28",
+    "name": "INS Ranvijay",
     "type": "Pilot",
     "flag": "IN",
     "length_m": 252,
@@ -320,7 +320,7 @@
   },
   {
     "mmsi": "41910029",
-    "name": "REGIONAL_29",
+    "name": "INS Teg",
     "type": "Tanker",
     "flag": "IN",
     "length_m": 280,
@@ -331,7 +331,7 @@
   },
   {
     "mmsi": "41910030",
-    "name": "REGIONAL_30",
+    "name": "INS Tarkash",
     "type": "Cargo",
     "flag": "IN",
     "length_m": 178,
@@ -342,7 +342,7 @@
   },
   {
     "mmsi": "41910031",
-    "name": "REGIONAL_31",
+    "name": "INS Khukri",
     "type": "Tanker",
     "flag": "IN",
     "length_m": 258,
@@ -353,7 +353,7 @@
   },
   {
     "mmsi": "41910032",
-    "name": "REGIONAL_32",
+    "name": "INS Kirpan",
     "type": "Pilot",
     "flag": "IN",
     "length_m": 247,
@@ -364,7 +364,7 @@
   },
   {
     "mmsi": "41910033",
-    "name": "REGIONAL_33",
+    "name": "INS Khanjar",
     "type": "Pilot",
     "flag": "IN",
     "length_m": 214,
@@ -375,7 +375,7 @@
   },
   {
     "mmsi": "41910034",
-    "name": "REGIONAL_34",
+    "name": "INS Kora",
     "type": "Cargo",
     "flag": "IN",
     "length_m": 179,
@@ -386,7 +386,7 @@
   },
   {
     "mmsi": "41910035",
-    "name": "REGIONAL_35",
+    "name": "SCI Ratna (REGIONAL)",
     "type": "Fishing",
     "flag": "IN",
     "length_m": 237,
@@ -397,7 +397,7 @@
   },
   {
     "mmsi": "41910036",
-    "name": "REGIONAL_36",
+    "name": "Swarna Mala (REGIONAL)",
     "type": "Pilot",
     "flag": "IN",
     "length_m": 190,
@@ -408,7 +408,7 @@
   },
   {
     "mmsi": "41910037",
-    "name": "REGIONAL_37",
+    "name": "Swarna Pushp (REGIONAL)",
     "type": "Fishing",
     "flag": "IN",
     "length_m": 278,
@@ -419,7 +419,7 @@
   },
   {
     "mmsi": "41910038",
-    "name": "REGIONAL_38",
+    "name": "Swarna Jayanti (REGIONAL)",
     "type": "Cargo",
     "flag": "IN",
     "length_m": 226,
@@ -430,7 +430,7 @@
   },
   {
     "mmsi": "41910039",
-    "name": "REGIONAL_39",
+    "name": "Swarna Kamal (REGIONAL)",
     "type": "Tanker",
     "flag": "IN",
     "length_m": 189,
@@ -441,7 +441,7 @@
   },
   {
     "mmsi": "99800000",
-    "name": "GLOBAL_TRANSIT_0",
+    "name": "SCI Ratna #1",
     "type": "Cargo",
     "flag": "HK",
     "length_m": 299,
@@ -452,7 +452,7 @@
   },
   {
     "mmsi": "99800001",
-    "name": "GLOBAL_TRANSIT_1",
+    "name": "Swarna Mala #2",
     "type": "Cargo",
     "flag": "HK",
     "length_m": 241,
@@ -463,7 +463,7 @@
   },
   {
     "mmsi": "99800002",
-    "name": "GLOBAL_TRANSIT_2",
+    "name": "Swarna Pushp #3",
     "type": "Cargo",
     "flag": "SG",
     "length_m": 312,
@@ -474,7 +474,7 @@
   },
   {
     "mmsi": "99800003",
-    "name": "GLOBAL_TRANSIT_3",
+    "name": "Swarna Jayanti #4",
     "type": "Tanker",
     "flag": "MH",
     "length_m": 207,
@@ -485,7 +485,7 @@
   },
   {
     "mmsi": "99800004",
-    "name": "GLOBAL_TRANSIT_4",
+    "name": "Swarna Kamal #5",
     "type": "Bulk",
     "flag": "PA",
     "length_m": 210,
@@ -496,7 +496,7 @@
   },
   {
     "mmsi": "99800005",
-    "name": "GLOBAL_TRANSIT_5",
+    "name": "SCI Kundan #6",
     "type": "Cargo",
     "flag": "HK",
     "length_m": 298,
@@ -507,7 +507,7 @@
   },
   {
     "mmsi": "99800006",
-    "name": "GLOBAL_TRANSIT_6",
+    "name": "SCI Yamuna #7",
     "type": "Bulk",
     "flag": "LR",
     "length_m": 270,
@@ -518,7 +518,7 @@
   },
   {
     "mmsi": "99800007",
-    "name": "GLOBAL_TRANSIT_7",
+    "name": "SCI Narmada #8",
     "type": "Bulk",
     "flag": "HK",
     "length_m": 254,
@@ -529,7 +529,7 @@
   },
   {
     "mmsi": "99800008",
-    "name": "GLOBAL_TRANSIT_8",
+    "name": "m.v. Kavaratti #9",
     "type": "Bulk",
     "flag": "MH",
     "length_m": 291,
@@ -540,7 +540,7 @@
   },
   {
     "mmsi": "99800009",
-    "name": "GLOBAL_TRANSIT_9",
+    "name": "m.v. Swaraj Dweep #10",
     "type": "Bulk",
     "flag": "SG",
     "length_m": 256,
@@ -551,7 +551,7 @@
   },
   {
     "mmsi": "99800010",
-    "name": "GLOBAL_TRANSIT_10",
+    "name": "m.v. Corals #11",
     "type": "Tanker",
     "flag": "PA",
     "length_m": 231,
@@ -562,7 +562,7 @@
   },
   {
     "mmsi": "99800011",
-    "name": "GLOBAL_TRANSIT_11",
+    "name": "SCI Ahimsa #12",
     "type": "Tanker",
     "flag": "PA",
     "length_m": 275,
@@ -573,7 +573,7 @@
   },
   {
     "mmsi": "99800012",
-    "name": "GLOBAL_TRANSIT_12",
+    "name": "SCI Mukta #13",
     "type": "Bulk",
     "flag": "MH",
     "length_m": 200,
@@ -584,7 +584,7 @@
   },
   {
     "mmsi": "99800013",
-    "name": "GLOBAL_TRANSIT_13",
+    "name": "SCI Saraswati #14",
     "type": "Bulk",
     "flag": "PA",
     "length_m": 229,
@@ -595,7 +595,7 @@
   },
   {
     "mmsi": "99800014",
-    "name": "GLOBAL_TRANSIT_14",
+    "name": "Desh Bhakta #15",
     "type": "Cargo",
     "flag": "SG",
     "length_m": 209,
@@ -606,7 +606,7 @@
   },
   {
     "mmsi": "99800015",
-    "name": "GLOBAL_TRANSIT_15",
+    "name": "Desh Shanti #16",
     "type": "Tanker",
     "flag": "LR",
     "length_m": 227,
@@ -617,7 +617,7 @@
   },
   {
     "mmsi": "99800016",
-    "name": "GLOBAL_TRANSIT_16",
+    "name": "Desh Gaurav #17",
     "type": "Bulk",
     "flag": "HK",
     "length_m": 273,
@@ -628,7 +628,7 @@
   },
   {
     "mmsi": "99800017",
-    "name": "GLOBAL_TRANSIT_17",
+    "name": "Desh Prem #18",
     "type": "Tanker",
     "flag": "LR",
     "length_m": 224,
@@ -639,7 +639,7 @@
   },
   {
     "mmsi": "99800018",
-    "name": "GLOBAL_TRANSIT_18",
+    "name": "Desh Vishal #19",
     "type": "Bulk",
     "flag": "LR",
     "length_m": 245,
@@ -650,7 +650,7 @@
   },
   {
     "mmsi": "99800019",
-    "name": "GLOBAL_TRANSIT_19",
+    "name": "SCI Alaknanda #20",
     "type": "Tanker",
     "flag": "PA",
     "length_m": 286,
@@ -661,7 +661,7 @@
   },
   {
     "mmsi": "99800020",
-    "name": "GLOBAL_TRANSIT_20",
+    "name": "SCI Ganga #21",
     "type": "Bulk",
     "flag": "PA",
     "length_m": 207,
@@ -672,7 +672,7 @@
   },
   {
     "mmsi": "99800021",
-    "name": "GLOBAL_TRANSIT_21",
+    "name": "SCI Godavari #22",
     "type": "Tanker",
     "flag": "PA",
     "length_m": 231,
@@ -683,7 +683,7 @@
   },
   {
     "mmsi": "99800022",
-    "name": "GLOBAL_TRANSIT_22",
+    "name": "SCI Mahanadi #23",
     "type": "Bulk",
     "flag": "LR",
     "length_m": 217,
@@ -694,7 +694,7 @@
   },
   {
     "mmsi": "99800023",
-    "name": "GLOBAL_TRANSIT_23",
+    "name": "SCI Tapi #24",
     "type": "Tanker",
     "flag": "LR",
     "length_m": 231,
@@ -705,7 +705,7 @@
   },
   {
     "mmsi": "99800024",
-    "name": "GLOBAL_TRANSIT_24",
+    "name": "SCI Kaveri #25",
     "type": "Cargo",
     "flag": "LR",
     "length_m": 303,
@@ -716,7 +716,7 @@
   },
   {
     "mmsi": "99800025",
-    "name": "GLOBAL_TRANSIT_25",
+    "name": "SCI Indus #26",
     "type": "Bulk",
     "flag": "PA",
     "length_m": 206,
@@ -727,7 +727,7 @@
   },
   {
     "mmsi": "99800026",
-    "name": "GLOBAL_TRANSIT_26",
+    "name": "SCI Brahmaputra #27",
     "type": "Bulk",
     "flag": "PA",
     "length_m": 211,
@@ -738,7 +738,7 @@
   },
   {
     "mmsi": "99800027",
-    "name": "GLOBAL_TRANSIT_27",
+    "name": "SCI Tista #28",
     "type": "Cargo",
     "flag": "MH",
     "length_m": 252,
@@ -749,7 +749,7 @@
   },
   {
     "mmsi": "99800028",
-    "name": "GLOBAL_TRANSIT_28",
+    "name": "SCI Sabarmati #29",
     "type": "Cargo",
     "flag": "LR",
     "length_m": 315,
@@ -760,7 +760,7 @@
   },
   {
     "mmsi": "99800029",
-    "name": "GLOBAL_TRANSIT_29",
+    "name": "Swarna Sindhu #30",
     "type": "Tanker",
     "flag": "PA",
     "length_m": 249,
@@ -771,7 +771,7 @@
   },
   {
     "mmsi": "99800030",
-    "name": "GLOBAL_TRANSIT_30",
+    "name": "Swarna Godavari #31",
     "type": "Tanker",
     "flag": "SG",
     "length_m": 254,
@@ -782,7 +782,7 @@
   },
   {
     "mmsi": "99800031",
-    "name": "GLOBAL_TRANSIT_31",
+    "name": "Swarna Kaveri #32",
     "type": "Bulk",
     "flag": "HK",
     "length_m": 284,
@@ -793,7 +793,7 @@
   },
   {
     "mmsi": "99800032",
-    "name": "GLOBAL_TRANSIT_32",
+    "name": "Swarna Narmada #33",
     "type": "Cargo",
     "flag": "MH",
     "length_m": 237,
@@ -804,7 +804,7 @@
   },
   {
     "mmsi": "99800033",
-    "name": "GLOBAL_TRANSIT_33",
+    "name": "Swarna Tapi #34",
     "type": "Cargo",
     "flag": "HK",
     "length_m": 294,
@@ -815,7 +815,7 @@
   },
   {
     "mmsi": "99800034",
-    "name": "GLOBAL_TRANSIT_34",
+    "name": "Swarna Yamuna #35",
     "type": "Bulk",
     "flag": "SG",
     "length_m": 207,
@@ -826,7 +826,7 @@
   },
   {
     "mmsi": "99800035",
-    "name": "GLOBAL_TRANSIT_35",
+    "name": "SCI Harsha #36",
     "type": "Tanker",
     "flag": "HK",
     "length_m": 317,
@@ -837,7 +837,7 @@
   },
   {
     "mmsi": "99800036",
-    "name": "GLOBAL_TRANSIT_36",
+    "name": "SCI Vikram #37",
     "type": "Cargo",
     "flag": "PA",
     "length_m": 265,
@@ -848,7 +848,7 @@
   },
   {
     "mmsi": "99800037",
-    "name": "GLOBAL_TRANSIT_37",
+    "name": "SCI Samudra #38",
     "type": "Cargo",
     "flag": "PA",
     "length_m": 276,
@@ -859,7 +859,7 @@
   },
   {
     "mmsi": "99800038",
-    "name": "GLOBAL_TRANSIT_38",
+    "name": "SCI Sagar #39",
     "type": "Cargo",
     "flag": "LR",
     "length_m": 215,
@@ -870,7 +870,7 @@
   },
   {
     "mmsi": "99800039",
-    "name": "GLOBAL_TRANSIT_39",
+    "name": "SCI Nalanda #40",
     "type": "Bulk",
     "flag": "MH",
     "length_m": 274,
@@ -881,7 +881,7 @@
   },
   {
     "mmsi": "99800040",
-    "name": "GLOBAL_TRANSIT_40",
+    "name": "SCI Ratna #41",
     "type": "Bulk",
     "flag": "PA",
     "length_m": 253,
@@ -892,7 +892,7 @@
   },
   {
     "mmsi": "99800041",
-    "name": "GLOBAL_TRANSIT_41",
+    "name": "Swarna Mala #42",
     "type": "Bulk",
     "flag": "HK",
     "length_m": 240,
@@ -903,7 +903,7 @@
   },
   {
     "mmsi": "99800042",
-    "name": "GLOBAL_TRANSIT_42",
+    "name": "Swarna Pushp #43",
     "type": "Cargo",
     "flag": "SG",
     "length_m": 230,
@@ -914,7 +914,7 @@
   },
   {
     "mmsi": "99800043",
-    "name": "GLOBAL_TRANSIT_43",
+    "name": "Swarna Jayanti #44",
     "type": "Cargo",
     "flag": "SG",
     "length_m": 258,
@@ -925,7 +925,7 @@
   },
   {
     "mmsi": "99800044",
-    "name": "GLOBAL_TRANSIT_44",
+    "name": "Swarna Kamal #45",
     "type": "Cargo",
     "flag": "PA",
     "length_m": 258,
@@ -936,7 +936,7 @@
   },
   {
     "mmsi": "99800045",
-    "name": "GLOBAL_TRANSIT_45",
+    "name": "SCI Kundan #46",
     "type": "Bulk",
     "flag": "PA",
     "length_m": 209,
@@ -947,7 +947,7 @@
   },
   {
     "mmsi": "99800046",
-    "name": "GLOBAL_TRANSIT_46",
+    "name": "SCI Yamuna #47",
     "type": "Bulk",
     "flag": "SG",
     "length_m": 216,
@@ -958,7 +958,7 @@
   },
   {
     "mmsi": "99800047",
-    "name": "GLOBAL_TRANSIT_47",
+    "name": "SCI Narmada #48",
     "type": "Cargo",
     "flag": "MH",
     "length_m": 247,
@@ -969,7 +969,7 @@
   },
   {
     "mmsi": "99800048",
-    "name": "GLOBAL_TRANSIT_48",
+    "name": "m.v. Kavaratti #49",
     "type": "Tanker",
     "flag": "HK",
     "length_m": 290,
@@ -980,7 +980,7 @@
   },
   {
     "mmsi": "99800049",
-    "name": "GLOBAL_TRANSIT_49",
+    "name": "m.v. Swaraj Dweep #50",
     "type": "Bulk",
     "flag": "HK",
     "length_m": 201,
@@ -991,7 +991,7 @@
   },
   {
     "mmsi": "99800050",
-    "name": "GLOBAL_TRANSIT_50",
+    "name": "m.v. Corals #51",
     "type": "Bulk",
     "flag": "SG",
     "length_m": 319,
@@ -1002,7 +1002,7 @@
   },
   {
     "mmsi": "99800051",
-    "name": "GLOBAL_TRANSIT_51",
+    "name": "SCI Ahimsa #52",
     "type": "Cargo",
     "flag": "SG",
     "length_m": 214,
@@ -1013,7 +1013,7 @@
   },
   {
     "mmsi": "99800052",
-    "name": "GLOBAL_TRANSIT_52",
+    "name": "SCI Mukta #53",
     "type": "Bulk",
     "flag": "HK",
     "length_m": 219,
@@ -1024,7 +1024,7 @@
   },
   {
     "mmsi": "99800053",
-    "name": "GLOBAL_TRANSIT_53",
+    "name": "SCI Saraswati #54",
     "type": "Bulk",
     "flag": "MH",
     "length_m": 291,
@@ -1035,7 +1035,7 @@
   },
   {
     "mmsi": "99800054",
-    "name": "GLOBAL_TRANSIT_54",
+    "name": "Desh Bhakta #55",
     "type": "Bulk",
     "flag": "SG",
     "length_m": 264,
@@ -1046,7 +1046,7 @@
   },
   {
     "mmsi": "99800055",
-    "name": "GLOBAL_TRANSIT_55",
+    "name": "Desh Shanti #56",
     "type": "Cargo",
     "flag": "PA",
     "length_m": 281,
@@ -1057,7 +1057,7 @@
   },
   {
     "mmsi": "99800056",
-    "name": "GLOBAL_TRANSIT_56",
+    "name": "Desh Gaurav #57",
     "type": "Tanker",
     "flag": "PA",
     "length_m": 200,
@@ -1068,7 +1068,7 @@
   },
   {
     "mmsi": "99800057",
-    "name": "GLOBAL_TRANSIT_57",
+    "name": "Desh Prem #58",
     "type": "Cargo",
     "flag": "SG",
     "length_m": 220,
@@ -1079,7 +1079,7 @@
   },
   {
     "mmsi": "99800058",
-    "name": "GLOBAL_TRANSIT_58",
+    "name": "Desh Vishal #59",
     "type": "Bulk",
     "flag": "LR",
     "length_m": 271,
@@ -1090,7 +1090,7 @@
   },
   {
     "mmsi": "99800059",
-    "name": "GLOBAL_TRANSIT_59",
+    "name": "SCI Alaknanda #60",
     "type": "Cargo",
     "flag": "MH",
     "length_m": 269,

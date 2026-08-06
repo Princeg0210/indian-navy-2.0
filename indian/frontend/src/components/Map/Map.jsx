@@ -34,16 +34,22 @@ const MapUpdater = ({ center, zoom, selectedMmsi }) => {
   const lastMmsi = useRef(null);
 
   useEffect(() => {
-    // Only center the map when the selection changes, not on every coordinate update
-    // This prevents the "aggy" jumping feel during live updates
+    // Invalidate map size to ensure tile layer fills 100% container upon tab mount
+    setTimeout(() => {
+      map.invalidateSize();
+    }, 100);
+
     if (center && selectedMmsi !== lastMmsi.current) {
-      map.setView(center, zoom, { animate: true, duration: 1.5 });
+      map.setView(center, zoom, { animate: true, duration: 1.2 });
       lastMmsi.current = selectedMmsi;
+    } else if (center) {
+      map.setView(center, zoom);
     }
   }, [center, zoom, map, selectedMmsi]);
   
   return null;
 };
+
 
 // Arrow marker icon factory — places a rotated triangle at each waypoint
 const createArrowIcon = (bearing, color = '#1e3a5f') => L.divIcon({
@@ -207,7 +213,7 @@ const Map = ({ vessels, alerts, historyData, selectedMmsi, onSelectVessel, activ
     return [lat + dist * Math.cos(r), lon + dist * Math.sin(r)];
   };
 
-  const selectedVessel = useMemo(() => vessels.find(v => v.mmsi === selectedMmsi), [vessels, selectedMmsi]);
+  const selectedVessel = useMemo(() => vessels.find(v => String(v.mmsi) === String(selectedMmsi)), [vessels, selectedMmsi]);
   
   const highlightCenter = useMemo(() => {
     if (!selectedVessel) return null;
@@ -215,6 +221,7 @@ const Map = ({ vessels, alerts, historyData, selectedMmsi, onSelectVessel, activ
     const lon = selectedVessel.last_lon || selectedVessel.lon || selectedVessel.start_lon;
     return (lat && lon) ? [lat, lon] : null;
   }, [selectedVessel]);
+
 
   return (
     <MapContainer 
@@ -297,7 +304,8 @@ const Map = ({ vessels, alerts, historyData, selectedMmsi, onSelectVessel, activ
         const severity = alert?.severity || v.severity || 'NORMAL';
         const riskScore = alert?.risk_score || v.risk_score || 0;
         const isAnomalous = severity !== 'NORMAL';
-        const isSelected = v.mmsi === selectedMmsi;
+        const isSelected = String(v.mmsi) === String(selectedMmsi);
+
         
         // Safety checks for telemetry
         const sog = v.last_sog || v.sog || 0;
