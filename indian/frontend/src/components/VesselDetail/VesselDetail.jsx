@@ -193,7 +193,7 @@ const VesselDetail = ({ vessel, alert, onClose, isVisible, onToggleVisible }) =>
       </div>
 
       {/* Tab Selector */}
-      <div style={{ display: 'flex', borderBottom: '1px solid var(--panel-border)', background: 'rgba(15, 23, 42, 0.6)' }}>
+      <div style={{ display: 'flex', borderBottom: '1px solid var(--panel-border)', background: 'rgba(15, 23, 42, 0.9)', alignItems: 'center' }}>
         <button 
           onClick={() => setActiveTab('OVERVIEW')} 
           style={{
@@ -217,7 +217,28 @@ const VesselDetail = ({ vessel, alert, onClose, isVisible, onToggleVisible }) =>
         >
           <MessageSquare size={14} /> HQ COMMS ({commsMessages.length})
         </button>
+        <button 
+          onClick={onClose} 
+          title="Hide Detail Panel"
+          style={{
+            padding: '10px 14px',
+            background: 'rgba(239, 68, 68, 0.12)',
+            border: 'none',
+            borderLeft: '1px solid var(--panel-border)',
+            color: '#ef4444',
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '4px',
+            fontSize: '0.72rem',
+            fontWeight: 800
+          }}
+        >
+          <span>HIDE</span>
+          <ChevronRight size={16} />
+        </button>
       </div>
+
 
       {activeTab === 'OVERVIEW' ? (
         <>
