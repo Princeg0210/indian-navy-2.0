@@ -21,7 +21,7 @@
       "last_lat": 12.722818,
       "last_lon": 58.102865,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454095+00:00"
+      "generated_at": "2026-08-06T06:46:52.494958+00:00"
     },
     {
       "alert_id": "ALT-5002",
@@ -41,7 +41,7 @@
       "last_lat": 18.372328,
       "last_lon": 66.445084,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455835+00:00"
+      "generated_at": "2026-08-06T06:46:52.494483+00:00"
     },
     {
       "alert_id": "ALT-4002",
@@ -64,7 +64,7 @@
       "last_lat": 19.650269,
       "last_lon": 69.045877,
       "loitering": false,
-      "generated_at": "2026-08-04T14:28:37.454566+00:00"
+      "generated_at": "2026-08-06T06:46:52.496852+00:00"
     },
     {
       "alert_id": "ALT-5003",
@@ -84,25 +84,7 @@
       "last_lat": 8.313522,
       "last_lon": 67.414375,
       "loitering": false,
-      "generated_at": "2026-08-04T14:28:37.454446+00:00"
-    },
-    {
-      "alert_id": "ALT-0012",
-      "mmsi": "41910012",
-      "vessel_name": "INS Satpura",
-      "vessel_type": "Cargo",
-      "flag": "IN",
-      "risk_score": 19.3,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 15.74375,
-      "last_lon": 72.25372,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454877+00:00"
+      "generated_at": "2026-08-06T06:46:52.494675+00:00"
     },
     {
       "alert_id": "ALT-0005",
@@ -120,27 +102,25 @@
       "last_lat": 18.425277,
       "last_lon": 72.237407,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455543+00:00"
+      "generated_at": "2026-08-06T06:46:52.494717+00:00"
     },
     {
-      "alert_id": "ALT-0035",
-      "mmsi": "41910035",
-      "vessel_name": "SCI Ratna (REGIONAL)",
-      "vessel_type": "Fishing",
+      "alert_id": "ALT-0003",
+      "mmsi": "41910003",
+      "vessel_name": "INS Surat",
+      "vessel_type": "Cargo",
       "flag": "IN",
       "risk_score": 19.3,
       "severity": "LOW",
       "anomaly_types": [
         "LOITERING_ANOMALY"
       ],
-      "risk_categories": [
-        "IUU_Fishing"
-      ],
+      "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 21.692373,
-      "last_lon": 70.885939,
+      "last_lat": 19.78038,
+      "last_lon": 70.679176,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455593+00:00"
+      "generated_at": "2026-08-06T06:46:52.494855+00:00"
     },
     {
       "alert_id": "ALT-0009",
@@ -160,7 +140,7 @@
       "last_lat": 18.959947,
       "last_lon": 74.655364,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.456022+00:00"
+      "generated_at": "2026-08-06T06:46:52.495955+00:00"
     },
     {
       "alert_id": "ALT-0001",
@@ -178,12 +158,12 @@
       "last_lat": 12.47431,
       "last_lon": 73.240426,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.456107+00:00"
+      "generated_at": "2026-08-06T06:46:52.496124+00:00"
     },
     {
-      "alert_id": "ALT-0003",
-      "mmsi": "41910003",
-      "vessel_name": "INS Surat",
+      "alert_id": "ALT-0012",
+      "mmsi": "41910012",
+      "vessel_name": "INS Satpura",
       "vessel_type": "Cargo",
       "flag": "IN",
       "risk_score": 19.3,
@@ -193,10 +173,48 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 19.78038,
-      "last_lon": 70.679176,
+      "last_lat": 15.74375,
+      "last_lon": 72.25372,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.456471+00:00"
+      "generated_at": "2026-08-06T06:46:52.496653+00:00"
+    },
+    {
+      "alert_id": "ALT-0035",
+      "mmsi": "41910035",
+      "vessel_name": "SCI Ratna (REGIONAL)",
+      "vessel_type": "Fishing",
+      "flag": "IN",
+      "risk_score": 19.3,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [
+        "IUU_Fishing"
+      ],
+      "is_anomalous": true,
+      "last_lat": 21.692373,
+      "last_lon": 70.885939,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.497054+00:00"
+    },
+    {
+      "alert_id": "ALT-0007",
+      "mmsi": "41910007",
+      "vessel_name": "INS Trikand",
+      "vessel_type": "Tanker",
+      "flag": "IN",
+      "risk_score": 19.2,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 16.354946,
+      "last_lon": 70.100593,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.494368+00:00"
     },
     {
       "alert_id": "ALT-0017",
@@ -216,117 +234,7 @@
       "last_lat": 13.25625,
       "last_lon": 74.974303,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.453631+00:00"
-    },
-    {
-      "alert_id": "ALT-0016",
-      "mmsi": "41910016",
-      "vessel_name": "INS Kavaratti",
-      "vessel_type": "Cargo",
-      "flag": "IN",
-      "risk_score": 19.2,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 8.903875,
-      "last_lon": 75.413399,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.453783+00:00"
-    },
-    {
-      "alert_id": "ALT-0030",
-      "mmsi": "41910030",
-      "vessel_name": "INS Tarkash",
-      "vessel_type": "Cargo",
-      "flag": "IN",
-      "risk_score": 19.2,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.315084,
-      "last_lon": 75.145333,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.453824+00:00"
-    },
-    {
-      "alert_id": "ALT-0026",
-      "mmsi": "41910026",
-      "vessel_name": "INS Rana",
-      "vessel_type": "Pilot",
-      "flag": "IN",
-      "risk_score": 19.2,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 16.808408,
-      "last_lon": 70.251043,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454335+00:00"
-    },
-    {
-      "alert_id": "ALT-0028",
-      "mmsi": "41910028",
-      "vessel_name": "INS Ranvijay",
-      "vessel_type": "Pilot",
-      "flag": "IN",
-      "risk_score": 19.2,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 14.857444,
-      "last_lon": 74.464999,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454930+00:00"
-    },
-    {
-      "alert_id": "ALT-0023",
-      "mmsi": "41910023",
-      "vessel_name": "INS Delhi",
-      "vessel_type": "Fishing",
-      "flag": "IN",
-      "risk_score": 19.2,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [
-        "IUU_Fishing"
-      ],
-      "is_anomalous": true,
-      "last_lat": 8.783246,
-      "last_lon": 71.547646,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455370+00:00"
-    },
-    {
-      "alert_id": "ALT-0007",
-      "mmsi": "41910007",
-      "vessel_name": "INS Trikand",
-      "vessel_type": "Tanker",
-      "flag": "IN",
-      "risk_score": 19.2,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 16.354946,
-      "last_lon": 70.100593,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455764+00:00"
+      "generated_at": "2026-08-06T06:46:52.494909+00:00"
     },
     {
       "alert_id": "ALT-0013",
@@ -346,13 +254,13 @@
       "last_lat": 17.48066,
       "last_lon": 70.988208,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455907+00:00"
+      "generated_at": "2026-08-06T06:46:52.494946+00:00"
     },
     {
-      "alert_id": "ALT-0020",
-      "mmsi": "41910020",
-      "vessel_name": "INS Sagardhwani",
-      "vessel_type": "Tanker",
+      "alert_id": "ALT-0016",
+      "mmsi": "41910016",
+      "vessel_name": "INS Kavaratti",
+      "vessel_type": "Cargo",
       "flag": "IN",
       "risk_score": 19.2,
       "severity": "LOW",
@@ -361,10 +269,48 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 17.379577,
-      "last_lon": 72.031158,
+      "last_lat": 8.903875,
+      "last_lon": 75.413399,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.456063+00:00"
+      "generated_at": "2026-08-06T06:46:52.495610+00:00"
+    },
+    {
+      "alert_id": "ALT-0023",
+      "mmsi": "41910023",
+      "vessel_name": "INS Delhi",
+      "vessel_type": "Fishing",
+      "flag": "IN",
+      "risk_score": 19.2,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [
+        "IUU_Fishing"
+      ],
+      "is_anomalous": true,
+      "last_lat": 8.783246,
+      "last_lon": 71.547646,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.495656+00:00"
+    },
+    {
+      "alert_id": "ALT-0030",
+      "mmsi": "41910030",
+      "vessel_name": "INS Tarkash",
+      "vessel_type": "Cargo",
+      "flag": "IN",
+      "risk_score": 19.2,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 12.315084,
+      "last_lon": 75.145333,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.496054+00:00"
     },
     {
       "alert_id": "ALT-0024",
@@ -382,32 +328,68 @@
       "last_lat": 19.416304,
       "last_lon": 71.356201,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.456139+00:00"
+      "generated_at": "2026-08-06T06:46:52.496096+00:00"
     },
     {
-      "alert_id": "ALT-0004",
-      "mmsi": "41910004",
-      "vessel_name": "INS Kolkata",
+      "alert_id": "ALT-0026",
+      "mmsi": "41910026",
+      "vessel_name": "INS Rana",
+      "vessel_type": "Pilot",
+      "flag": "IN",
+      "risk_score": 19.2,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 16.808408,
+      "last_lon": 70.251043,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.496481+00:00"
+    },
+    {
+      "alert_id": "ALT-0020",
+      "mmsi": "41910020",
+      "vessel_name": "INS Sagardhwani",
       "vessel_type": "Tanker",
       "flag": "IN",
-      "risk_score": 19.1,
+      "risk_score": 19.2,
       "severity": "LOW",
       "anomaly_types": [
         "LOITERING_ANOMALY"
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 13.819261,
-      "last_lon": 71.203968,
+      "last_lat": 17.379577,
+      "last_lon": 72.031158,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.453446+00:00"
+      "generated_at": "2026-08-06T06:46:52.497520+00:00"
     },
     {
-      "alert_id": "ALT-0034",
-      "mmsi": "99800034",
-      "vessel_name": "Swarna Yamuna #35",
-      "vessel_type": "Bulk",
-      "flag": "SG",
+      "alert_id": "ALT-0028",
+      "mmsi": "41910028",
+      "vessel_name": "INS Ranvijay",
+      "vessel_type": "Pilot",
+      "flag": "IN",
+      "risk_score": 19.2,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 14.857444,
+      "last_lon": 74.464999,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.497551+00:00"
+    },
+    {
+      "alert_id": "ALT-0028",
+      "mmsi": "99800028",
+      "vessel_name": "SCI Sabarmati #29",
+      "vessel_type": "Cargo",
+      "flag": "LR",
       "risk_score": 19.1,
       "severity": "LOW",
       "anomaly_types": [
@@ -415,10 +397,28 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 25.998112,
-      "last_lon": 56.001512,
+      "last_lat": 12.00073,
+      "last_lon": 43.002354,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.453515+00:00"
+      "generated_at": "2026-08-06T06:46:52.494470+00:00"
+    },
+    {
+      "alert_id": "ALT-0059",
+      "mmsi": "99800059",
+      "vessel_name": "SCI Alaknanda #60",
+      "vessel_type": "Cargo",
+      "flag": "MH",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 12.00027,
+      "last_lon": 43.00248,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.494522+00:00"
     },
     {
       "alert_id": "ALT-0021",
@@ -436,14 +436,14 @@
       "last_lat": 11.999921,
       "last_lon": 43.002613,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.453577+00:00"
+      "generated_at": "2026-08-06T06:46:52.494553+00:00"
     },
     {
-      "alert_id": "ALT-0005",
-      "mmsi": "99800005",
-      "vessel_name": "SCI Kundan #6",
-      "vessel_type": "Cargo",
-      "flag": "HK",
+      "alert_id": "ALT-0032",
+      "mmsi": "41910032",
+      "vessel_name": "INS Kirpan",
+      "vessel_type": "Pilot",
+      "flag": "IN",
       "risk_score": 19.1,
       "severity": "LOW",
       "anomaly_types": [
@@ -451,15 +451,69 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 25.997739,
-      "last_lon": 56.001088,
+      "last_lat": 12.21723,
+      "last_lon": 74.478182,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.453673+00:00"
+      "generated_at": "2026-08-06T06:46:52.494791+00:00"
     },
     {
-      "alert_id": "ALT-0039",
-      "mmsi": "41910039",
-      "vessel_name": "Swarna Kamal (REGIONAL)",
+      "alert_id": "ALT-0056",
+      "mmsi": "99800056",
+      "vessel_name": "Desh Gaurav #57",
+      "vessel_type": "Tanker",
+      "flag": "PA",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 25.999194,
+      "last_lon": 56.002658,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.494871+00:00"
+    },
+    {
+      "alert_id": "ALT-0014",
+      "mmsi": "41910014",
+      "vessel_name": "INS Kadmatt",
+      "vessel_type": "Cargo",
+      "flag": "IN",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 21.611934,
+      "last_lon": 73.810707,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.495168+00:00"
+    },
+    {
+      "alert_id": "ALT-0034",
+      "mmsi": "41910034",
+      "vessel_name": "INS Kora",
+      "vessel_type": "Cargo",
+      "flag": "IN",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 21.246974,
+      "last_lon": 75.480131,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.495209+00:00"
+    },
+    {
+      "alert_id": "ALT-0029",
+      "mmsi": "41910029",
+      "vessel_name": "INS Teg",
       "vessel_type": "Tanker",
       "flag": "IN",
       "risk_score": 19.1,
@@ -469,10 +523,172 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 8.199731,
-      "last_lon": 73.155047,
+      "last_lat": 13.082249,
+      "last_lon": 73.144746,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.453714+00:00"
+      "generated_at": "2026-08-06T06:46:52.495313+00:00"
+    },
+    {
+      "alert_id": "ALT-0002",
+      "mmsi": "41910002",
+      "vessel_name": "INS Visakhapatnam",
+      "vessel_type": "Cargo",
+      "flag": "IN",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 12.291456,
+      "last_lon": 71.385119,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.495918+00:00"
+    },
+    {
+      "alert_id": "ALT-0034",
+      "mmsi": "99800034",
+      "vessel_name": "Swarna Yamuna #35",
+      "vessel_type": "Bulk",
+      "flag": "SG",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 25.998112,
+      "last_lon": 56.001512,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.496020+00:00"
+    },
+    {
+      "alert_id": "ALT-0019",
+      "mmsi": "41910019",
+      "vessel_name": "INS Sunayna",
+      "vessel_type": "Cargo",
+      "flag": "IN",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 14.004507,
+      "last_lon": 72.863207,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.496159+00:00"
+    },
+    {
+      "alert_id": "ALT-0036",
+      "mmsi": "41910036",
+      "vessel_name": "Swarna Mala (REGIONAL)",
+      "vessel_type": "Pilot",
+      "flag": "IN",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 10.165841,
+      "last_lon": 71.327109,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.496291+00:00"
+    },
+    {
+      "alert_id": "ALT-0058",
+      "mmsi": "99800058",
+      "vessel_name": "Desh Vishal #59",
+      "vessel_type": "Bulk",
+      "flag": "LR",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 25.998836,
+      "last_lon": 56.002104,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.496356+00:00"
+    },
+    {
+      "alert_id": "ALT-0031",
+      "mmsi": "41910031",
+      "vessel_name": "INS Khukri",
+      "vessel_type": "Tanker",
+      "flag": "IN",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 11.048665,
+      "last_lon": 70.834197,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.496413+00:00"
+    },
+    {
+      "alert_id": "ALT-0017",
+      "mmsi": "99800017",
+      "vessel_name": "Desh Prem #18",
+      "vessel_type": "Tanker",
+      "flag": "LR",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 12.000334,
+      "last_lon": 43.002369,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.496548+00:00"
+    },
+    {
+      "alert_id": "ALT-0004",
+      "mmsi": "41910004",
+      "vessel_name": "INS Kolkata",
+      "vessel_type": "Tanker",
+      "flag": "IN",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 13.819261,
+      "last_lon": 71.203968,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.496615+00:00"
+    },
+    {
+      "alert_id": "ALT-0036",
+      "mmsi": "99800036",
+      "vessel_name": "SCI Vikram #37",
+      "vessel_type": "Cargo",
+      "flag": "PA",
+      "risk_score": 19.1,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 4.999497,
+      "last_lon": 60.002418,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.496683+00:00"
     },
     {
       "alert_id": "ALT-0011",
@@ -492,12 +708,12 @@
       "last_lat": 18.662078,
       "last_lon": 74.343998,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.453867+00:00"
+      "generated_at": "2026-08-06T06:46:52.496836+00:00"
     },
     {
-      "alert_id": "ALT-0018",
-      "mmsi": "41910018",
-      "vessel_name": "INS Saryu",
+      "alert_id": "ALT-0039",
+      "mmsi": "41910039",
+      "vessel_name": "Swarna Kamal (REGIONAL)",
       "vessel_type": "Tanker",
       "flag": "IN",
       "risk_score": 19.1,
@@ -507,16 +723,16 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 20.142145,
-      "last_lon": 74.924082,
+      "last_lat": 8.199731,
+      "last_lon": 73.155047,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.453969+00:00"
+      "generated_at": "2026-08-06T06:46:52.496888+00:00"
     },
     {
-      "alert_id": "ALT-0059",
-      "mmsi": "99800059",
-      "vessel_name": "SCI Alaknanda #60",
-      "vessel_type": "Cargo",
+      "alert_id": "ALT-0012",
+      "mmsi": "99800012",
+      "vessel_name": "SCI Mukta #13",
+      "vessel_type": "Bulk",
       "flag": "MH",
       "risk_score": 19.1,
       "severity": "LOW",
@@ -525,17 +741,17 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 12.00027,
-      "last_lon": 43.00248,
+      "last_lat": 25.998266,
+      "last_lon": 56.001857,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454106+00:00"
+      "generated_at": "2026-08-06T06:46:52.496991+00:00"
     },
     {
-      "alert_id": "ALT-0036",
-      "mmsi": "99800036",
-      "vessel_name": "SCI Vikram #37",
-      "vessel_type": "Cargo",
-      "flag": "PA",
+      "alert_id": "ALT-0027",
+      "mmsi": "41910027",
+      "vessel_name": "INS Ranvir",
+      "vessel_type": "Tanker",
+      "flag": "IN",
       "risk_score": 19.1,
       "severity": "LOW",
       "anomaly_types": [
@@ -543,10 +759,10 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 4.999497,
-      "last_lon": 60.002418,
+      "last_lat": 12.223674,
+      "last_lon": 71.800637,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454169+00:00"
+      "generated_at": "2026-08-06T06:46:52.497086+00:00"
     },
     {
       "alert_id": "ALT-0021",
@@ -566,48 +782,12 @@
       "last_lat": 15.864058,
       "last_lon": 71.346016,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454254+00:00"
+      "generated_at": "2026-08-06T06:46:52.497188+00:00"
     },
     {
-      "alert_id": "ALT-0019",
-      "mmsi": "41910019",
-      "vessel_name": "INS Sunayna",
-      "vessel_type": "Cargo",
-      "flag": "IN",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 14.004507,
-      "last_lon": 72.863207,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454283+00:00"
-    },
-    {
-      "alert_id": "ALT-0036",
-      "mmsi": "41910036",
-      "vessel_name": "Swarna Mala (REGIONAL)",
-      "vessel_type": "Pilot",
-      "flag": "IN",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 10.165841,
-      "last_lon": 71.327109,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454365+00:00"
-    },
-    {
-      "alert_id": "ALT-0029",
-      "mmsi": "41910029",
-      "vessel_name": "INS Teg",
+      "alert_id": "ALT-0018",
+      "mmsi": "41910018",
+      "vessel_name": "INS Saryu",
       "vessel_type": "Tanker",
       "flag": "IN",
       "risk_score": 19.1,
@@ -617,35 +797,17 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 13.082249,
-      "last_lon": 73.144746,
+      "last_lat": 20.142145,
+      "last_lon": 74.924082,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454393+00:00"
+      "generated_at": "2026-08-06T06:46:52.497221+00:00"
     },
     {
-      "alert_id": "ALT-0027",
-      "mmsi": "41910027",
-      "vessel_name": "INS Ranvir",
-      "vessel_type": "Tanker",
-      "flag": "IN",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.223674,
-      "last_lon": 71.800637,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454629+00:00"
-    },
-    {
-      "alert_id": "ALT-0034",
-      "mmsi": "41910034",
-      "vessel_name": "INS Kora",
+      "alert_id": "ALT-0005",
+      "mmsi": "99800005",
+      "vessel_name": "SCI Kundan #6",
       "vessel_type": "Cargo",
-      "flag": "IN",
+      "flag": "HK",
       "risk_score": 19.1,
       "severity": "LOW",
       "anomaly_types": [
@@ -653,196 +815,16 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 21.246974,
-      "last_lon": 75.480131,
+      "last_lat": 25.997739,
+      "last_lon": 56.001088,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454763+00:00"
+      "generated_at": "2026-08-06T06:46:52.497360+00:00"
     },
     {
-      "alert_id": "ALT-0058",
-      "mmsi": "99800058",
-      "vessel_name": "Desh Vishal #59",
+      "alert_id": "ALT-0052",
+      "mmsi": "99800052",
+      "vessel_name": "SCI Mukta #53",
       "vessel_type": "Bulk",
-      "flag": "LR",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.998836,
-      "last_lon": 56.002104,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454894+00:00"
-    },
-    {
-      "alert_id": "ALT-0014",
-      "mmsi": "41910014",
-      "vessel_name": "INS Kadmatt",
-      "vessel_type": "Cargo",
-      "flag": "IN",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 21.611934,
-      "last_lon": 73.810707,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454969+00:00"
-    },
-    {
-      "alert_id": "ALT-0031",
-      "mmsi": "41910031",
-      "vessel_name": "INS Khukri",
-      "vessel_type": "Tanker",
-      "flag": "IN",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 11.048665,
-      "last_lon": 70.834197,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455116+00:00"
-    },
-    {
-      "alert_id": "ALT-0032",
-      "mmsi": "41910032",
-      "vessel_name": "INS Kirpan",
-      "vessel_type": "Pilot",
-      "flag": "IN",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.21723,
-      "last_lon": 74.478182,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455181+00:00"
-    },
-    {
-      "alert_id": "ALT-0017",
-      "mmsi": "99800017",
-      "vessel_name": "Desh Prem #18",
-      "vessel_type": "Tanker",
-      "flag": "LR",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.000334,
-      "last_lon": 43.002369,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455210+00:00"
-    },
-    {
-      "alert_id": "ALT-0056",
-      "mmsi": "99800056",
-      "vessel_name": "Desh Gaurav #57",
-      "vessel_type": "Tanker",
-      "flag": "PA",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.999194,
-      "last_lon": 56.002658,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455228+00:00"
-    },
-    {
-      "alert_id": "ALT-0002",
-      "mmsi": "41910002",
-      "vessel_name": "INS Visakhapatnam",
-      "vessel_type": "Cargo",
-      "flag": "IN",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.291456,
-      "last_lon": 71.385119,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455512+00:00"
-    },
-    {
-      "alert_id": "ALT-0012",
-      "mmsi": "99800012",
-      "vessel_name": "SCI Mukta #13",
-      "vessel_type": "Bulk",
-      "flag": "MH",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.998266,
-      "last_lon": 56.001857,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455938+00:00"
-    },
-    {
-      "alert_id": "ALT-0028",
-      "mmsi": "99800028",
-      "vessel_name": "SCI Sabarmati #29",
-      "vessel_type": "Cargo",
-      "flag": "LR",
-      "risk_score": 19.1,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.00073,
-      "last_lon": 43.002354,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.456322+00:00"
-    },
-    {
-      "alert_id": "ALT-0037",
-      "mmsi": "99800037",
-      "vessel_name": "SCI Samudra #38",
-      "vessel_type": "Cargo",
-      "flag": "PA",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.000498,
-      "last_lon": 43.002516,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.453647+00:00"
-    },
-    {
-      "alert_id": "ALT-0048",
-      "mmsi": "99800048",
-      "vessel_name": "m.v. Kavaratti #49",
-      "vessel_type": "Tanker",
       "flag": "HK",
       "risk_score": 19.0,
       "severity": "LOW",
@@ -851,10 +833,10 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 25.998661,
-      "last_lon": 56.002373,
+      "last_lat": 4.998533,
+      "last_lon": 60.002219,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.453744+00:00"
+      "generated_at": "2026-08-06T06:46:52.494320+00:00"
     },
     {
       "alert_id": "ALT-0037",
@@ -874,7 +856,43 @@
       "last_lat": 12.2409,
       "last_lon": 73.739671,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.453900+00:00"
+      "generated_at": "2026-08-06T06:46:52.494629+00:00"
+    },
+    {
+      "alert_id": "ALT-0015",
+      "mmsi": "99800015",
+      "vessel_name": "Desh Shanti #16",
+      "vessel_type": "Tanker",
+      "flag": "LR",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 25.999003,
+      "last_lon": 56.002844,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.495010+00:00"
+    },
+    {
+      "alert_id": "ALT-0025",
+      "mmsi": "41910025",
+      "vessel_name": "INS Mumbai",
+      "vessel_type": "Pilot",
+      "flag": "IN",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 9.098788,
+      "last_lon": 73.679426,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.495047+00:00"
     },
     {
       "alert_id": "ALT-0055",
@@ -892,7 +910,7 @@
       "last_lat": 25.998546,
       "last_lon": 56.002371,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.453990+00:00"
+      "generated_at": "2026-08-06T06:46:52.495139+00:00"
     },
     {
       "alert_id": "ALT-0010",
@@ -910,7 +928,79 @@
       "last_lat": 21.167241,
       "last_lon": 72.203237,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454034+00:00"
+      "generated_at": "2026-08-06T06:46:52.495258+00:00"
+    },
+    {
+      "alert_id": "ALT-0042",
+      "mmsi": "99800042",
+      "vessel_name": "Swarna Pushp #43",
+      "vessel_type": "Cargo",
+      "flag": "SG",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 11.998483,
+      "last_lon": 43.001881,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.495420+00:00"
+    },
+    {
+      "alert_id": "ALT-0010",
+      "mmsi": "99800010",
+      "vessel_name": "m.v. Corals #11",
+      "vessel_type": "Tanker",
+      "flag": "PA",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 12.000165,
+      "last_lon": 43.002747,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.495466+00:00"
+    },
+    {
+      "alert_id": "ALT-0038",
+      "mmsi": "41910038",
+      "vessel_name": "Swarna Jayanti (REGIONAL)",
+      "vessel_type": "Cargo",
+      "flag": "IN",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 12.34707,
+      "last_lon": 72.914902,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.495509+00:00"
+    },
+    {
+      "alert_id": "ALT-0032",
+      "mmsi": "99800032",
+      "vessel_name": "Swarna Narmada #33",
+      "vessel_type": "Cargo",
+      "flag": "MH",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 5.00049,
+      "last_lon": 60.002549,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.495562+00:00"
     },
     {
       "alert_id": "ALT-0006",
@@ -930,79 +1020,7 @@
       "last_lat": 14.477724,
       "last_lon": 73.32841,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454143+00:00"
-    },
-    {
-      "alert_id": "ALT-0022",
-      "mmsi": "41910022",
-      "vessel_name": "INS Shakti",
-      "vessel_type": "Cargo",
-      "flag": "IN",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 15.666795,
-      "last_lon": 70.51285,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454205+00:00"
-    },
-    {
-      "alert_id": "ALT-0011",
-      "mmsi": "99800011",
-      "vessel_name": "SCI Ahimsa #12",
-      "vessel_type": "Tanker",
-      "flag": "PA",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.998027,
-      "last_lon": 56.002345,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454232+00:00"
-    },
-    {
-      "alert_id": "ALT-0042",
-      "mmsi": "99800042",
-      "vessel_name": "Swarna Pushp #43",
-      "vessel_type": "Cargo",
-      "flag": "SG",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 11.998483,
-      "last_lon": 43.001881,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454305+00:00"
-    },
-    {
-      "alert_id": "ALT-0006",
-      "mmsi": "99800006",
-      "vessel_name": "SCI Yamuna #7",
-      "vessel_type": "Bulk",
-      "flag": "LR",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.000537,
-      "last_lon": 43.002671,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454415+00:00"
+      "generated_at": "2026-08-06T06:46:52.495800+00:00"
     },
     {
       "alert_id": "ALT-0000",
@@ -1020,12 +1038,12 @@
       "last_lat": 13.166778,
       "last_lon": 73.314008,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454489+00:00"
+      "generated_at": "2026-08-06T06:46:52.495832+00:00"
     },
     {
-      "alert_id": "ALT-0018",
-      "mmsi": "99800018",
-      "vessel_name": "Desh Vishal #19",
+      "alert_id": "ALT-0006",
+      "mmsi": "99800006",
+      "vessel_name": "SCI Yamuna #7",
       "vessel_type": "Bulk",
       "flag": "LR",
       "risk_score": 19.0,
@@ -1035,17 +1053,17 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 11.998249,
-      "last_lon": 43.002303,
+      "last_lat": 12.000537,
+      "last_lon": 43.002671,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454691+00:00"
+      "generated_at": "2026-08-06T06:46:52.495876+00:00"
     },
     {
-      "alert_id": "ALT-0038",
-      "mmsi": "41910038",
-      "vessel_name": "Swarna Jayanti (REGIONAL)",
+      "alert_id": "ALT-0047",
+      "mmsi": "99800047",
+      "vessel_name": "SCI Narmada #48",
       "vessel_type": "Cargo",
-      "flag": "IN",
+      "flag": "MH",
       "risk_score": 19.0,
       "severity": "LOW",
       "anomaly_types": [
@@ -1053,17 +1071,17 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 12.34707,
-      "last_lon": 72.914902,
+      "last_lat": 11.999875,
+      "last_lon": 43.002783,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454721+00:00"
+      "generated_at": "2026-08-06T06:46:52.495989+00:00"
     },
     {
-      "alert_id": "ALT-0020",
-      "mmsi": "99800020",
-      "vessel_name": "SCI Ganga #21",
-      "vessel_type": "Bulk",
-      "flag": "PA",
+      "alert_id": "ALT-0003",
+      "mmsi": "99800003",
+      "vessel_name": "Swarna Jayanti #4",
+      "vessel_type": "Tanker",
+      "flag": "MH",
       "risk_score": 19.0,
       "severity": "LOW",
       "anomaly_types": [
@@ -1071,10 +1089,10 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 5.002355,
-      "last_lon": 60.001742,
+      "last_lat": 11.999284,
+      "last_lon": 43.002523,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454789+00:00"
+      "generated_at": "2026-08-06T06:46:52.496195+00:00"
     },
     {
       "alert_id": "ALT-0043",
@@ -1092,7 +1110,169 @@
       "last_lat": 12.00012,
       "last_lon": 43.00287,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454842+00:00"
+      "generated_at": "2026-08-06T06:46:52.496256+00:00"
+    },
+    {
+      "alert_id": "ALT-0011",
+      "mmsi": "99800011",
+      "vessel_name": "SCI Ahimsa #12",
+      "vessel_type": "Tanker",
+      "flag": "PA",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 25.998027,
+      "last_lon": 56.002345,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.496327+00:00"
+    },
+    {
+      "alert_id": "ALT-0048",
+      "mmsi": "99800048",
+      "vessel_name": "m.v. Kavaratti #49",
+      "vessel_type": "Tanker",
+      "flag": "HK",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 25.998661,
+      "last_lon": 56.002373,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.496381+00:00"
+    },
+    {
+      "alert_id": "ALT-0013",
+      "mmsi": "99800013",
+      "vessel_name": "SCI Saraswati #14",
+      "vessel_type": "Bulk",
+      "flag": "PA",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 4.998176,
+      "last_lon": 60.001859,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.496447+00:00"
+    },
+    {
+      "alert_id": "ALT-0022",
+      "mmsi": "41910022",
+      "vessel_name": "INS Shakti",
+      "vessel_type": "Cargo",
+      "flag": "IN",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 15.666795,
+      "last_lon": 70.51285,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.496925+00:00"
+    },
+    {
+      "alert_id": "ALT-0033",
+      "mmsi": "41910033",
+      "vessel_name": "INS Khanjar",
+      "vessel_type": "Pilot",
+      "flag": "IN",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 20.181321,
+      "last_lon": 73.21692,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.496958+00:00"
+    },
+    {
+      "alert_id": "ALT-0037",
+      "mmsi": "99800037",
+      "vessel_name": "SCI Samudra #38",
+      "vessel_type": "Cargo",
+      "flag": "PA",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 12.000498,
+      "last_lon": 43.002516,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.497118+00:00"
+    },
+    {
+      "alert_id": "ALT-0020",
+      "mmsi": "99800020",
+      "vessel_name": "SCI Ganga #21",
+      "vessel_type": "Bulk",
+      "flag": "PA",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 5.002355,
+      "last_lon": 60.001742,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.497253+00:00"
+    },
+    {
+      "alert_id": "ALT-0054",
+      "mmsi": "99800054",
+      "vessel_name": "Desh Bhakta #55",
+      "vessel_type": "Bulk",
+      "flag": "SG",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 4.999923,
+      "last_lon": 60.003017,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.497271+00:00"
+    },
+    {
+      "alert_id": "ALT-0008",
+      "mmsi": "41910008",
+      "vessel_name": "INS Talwar",
+      "vessel_type": "Tanker",
+      "flag": "IN",
+      "risk_score": 19.0,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 9.753816,
+      "last_lon": 71.904839,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.497427+00:00"
     },
     {
       "alert_id": "ALT-0015",
@@ -1112,385 +1292,25 @@
       "last_lat": 15.239458,
       "last_lon": 74.933057,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455076+00:00"
+      "generated_at": "2026-08-06T06:46:52.497589+00:00"
     },
     {
-      "alert_id": "ALT-0054",
-      "mmsi": "99800054",
-      "vessel_name": "Desh Bhakta #55",
-      "vessel_type": "Bulk",
-      "flag": "SG",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 4.999923,
-      "last_lon": 60.003017,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455251+00:00"
-    },
-    {
-      "alert_id": "ALT-0052",
-      "mmsi": "99800052",
-      "vessel_name": "SCI Mukta #53",
-      "vessel_type": "Bulk",
-      "flag": "HK",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 4.998533,
-      "last_lon": 60.002219,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455329+00:00"
-    },
-    {
-      "alert_id": "ALT-0003",
-      "mmsi": "99800003",
-      "vessel_name": "Swarna Jayanti #4",
-      "vessel_type": "Tanker",
-      "flag": "MH",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 11.999284,
-      "last_lon": 43.002523,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455422+00:00"
-    },
-    {
-      "alert_id": "ALT-0033",
-      "mmsi": "41910033",
-      "vessel_name": "INS Khanjar",
-      "vessel_type": "Pilot",
-      "flag": "IN",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 20.181321,
-      "last_lon": 73.21692,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455570+00:00"
-    },
-    {
-      "alert_id": "ALT-0015",
-      "mmsi": "99800015",
-      "vessel_name": "Desh Shanti #16",
-      "vessel_type": "Tanker",
-      "flag": "LR",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.999003,
-      "last_lon": 56.002844,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455623+00:00"
-    },
-    {
-      "alert_id": "ALT-0010",
-      "mmsi": "99800010",
-      "vessel_name": "m.v. Corals #11",
-      "vessel_type": "Tanker",
-      "flag": "PA",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.000165,
-      "last_lon": 43.002747,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455726+00:00"
-    },
-    {
-      "alert_id": "ALT-0013",
-      "mmsi": "99800013",
-      "vessel_name": "SCI Saraswati #14",
-      "vessel_type": "Bulk",
-      "flag": "PA",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 4.998176,
-      "last_lon": 60.001859,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.456201+00:00"
-    },
-    {
-      "alert_id": "ALT-0032",
-      "mmsi": "99800032",
-      "vessel_name": "Swarna Narmada #33",
-      "vessel_type": "Cargo",
-      "flag": "MH",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 5.00049,
-      "last_lon": 60.002549,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.456235+00:00"
-    },
-    {
-      "alert_id": "ALT-0008",
-      "mmsi": "41910008",
-      "vessel_name": "INS Talwar",
-      "vessel_type": "Tanker",
-      "flag": "IN",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 9.753816,
-      "last_lon": 71.904839,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.456413+00:00"
-    },
-    {
-      "alert_id": "ALT-0025",
-      "mmsi": "41910025",
-      "vessel_name": "INS Mumbai",
-      "vessel_type": "Pilot",
-      "flag": "IN",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 9.098788,
-      "last_lon": 73.679426,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.456439+00:00"
-    },
-    {
-      "alert_id": "ALT-0047",
-      "mmsi": "99800047",
-      "vessel_name": "SCI Narmada #48",
-      "vessel_type": "Cargo",
-      "flag": "MH",
-      "risk_score": 19.0,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 11.999875,
-      "last_lon": 43.002783,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.456521+00:00"
-    },
-    {
-      "alert_id": "ALT-0039",
-      "mmsi": "99800039",
-      "vessel_name": "SCI Nalanda #40",
-      "vessel_type": "Bulk",
-      "flag": "MH",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.997208,
-      "last_lon": 56.000915,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.453473+00:00"
-    },
-    {
-      "alert_id": "ALT-0022",
-      "mmsi": "99800022",
-      "vessel_name": "SCI Mahanadi #23",
+      "alert_id": "ALT-0018",
+      "mmsi": "99800018",
+      "vessel_name": "Desh Vishal #19",
       "vessel_type": "Bulk",
       "flag": "LR",
-      "risk_score": 18.9,
+      "risk_score": 19.0,
       "severity": "LOW",
       "anomaly_types": [
         "LOITERING_ANOMALY"
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 11.999626,
-      "last_lon": 43.003052,
+      "last_lat": 11.998249,
+      "last_lon": 43.002303,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.453924+00:00"
-    },
-    {
-      "alert_id": "ALT-0009",
-      "mmsi": "99800009",
-      "vessel_name": "m.v. Swaraj Dweep #10",
-      "vessel_type": "Bulk",
-      "flag": "SG",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.998658,
-      "last_lon": 56.003174,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454554+00:00"
-    },
-    {
-      "alert_id": "ALT-0030",
-      "mmsi": "99800030",
-      "vessel_name": "Swarna Godavari #31",
-      "vessel_type": "Tanker",
-      "flag": "SG",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.997411,
-      "last_lon": 56.002085,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454657+00:00"
-    },
-    {
-      "alert_id": "ALT-0025",
-      "mmsi": "99800025",
-      "vessel_name": "SCI Indus #26",
-      "vessel_type": "Bulk",
-      "flag": "PA",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.997643,
-      "last_lon": 56.002251,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454994+00:00"
-    },
-    {
-      "alert_id": "ALT-0008",
-      "mmsi": "99800008",
-      "vessel_name": "m.v. Kavaratti #9",
-      "vessel_type": "Bulk",
-      "flag": "MH",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.001069,
-      "last_lon": 43.002502,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455048+00:00"
-    },
-    {
-      "alert_id": "ALT-0024",
-      "mmsi": "99800024",
-      "vessel_name": "SCI Kaveri #25",
-      "vessel_type": "Cargo",
-      "flag": "LR",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.998589,
-      "last_lon": 56.002846,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455142+00:00"
-    },
-    {
-      "alert_id": "ALT-0050",
-      "mmsi": "99800050",
-      "vessel_name": "m.v. Corals #51",
-      "vessel_type": "Bulk",
-      "flag": "SG",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 25.997687,
-      "last_lon": 56.00213,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455437+00:00"
-    },
-    {
-      "alert_id": "ALT-0027",
-      "mmsi": "99800027",
-      "vessel_name": "SCI Tista #28",
-      "vessel_type": "Cargo",
-      "flag": "MH",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 11.99817,
-      "last_lon": 43.002249,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455663+00:00"
-    },
-    {
-      "alert_id": "ALT-0016",
-      "mmsi": "99800016",
-      "vessel_name": "Desh Gaurav #17",
-      "vessel_type": "Bulk",
-      "flag": "HK",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.000454,
-      "last_lon": 43.002875,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455685+00:00"
+      "generated_at": "2026-08-06T06:46:52.497617+00:00"
     },
     {
       "alert_id": "ALT-0001",
@@ -1508,12 +1328,12 @@
       "last_lat": 5.001293,
       "last_lon": 60.002802,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455815+00:00"
+      "generated_at": "2026-08-06T06:46:52.494418+00:00"
     },
     {
-      "alert_id": "ALT-0053",
-      "mmsi": "99800053",
-      "vessel_name": "SCI Saraswati #54",
+      "alert_id": "ALT-0039",
+      "mmsi": "99800039",
+      "vessel_name": "SCI Nalanda #40",
       "vessel_type": "Bulk",
       "flag": "MH",
       "risk_score": 18.9,
@@ -1523,52 +1343,16 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 25.997815,
-      "last_lon": 56.002103,
+      "last_lat": 25.997208,
+      "last_lon": 56.000915,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455864+00:00"
+      "generated_at": "2026-08-06T06:46:52.494506+00:00"
     },
     {
-      "alert_id": "ALT-0029",
-      "mmsi": "99800029",
-      "vessel_name": "Swarna Sindhu #30",
-      "vessel_type": "Tanker",
-      "flag": "PA",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 4.999794,
-      "last_lon": 60.002909,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455985+00:00"
-    },
-    {
-      "alert_id": "ALT-0031",
-      "mmsi": "99800031",
-      "vessel_name": "Swarna Kaveri #32",
+      "alert_id": "ALT-0050",
+      "mmsi": "99800050",
+      "vessel_name": "m.v. Corals #51",
       "vessel_type": "Bulk",
-      "flag": "HK",
-      "risk_score": 18.9,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 11.998678,
-      "last_lon": 43.002777,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.456175+00:00"
-    },
-    {
-      "alert_id": "ALT-0014",
-      "mmsi": "99800014",
-      "vessel_name": "Desh Bhakta #15",
-      "vessel_type": "Cargo",
       "flag": "SG",
       "risk_score": 18.9,
       "severity": "LOW",
@@ -1577,16 +1361,52 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 25.99743,
-      "last_lon": 56.001513,
+      "last_lat": 25.997687,
+      "last_lon": 56.00213,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.456345+00:00"
+      "generated_at": "2026-08-06T06:46:52.494568+00:00"
     },
     {
-      "alert_id": "ALT-0019",
-      "mmsi": "99800019",
-      "vessel_name": "SCI Alaknanda #20",
-      "vessel_type": "Tanker",
+      "alert_id": "ALT-0024",
+      "mmsi": "99800024",
+      "vessel_name": "SCI Kaveri #25",
+      "vessel_type": "Cargo",
+      "flag": "LR",
+      "risk_score": 18.9,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 25.998589,
+      "last_lon": 56.002846,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.494593+00:00"
+    },
+    {
+      "alert_id": "ALT-0008",
+      "mmsi": "99800008",
+      "vessel_name": "m.v. Kavaratti #9",
+      "vessel_type": "Bulk",
+      "flag": "MH",
+      "risk_score": 18.9,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 12.001069,
+      "last_lon": 43.002502,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.494662+00:00"
+    },
+    {
+      "alert_id": "ALT-0025",
+      "mmsi": "99800025",
+      "vessel_name": "SCI Indus #26",
+      "vessel_type": "Bulk",
       "flag": "PA",
       "risk_score": 18.9,
       "severity": "LOW",
@@ -1595,10 +1415,10 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 5.000803,
-      "last_lon": 60.003139,
+      "last_lat": 25.997643,
+      "last_lon": 56.002251,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.456383+00:00"
+      "generated_at": "2026-08-06T06:46:52.495377+00:00"
     },
     {
       "alert_id": "ALT-0040",
@@ -1616,169 +1436,187 @@
       "last_lat": 5.001879,
       "last_lon": 60.002652,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.456504+00:00"
+      "generated_at": "2026-08-06T06:46:52.495719+00:00"
     },
     {
-      "alert_id": "ALT-0038",
-      "mmsi": "99800038",
-      "vessel_name": "SCI Sagar #39",
-      "vessel_type": "Cargo",
+      "alert_id": "ALT-0022",
+      "mmsi": "99800022",
+      "vessel_name": "SCI Mahanadi #23",
+      "vessel_type": "Bulk",
       "flag": "LR",
-      "risk_score": 18.8,
+      "risk_score": 18.9,
       "severity": "LOW",
       "anomaly_types": [
         "LOITERING_ANOMALY"
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 25.998455,
-      "last_lon": 56.003221,
+      "last_lat": 11.999626,
+      "last_lon": 43.003052,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.453598+00:00"
+      "generated_at": "2026-08-06T06:46:52.495755+00:00"
     },
     {
-      "alert_id": "ALT-0004",
-      "mmsi": "99800004",
-      "vessel_name": "Swarna Kamal #5",
-      "vessel_type": "Bulk",
-      "flag": "PA",
-      "risk_score": 18.8,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 4.997748,
-      "last_lon": 60.002437,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454067+00:00"
-    },
-    {
-      "alert_id": "ALT-0026",
-      "mmsi": "99800026",
-      "vessel_name": "SCI Brahmaputra #27",
-      "vessel_type": "Bulk",
-      "flag": "PA",
-      "risk_score": 18.8,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 5.00303,
-      "last_lon": 60.001538,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454472+00:00"
-    },
-    {
-      "alert_id": "ALT-0041",
-      "mmsi": "99800041",
-      "vessel_name": "Swarna Mala #42",
+      "alert_id": "ALT-0031",
+      "mmsi": "99800031",
+      "vessel_name": "Swarna Kaveri #32",
       "vessel_type": "Bulk",
       "flag": "HK",
-      "risk_score": 18.8,
+      "risk_score": 18.9,
       "severity": "LOW",
       "anomaly_types": [
         "LOITERING_ANOMALY"
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 11.998628,
-      "last_lon": 43.003246,
+      "last_lat": 11.998678,
+      "last_lon": 43.002777,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454510+00:00"
+      "generated_at": "2026-08-06T06:46:52.496516+00:00"
     },
     {
-      "alert_id": "ALT-0051",
-      "mmsi": "99800051",
-      "vessel_name": "SCI Ahimsa #52",
+      "alert_id": "ALT-0029",
+      "mmsi": "99800029",
+      "vessel_name": "Swarna Sindhu #30",
+      "vessel_type": "Tanker",
+      "flag": "PA",
+      "risk_score": 18.9,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 4.999794,
+      "last_lon": 60.002909,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.496712+00:00"
+    },
+    {
+      "alert_id": "ALT-0030",
+      "mmsi": "99800030",
+      "vessel_name": "Swarna Godavari #31",
+      "vessel_type": "Tanker",
+      "flag": "SG",
+      "risk_score": 18.9,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 25.997411,
+      "last_lon": 56.002085,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.496736+00:00"
+    },
+    {
+      "alert_id": "ALT-0019",
+      "mmsi": "99800019",
+      "vessel_name": "SCI Alaknanda #20",
+      "vessel_type": "Tanker",
+      "flag": "PA",
+      "risk_score": 18.9,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 5.000803,
+      "last_lon": 60.003139,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.496802+00:00"
+    },
+    {
+      "alert_id": "ALT-0027",
+      "mmsi": "99800027",
+      "vessel_name": "SCI Tista #28",
+      "vessel_type": "Cargo",
+      "flag": "MH",
+      "risk_score": 18.9,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 11.99817,
+      "last_lon": 43.002249,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.497151+00:00"
+    },
+    {
+      "alert_id": "ALT-0053",
+      "mmsi": "99800053",
+      "vessel_name": "SCI Saraswati #54",
+      "vessel_type": "Bulk",
+      "flag": "MH",
+      "risk_score": 18.9,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 25.997815,
+      "last_lon": 56.002103,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.497287+00:00"
+    },
+    {
+      "alert_id": "ALT-0016",
+      "mmsi": "99800016",
+      "vessel_name": "Desh Gaurav #17",
+      "vessel_type": "Bulk",
+      "flag": "HK",
+      "risk_score": 18.9,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 12.000454,
+      "last_lon": 43.002875,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.497318+00:00"
+    },
+    {
+      "alert_id": "ALT-0009",
+      "mmsi": "99800009",
+      "vessel_name": "m.v. Swaraj Dweep #10",
+      "vessel_type": "Bulk",
+      "flag": "SG",
+      "risk_score": 18.9,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 25.998658,
+      "last_lon": 56.003174,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.497388+00:00"
+    },
+    {
+      "alert_id": "ALT-0014",
+      "mmsi": "99800014",
+      "vessel_name": "Desh Bhakta #15",
       "vessel_type": "Cargo",
       "flag": "SG",
-      "risk_score": 18.8,
+      "risk_score": 18.9,
       "severity": "LOW",
       "anomaly_types": [
         "LOITERING_ANOMALY"
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 5.002058,
-      "last_lon": 60.002722,
+      "last_lat": 25.99743,
+      "last_lon": 56.001513,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454591+00:00"
-    },
-    {
-      "alert_id": "ALT-0045",
-      "mmsi": "99800045",
-      "vessel_name": "SCI Kundan #46",
-      "vessel_type": "Bulk",
-      "flag": "PA",
-      "risk_score": 18.8,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.001108,
-      "last_lon": 43.002737,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454808+00:00"
-    },
-    {
-      "alert_id": "ALT-0033",
-      "mmsi": "99800033",
-      "vessel_name": "Swarna Tapi #34",
-      "vessel_type": "Cargo",
-      "flag": "HK",
-      "risk_score": 18.8,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 5.001916,
-      "last_lon": 60.002652,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455019+00:00"
-    },
-    {
-      "alert_id": "ALT-0035",
-      "mmsi": "99800035",
-      "vessel_name": "SCI Harsha #36",
-      "vessel_type": "Tanker",
-      "flag": "HK",
-      "risk_score": 18.8,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 4.998796,
-      "last_lon": 60.003033,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455164+00:00"
-    },
-    {
-      "alert_id": "ALT-0000",
-      "mmsi": "99800000",
-      "vessel_name": "SCI Ratna #1",
-      "vessel_type": "Cargo",
-      "flag": "HK",
-      "risk_score": 18.8,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 12.000151,
-      "last_lon": 43.003454,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455288+00:00"
+      "generated_at": "2026-08-06T06:46:52.497455+00:00"
     },
     {
       "alert_id": "ALT-0057",
@@ -1796,7 +1634,25 @@
       "last_lat": 4.998443,
       "last_lon": 60.0029,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455389+00:00"
+      "generated_at": "2026-08-06T06:46:52.494381+00:00"
+    },
+    {
+      "alert_id": "ALT-0045",
+      "mmsi": "99800045",
+      "vessel_name": "SCI Kundan #46",
+      "vessel_type": "Bulk",
+      "flag": "PA",
+      "risk_score": 18.8,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 12.001108,
+      "last_lon": 43.002737,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.494439+00:00"
     },
     {
       "alert_id": "ALT-0007",
@@ -1814,13 +1670,13 @@
       "last_lat": 25.996782,
       "last_lon": 56.001654,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455472+00:00"
+      "generated_at": "2026-08-06T06:46:52.494752+00:00"
     },
     {
-      "alert_id": "ALT-0044",
-      "mmsi": "99800044",
-      "vessel_name": "Swarna Kamal #45",
-      "vessel_type": "Cargo",
+      "alert_id": "ALT-0004",
+      "mmsi": "99800004",
+      "vessel_name": "Swarna Kamal #5",
+      "vessel_type": "Bulk",
       "flag": "PA",
       "risk_score": 18.8,
       "severity": "LOW",
@@ -1829,10 +1685,10 @@
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 5.002623,
-      "last_lon": 60.002022,
+      "last_lat": 4.997748,
+      "last_lon": 60.002437,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.455784+00:00"
+      "generated_at": "2026-08-06T06:46:52.494819+00:00"
     },
     {
       "alert_id": "ALT-0049",
@@ -1850,43 +1706,151 @@
       "last_lat": 11.998597,
       "last_lon": 43.002934,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.456259+00:00"
+      "generated_at": "2026-08-06T06:46:52.494978+00:00"
     },
     {
-      "alert_id": "ALT-0023",
-      "mmsi": "99800023",
-      "vessel_name": "SCI Tapi #24",
-      "vessel_type": "Tanker",
-      "flag": "LR",
-      "risk_score": 18.7,
-      "severity": "LOW",
-      "anomaly_types": [
-        "LOITERING_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": true,
-      "last_lat": 5.000432,
-      "last_lon": 60.00324,
-      "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.453544+00:00"
-    },
-    {
-      "alert_id": "ALT-0046",
-      "mmsi": "99800046",
-      "vessel_name": "SCI Yamuna #47",
+      "alert_id": "ALT-0026",
+      "mmsi": "99800026",
+      "vessel_name": "SCI Brahmaputra #27",
       "vessel_type": "Bulk",
-      "flag": "SG",
-      "risk_score": 18.7,
+      "flag": "PA",
+      "risk_score": 18.8,
       "severity": "LOW",
       "anomaly_types": [
         "LOITERING_ANOMALY"
       ],
       "risk_categories": [],
       "is_anomalous": true,
-      "last_lat": 4.998772,
-      "last_lon": 60.003262,
+      "last_lat": 5.00303,
+      "last_lon": 60.001538,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.454525+00:00"
+      "generated_at": "2026-08-06T06:46:52.495099+00:00"
+    },
+    {
+      "alert_id": "ALT-0044",
+      "mmsi": "99800044",
+      "vessel_name": "Swarna Kamal #45",
+      "vessel_type": "Cargo",
+      "flag": "PA",
+      "risk_score": 18.8,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 5.002623,
+      "last_lon": 60.002022,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.495125+00:00"
+    },
+    {
+      "alert_id": "ALT-0051",
+      "mmsi": "99800051",
+      "vessel_name": "SCI Ahimsa #52",
+      "vessel_type": "Cargo",
+      "flag": "SG",
+      "risk_score": 18.8,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 5.002058,
+      "last_lon": 60.002722,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.495527+00:00"
+    },
+    {
+      "alert_id": "ALT-0041",
+      "mmsi": "99800041",
+      "vessel_name": "Swarna Mala #42",
+      "vessel_type": "Bulk",
+      "flag": "HK",
+      "risk_score": 18.8,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 11.998628,
+      "last_lon": 43.003246,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.495688+00:00"
+    },
+    {
+      "alert_id": "ALT-0000",
+      "mmsi": "99800000",
+      "vessel_name": "SCI Ratna #1",
+      "vessel_type": "Cargo",
+      "flag": "HK",
+      "risk_score": 18.8,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 12.000151,
+      "last_lon": 43.003454,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.496226+00:00"
+    },
+    {
+      "alert_id": "ALT-0033",
+      "mmsi": "99800033",
+      "vessel_name": "Swarna Tapi #34",
+      "vessel_type": "Cargo",
+      "flag": "HK",
+      "risk_score": 18.8,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 5.001916,
+      "last_lon": 60.002652,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.496576+00:00"
+    },
+    {
+      "alert_id": "ALT-0038",
+      "mmsi": "99800038",
+      "vessel_name": "SCI Sagar #39",
+      "vessel_type": "Cargo",
+      "flag": "LR",
+      "risk_score": 18.8,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 25.998455,
+      "last_lon": 56.003221,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.496766+00:00"
+    },
+    {
+      "alert_id": "ALT-0035",
+      "mmsi": "99800035",
+      "vessel_name": "SCI Harsha #36",
+      "vessel_type": "Tanker",
+      "flag": "HK",
+      "risk_score": 18.8,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 4.998796,
+      "last_lon": 60.003033,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.497682+00:00"
     },
     {
       "alert_id": "ALT-0002",
@@ -1904,7 +1868,43 @@
       "last_lat": 5.0015,
       "last_lon": 60.00339,
       "loitering": true,
-      "generated_at": "2026-08-04T14:28:37.456287+00:00"
+      "generated_at": "2026-08-06T06:46:52.497023+00:00"
+    },
+    {
+      "alert_id": "ALT-0023",
+      "mmsi": "99800023",
+      "vessel_name": "SCI Tapi #24",
+      "vessel_type": "Tanker",
+      "flag": "LR",
+      "risk_score": 18.7,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 5.000432,
+      "last_lon": 60.00324,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.497486+00:00"
+    },
+    {
+      "alert_id": "ALT-0046",
+      "mmsi": "99800046",
+      "vessel_name": "SCI Yamuna #47",
+      "vessel_type": "Bulk",
+      "flag": "SG",
+      "risk_score": 18.7,
+      "severity": "LOW",
+      "anomaly_types": [
+        "LOITERING_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": true,
+      "last_lat": 4.998772,
+      "last_lon": 60.003262,
+      "loitering": true,
+      "generated_at": "2026-08-06T06:46:52.497649+00:00"
     },
     {
       "alert_id": "ALT-5001",
@@ -1923,7 +1923,7 @@
       "last_lat": 7.895714,
       "last_lon": 69.184219,
       "loitering": false,
-      "generated_at": "2026-08-04T14:28:37.456216+00:00"
+      "generated_at": "2026-08-06T06:46:52.494294+00:00"
     },
     {
       "alert_id": "ALT-3001",
@@ -1941,25 +1941,7 @@
       "last_lat": null,
       "last_lon": null,
       "loitering": false,
-      "generated_at": "2026-08-04T14:28:37.453340+00:00"
-    },
-    {
-      "alert_id": "ALT-1004",
-      "mmsi": "419001004",
-      "vessel_name": "UNKNOWN",
-      "vessel_type": "UNKNOWN",
-      "flag": "XX",
-      "risk_score": 0.9,
-      "severity": "NORMAL",
-      "anomaly_types": [
-        "KINEMATIC_ANOMALY"
-      ],
-      "risk_categories": [],
-      "is_anomalous": false,
-      "last_lat": null,
-      "last_lon": null,
-      "loitering": false,
-      "generated_at": "2026-08-04T14:28:37.454368+00:00"
+      "generated_at": "2026-08-06T06:46:52.496738+00:00"
     },
     {
       "alert_id": "ALT-1003",
@@ -1977,15 +1959,15 @@
       "last_lat": null,
       "last_lon": null,
       "loitering": false,
-      "generated_at": "2026-08-04T14:28:37.455302+00:00"
+      "generated_at": "2026-08-06T06:46:52.495212+00:00"
     },
     {
-      "alert_id": "ALT-1005",
-      "mmsi": "419001005",
+      "alert_id": "ALT-1004",
+      "mmsi": "419001004",
       "vessel_name": "UNKNOWN",
       "vessel_type": "UNKNOWN",
       "flag": "XX",
-      "risk_score": 0.6,
+      "risk_score": 0.9,
       "severity": "NORMAL",
       "anomaly_types": [
         "KINEMATIC_ANOMALY"
@@ -1995,7 +1977,7 @@
       "last_lat": null,
       "last_lon": null,
       "loitering": false,
-      "generated_at": "2026-08-04T14:28:37.453486+00:00"
+      "generated_at": "2026-08-06T06:46:52.496768+00:00"
     },
     {
       "alert_id": "ALT-2003",
@@ -2013,7 +1995,25 @@
       "last_lat": null,
       "last_lon": null,
       "loitering": false,
-      "generated_at": "2026-08-04T14:28:37.455818+00:00"
+      "generated_at": "2026-08-06T06:46:52.494678+00:00"
+    },
+    {
+      "alert_id": "ALT-1005",
+      "mmsi": "419001005",
+      "vessel_name": "UNKNOWN",
+      "vessel_type": "UNKNOWN",
+      "flag": "XX",
+      "risk_score": 0.6,
+      "severity": "NORMAL",
+      "anomaly_types": [
+        "KINEMATIC_ANOMALY"
+      ],
+      "risk_categories": [],
+      "is_anomalous": false,
+      "last_lat": null,
+      "last_lon": null,
+      "loitering": false,
+      "generated_at": "2026-08-06T06:46:52.495659+00:00"
     },
     {
       "alert_id": "ALT-2001",
@@ -2031,7 +2031,7 @@
       "last_lat": null,
       "last_lon": null,
       "loitering": false,
-      "generated_at": "2026-08-04T14:28:37.453726+00:00"
+      "generated_at": "2026-08-06T06:46:52.496715+00:00"
     },
     {
       "alert_id": "ALT-1002",
@@ -2049,7 +2049,7 @@
       "last_lat": null,
       "last_lon": null,
       "loitering": false,
-      "generated_at": "2026-08-04T14:28:37.454814+00:00"
+      "generated_at": "2026-08-06T06:46:52.497554+00:00"
     },
     {
       "alert_id": "ALT-2002",
@@ -2067,7 +2067,7 @@
       "last_lat": null,
       "last_lon": null,
       "loitering": false,
-      "generated_at": "2026-08-04T14:28:37.455845+00:00"
+      "generated_at": "2026-08-06T06:46:52.497685+00:00"
     },
     {
       "alert_id": "ALT-1001",
@@ -2085,7 +2085,7 @@
       "last_lat": null,
       "last_lon": null,
       "loitering": false,
-      "generated_at": "2026-08-04T14:28:37.456204+00:00"
+      "generated_at": "2026-08-06T06:46:52.494720+00:00"
     },
     {
       "alert_id": "ALT-3002",
@@ -2103,8 +2103,8 @@
       "last_lat": null,
       "last_lon": null,
       "loitering": false,
-      "generated_at": "2026-08-04T14:28:37.455870+00:00"
+      "generated_at": "2026-08-06T06:46:52.494510+00:00"
     }
   ],
-  "generated_at": "2026-08-04T14:28:37.457286+00:00"
+  "generated_at": "2026-08-06T06:46:52.498473+00:00"
 }
