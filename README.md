@@ -26,7 +26,7 @@ Before running the project locally, ensure you have installed:
 
 The site is protected with a tactical **Password Lock Screen** on startup.
 - **Username**: *None (Password only)*
-- **Default Clearance Passcode**: `NAVY2026` *(Also accepts `NAVY` or `1234`)*
+- **Default Clearance Passcode**: `Create a Request / Contact - gprincegupta0210@gmail.com)*
 - **Session Locking**: Operators can click the red **Lock** icon in the top-right header at any time to re-lock the system terminal.
 
 ---
