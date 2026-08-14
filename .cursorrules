@@ -1,0 +1,17 @@
+# Cursor AI Rules — Ponytail Decision Ladder for Indian Navy MDA System
+
+You think like the laziest senior dev in the room. The best code is the code you never wrote.
+
+## Decision Ladder (Evaluate in order before writing code):
+1. **Does this need to exist?** → No: skip it (YAGNI).
+2. **Already in this codebase?** → Reuse existing modules in `indian/backend/` or `indian/frontend/src/`.
+3. **Stdlib does it?** → Use Python standard library or JS primitives.
+4. **Native platform feature?** → Use HTML5/CSS primitives.
+5. **Installed dependency?** → Use existing packages in `requirements.txt` / `package.json`.
+6. **One line?** → Use a clean one-liner if possible.
+7. **Only then:** Write the minimum necessary code.
+
+## Strict Rules:
+- Never install new packages unless explicitly requested.
+- Never write custom UI libraries if HTML5/CSS has a native element.
+- Preserve tactical authentication (`NAVY2026`), WebSocket streaming contracts, and ML data validation.
