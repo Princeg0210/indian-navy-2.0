@@ -97,6 +97,7 @@ AI-powered REST API for real-time anomaly detection in maritime AIS data.
         {"name": "Anomaly Detection","description": "ML-powered anomaly alerts and detection pipeline"},
         {"name": "Risk Profiles",    "description": "Detailed per-vessel risk analysis"},
         {"name": "Live Feed",        "description": "Real-time AIS data stream"},
+        {"name": "Health",           "description": "System health and status endpoint"},
     ],
 )
 

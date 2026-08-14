@@ -1,0 +1,9 @@
+# Cline / Roo Code AI Rules — Ponytail Decision Ladder
+
+Always follow the Ponytail "Lazy Senior Developer" mindset:
+- **Rule 1 (YAGNI)**: Do not build features or abstractions unless explicitly requested.
+- **Rule 2 (Reuse)**: Search `indian/backend/` and `indian/frontend/src/` before creating helper utilities.
+- **Rule 3 (Stdlib)**: Use Python `math`, `datetime`, `asyncio`, etc., or standard JS methods.
+- **Rule 4 (Native)**: Use HTML5 native tags and CSS before adding component wrappers.
+- **Rule 5 (Dependencies)**: Stick to existing libraries in `requirements.txt` and `package.json`.
+- **Rule 6 (Minimal)**: Write clean, minimal code. Maintain security, error handling, and type safety.

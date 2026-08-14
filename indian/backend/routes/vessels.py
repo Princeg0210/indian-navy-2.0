@@ -8,7 +8,7 @@ from services.detection_service import (
     get_search_criteria_stats, get_map_layers
 )
 
-router = APIRouter(prefix="/api/vessels", tags=["vessels"])
+router = APIRouter(prefix="/api/vessels", tags=["Vessels"])
 
 @router.get("/layers")
 async def fetch_layers():
