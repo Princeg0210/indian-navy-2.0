@@ -37,3 +37,8 @@ cloudflared.tgz
 
 # Simulation data (if large or temporary)
 # indian/simulation/data/*.json
+
+# Scratch & Pentest outputs
+get_headers.py
+test_auth.py
+strix_runs/

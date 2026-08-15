@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   mda-system:
     build:
@@ -18,8 +16,6 @@ services:
       - ./indian/backend/data:/app/indian/backend/data
       - ./indian/ml_engine/data:/app/indian/ml_engine/data
       - ./indian/simulation/data:/app/indian/simulation/data
-      - ./indian/frontend/dist:/app/indian/frontend/dist
-      - ./indian/backend/routes:/app/indian/backend/routes
 
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/api/anomalies/stats"]
