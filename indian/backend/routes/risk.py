@@ -1,7 +1,8 @@
 """
 Risk Profile endpoints — /api/risk
 """
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Depends
+from auth import require_vessel_authorization
 from services.detection_service import get_alert_by_mmsi, get_vessel_track
 
 router = APIRouter(prefix="/api/risk", tags=["Risk Profiles"])
@@ -16,7 +17,10 @@ router = APIRouter(prefix="/api/risk", tags=["Risk Profiles"])
         "anomaly type breakdown, and full kinematic track history."
     ),
 )
-def get_risk_profile(mmsi: str):
+def get_risk_profile(
+    mmsi: str,
+    _auth: dict = Depends(require_vessel_authorization)
+):
     alert = get_alert_by_mmsi(mmsi)
     if not alert:
         raise HTTPException(status_code=404, detail=f"No risk profile for MMSI {mmsi}")

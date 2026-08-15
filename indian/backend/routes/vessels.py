@@ -1,7 +1,13 @@
+import html
+import json
+import math
 from typing import List, Optional
 from datetime import datetime, timezone
-from fastapi import APIRouter, Query, HTTPException
+from fastapi import APIRouter, Query, HTTPException, Depends
+from fastapi.responses import JSONResponse
+from pydantic import BaseModel
 
+from auth import require_vessel_authorization, require_hq_clearance
 from services.detection_service import (
     get_all_alerts, get_vessel_registry_enhanced, get_vessel_track, get_alert_by_mmsi,
     get_summary_stats, get_global_history, get_vessel_operational_history,
@@ -9,6 +15,13 @@ from services.detection_service import (
 )
 
 router = APIRouter(prefix="/api/vessels", tags=["Vessels"])
+
+def sanitize_text(text: Optional[str], max_len: int = 500) -> str:
+    """Sanitizes user-provided string to prevent HTML/XSS injection attacks."""
+    if not text:
+        return ""
+    cleaned = str(text).strip()[:max_len]
+    return html.escape(cleaned)
 
 @router.get("/layers")
 async def fetch_layers():
@@ -26,8 +39,12 @@ async def get_traffic_history(hours: int = 1):
     return {"history": get_global_history(hours=hours)}
 
 @router.get("/history/{mmsi}")
-async def fetch_vessel_history(mmsi: str, hours: int = 24):
-    """Retrieve detailed history for a specific vessel."""
+async def fetch_vessel_history(
+    mmsi: str,
+    hours: int = 24,
+    _auth: dict = Depends(require_vessel_authorization)
+):
+    """Retrieve detailed history for a specific vessel (requires vessel authorization or HQ clearance)."""
     return get_vessel_operational_history(mmsi, hours)
 
 @router.get("")
@@ -35,7 +52,7 @@ async def list_vessels(
     anomalous_only: bool = Query(False),
     vessel_type: Optional[str] = Query(None)
 ):
-    """Returns the full fleet with specifications and filtering."""
+    """Returns the fleet vessel registry."""
     vessels = get_vessel_registry_enhanced()
     
     if anomalous_only or vessel_type:
@@ -51,8 +68,6 @@ async def list_vessels(
 # In-memory store for shipboard control states & bridge log entries
 SHIP_CONTROLS = {}
 
-from pydantic import BaseModel
-
 class ShipControlAction(BaseModel):
     action: str  # 'TOGGLE_AIS', 'TRIGGER_DISTRESS', 'ADD_LOG', 'SET_NAV_STATUS'
     ais_mode: Optional[str] = None
@@ -61,7 +76,10 @@ class ShipControlAction(BaseModel):
     nav_status: Optional[str] = None
 
 @router.get("/{mmsi}/ship-status")
-def get_ship_status(mmsi: str):
+def get_ship_status(
+    mmsi: str,
+    _auth: dict = Depends(require_vessel_authorization)
+):
     alert = get_alert_by_mmsi(mmsi)
     vessel_data = alert or {"mmsi": mmsi, "vessel_name": f"UNIT {mmsi}", "vessel_type": "Naval Escort"}
     
@@ -85,7 +103,11 @@ def get_ship_status(mmsi: str):
     }
 
 @router.post("/{mmsi}/control")
-def update_ship_control(mmsi: str, body: ShipControlAction):
+def update_ship_control(
+    mmsi: str,
+    body: ShipControlAction,
+    _auth: dict = Depends(require_vessel_authorization)
+):
     if mmsi not in SHIP_CONTROLS:
         SHIP_CONTROLS[mmsi] = {
             "ais_mode": "TRANSMITTING",
@@ -103,21 +125,22 @@ def update_ship_control(mmsi: str, body: ShipControlAction):
         state["ais_mode"] = body.ais_mode or ("STEALTH_SILENT" if state["ais_mode"] == "TRANSMITTING" else "TRANSMITTING")
     elif body.action == "TRIGGER_DISTRESS":
         state["distress_active"] = not state["distress_active"]
+        reason = sanitize_text(body.distress_reason, 200) or "Urgent Assistance Requested"
         state["bridge_logs"].insert(0, {
             "time": "NOW",
             "author": "TACTICAL COMMAND",
-            "msg": f"⚠️ EMERGENCY DISTRESS {'ACTIVATED' if state['distress_active'] else 'DEACTIVATED'}: {body.distress_reason or 'Urgent Assistance Requested'}"
+            "msg": f"⚠️ EMERGENCY DISTRESS {'ACTIVATED' if state['distress_active'] else 'DEACTIVATED'}: {reason}"
         })
     elif body.action == "ADD_LOG":
         if body.log_msg:
             state["bridge_logs"].insert(0, {
                 "time": "NOW",
                 "author": "Deck Officer",
-                "msg": body.log_msg
+                "msg": sanitize_text(body.log_msg, 300)
             })
     elif body.action == "SET_NAV_STATUS":
         if body.nav_status:
-            state["nav_status_override"] = body.nav_status
+            state["nav_status_override"] = sanitize_text(body.nav_status, 100)
             
     return {"status": "success", "mmsi": mmsi, "control_state": state}
 
@@ -129,10 +152,11 @@ class MessagePayload(BaseModel):
     text: str
     priority: Optional[str] = "NORMAL"
 
-from fastapi.responses import JSONResponse
-
 @router.get("/{mmsi}/comms")
-def get_ship_comms(mmsi: str):
+def get_ship_comms(
+    mmsi: str,
+    _auth: dict = Depends(require_vessel_authorization)
+):
     if mmsi not in SHIP_COMMS:
         SHIP_COMMS[mmsi] = [
             {"id": 1, "mmsi": mmsi, "time": "08:15:00", "sender": "HQ", "text": "TACTICAL DIRECTIVE: Maintain DBSCAN spatial corridor 4B.", "priority": "ROUTINE"},
@@ -143,25 +167,31 @@ def get_ship_comms(mmsi: str):
         headers={"Cache-Control": "no-cache, no-store, must-revalidate", "Pragma": "no-cache", "Expires": "0"}
     )
 
-
-import json
-
 @router.post("/{mmsi}/comms/send")
-async def send_ship_message(mmsi: str, body: MessagePayload):
+async def send_ship_message(
+    mmsi: str,
+    body: MessagePayload,
+    _auth: dict = Depends(require_vessel_authorization)
+):
     if mmsi not in SHIP_COMMS:
         SHIP_COMMS[mmsi] = [
             {"id": 1, "mmsi": mmsi, "time": "08:15:00", "sender": "HQ", "text": "TACTICAL DIRECTIVE: Maintain DBSCAN spatial corridor 4B.", "priority": "ROUTINE"},
             {"id": 2, "mmsi": mmsi, "time": "09:30:00", "sender": "SHIP", "text": "NavIC Satellite Lock 100% steady. Proceeding at 14 kts.", "priority": "ROUTINE"}
         ]
     
+    # Sanitize inputs before storing and broadcasting to prevent XSS / script injection
+    sanitized_text = sanitize_text(body.text, 500)
+    sanitized_sender = sanitize_text(body.sender, 50)
+    sanitized_priority = sanitize_text(body.priority or "ROUTINE", 20)
+
     new_msg = {
         "type": "COMMS_MESSAGE",
         "id": len(SHIP_COMMS[mmsi]) + 1,
         "mmsi": mmsi,
         "time": datetime.now(timezone.utc).strftime("%H:%M:%S"),
-        "sender": body.sender,
-        "text": body.text,
-        "priority": body.priority or "ROUTINE"
+        "sender": sanitized_sender,
+        "text": sanitized_text,
+        "priority": sanitized_priority
     }
     SHIP_COMMS[mmsi].insert(0, new_msg)
     
@@ -173,10 +203,6 @@ async def send_ship_message(mmsi: str, body: MessagePayload):
         print("Comms WS broadcast error:", e)
         
     return {"status": "success", "message": new_msg}
-
-
-
-import math
 
 def calculate_haversine_nm(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     R_nm = 3440.065  # Earth radius in nautical miles
@@ -195,7 +221,10 @@ def calculate_bearing(lat1: float, lon1: float, lat2: float, lon2: float) -> int
     return int((bearing + 360) % 360)
 
 @router.get("/{mmsi}/convoy")
-def get_convoy_radar(mmsi: str):
+def get_convoy_radar(
+    mmsi: str,
+    _auth: dict = Depends(require_vessel_authorization)
+):
     vessels = get_vessel_registry_enhanced()
     current = next((v for v in vessels if str(v.get("mmsi")) == mmsi), None)
     
@@ -231,10 +260,11 @@ def get_convoy_radar(mmsi: str):
     nearby_units.sort(key=lambda x: x["distance_nm"])
     return {"mmsi": mmsi, "convoy_units": nearby_units[:12]}
 
-
-
 @router.get("/{mmsi}")
-def get_vessel(mmsi: str):
+def get_vessel(
+    mmsi: str,
+    _auth: dict = Depends(require_vessel_authorization)
+):
     alert = get_alert_by_mmsi(mmsi)
     if not alert:
         raise HTTPException(status_code=404, detail=f"Vessel {mmsi} not found")
@@ -244,6 +274,7 @@ def get_vessel(mmsi: str):
         **alert,
         "track_history": track
     }
+
 
 
 

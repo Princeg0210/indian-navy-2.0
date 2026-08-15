@@ -59,6 +59,7 @@ function ShipLogin({ onLogin, onLoginSuccess, onSwitchToMain, onSwitchToMainComm
       if (DEFAULT_SHIP_PINS.includes(pin.trim().toUpperCase()) || pin.trim() === activeMmsi.toString()) {
         sessionStorage.setItem('ship_authenticated', 'true');
         sessionStorage.setItem('ship_mmsi', activeMmsi.toString());
+        sessionStorage.setItem('ship_key', pin.trim().toUpperCase());
         setIsLoading(false);
         const vesselObj = selectedVessel || { mmsi: activeMmsi, name: `SHIP ${activeMmsi}`, type: 'Naval Unit' };
         handleSuccess(activeMmsi.toString(), vesselObj);

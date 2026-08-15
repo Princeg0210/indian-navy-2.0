@@ -23,6 +23,7 @@ function LockScreen({ onUnlock, onOpenShipPortal }) {
     setTimeout(() => {
       if (VALID_PASSWORDS.includes(password.trim().toUpperCase())) {
         sessionStorage.setItem('mda_authenticated', 'true');
+        sessionStorage.setItem('mda_clearance', password.trim().toUpperCase());
         setIsLoading(false);
         onUnlock();
       } else {
