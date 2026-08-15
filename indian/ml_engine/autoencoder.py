@@ -96,9 +96,8 @@ def build_windows(array: np.ndarray, window_size: int) -> np.ndarray:
 
 
 def build_autoencoder(window_size: int, n_features: int):
-    """Build LSTM Autoencoder architecture."""
+    """Build LSTM Autoencoder architecture using Keras/TensorFlow."""
     try:
-        raise ImportError("Force fallback for macOS mutex issue")
         import tensorflow as tf
         from tensorflow.keras.models import Model
         from tensorflow.keras.layers import (
@@ -122,7 +121,8 @@ def build_autoencoder(window_size: int, n_features: int):
         model.compile(optimizer="adam", loss="mse")
         return model
 
-    except ImportError:
+    except Exception as e:
+        print(f"[Autoencoder] TensorFlow model build note: {e}")
         return None
 
 
