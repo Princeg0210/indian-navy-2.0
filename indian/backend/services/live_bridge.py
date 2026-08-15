@@ -7,12 +7,16 @@ import ssl
 from .detection_service import ingest_live_message
 from config import AIS_STREAM_KEY, BOUNDING_BOXES
 
+import os
+
 logger = logging.getLogger("live_bridge")
 
-# Bypass macOS SSL certificate issues in dev environment
+# SSL context configuration (Enforce verification by default, allow toggle for dev environments)
+VERIFY_SSL = os.getenv("VERIFY_SSL", "true").lower() in ("true", "1", "yes")
 ssl_context = ssl.create_default_context()
-ssl_context.check_hostname = False
-ssl_context.verify_mode = ssl.CERT_NONE
+if not VERIFY_SSL:
+    ssl_context.check_hostname = False
+    ssl_context.verify_mode = ssl.CERT_NONE
 
 class AISLiveBridge:
     def __init__(self):
@@ -68,7 +72,7 @@ class AISLiveBridge:
                     "lon": lon,
                     "sog": payload.get("Sog", 0),
                     "cog": payload.get("Cog", 0),
-                    "timestamp": datetime.datetime.utcnow().isoformat() + "Z"
+                    "timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat()
                 }
                 ingest_live_message(ais_msg)
 

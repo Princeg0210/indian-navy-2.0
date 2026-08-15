@@ -256,18 +256,23 @@ def get_vessel_registry_enhanced():
 
 def get_global_history(hours: int = 1) -> List[Dict]:
     """Retrieve filtered historical AIS messages for all vessels within the time horizon."""
-    from datetime import datetime, timedelta
+    from datetime import datetime, timedelta, timezone
     data = _load_list(HISTORY_PATH)
     if not data: return []
     
-    threshold = datetime.utcnow() - timedelta(hours=hours)
+    threshold = datetime.now(timezone.utc) - timedelta(hours=hours)
     
-    # Simple timestamp parser (ISO format)
+    # Robust ISO timestamp parser returning timezone-aware datetime
     def parse_ts(t_str):
-        try: return datetime.fromisoformat(t_str.replace("Z", ""))
-        except: return datetime.min
+        try:
+            dt = datetime.fromisoformat(str(t_str).replace("Z", "+00:00"))
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            return dt
+        except Exception:
+            return datetime.min.replace(tzinfo=timezone.utc)
         
-    return [m for m in data if parse_ts(m["timestamp"]) >= threshold]
+    return [m for m in data if parse_ts(m.get("timestamp")) >= threshold]
 
 def get_vessel_operational_history(mmsi: str, hours: int = 24):
     """Summarizes tactical activity for a single vessel based on recorded history."""
