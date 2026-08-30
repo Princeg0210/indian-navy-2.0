@@ -26,24 +26,38 @@ class AISLiveBridge:
 
     async def start(self):
         self.running = True
-        logger.info("📡 Connecting to Global Satellite AIS Feed...")
+        logger.info("📡 Initializing Global Satellite AIS Bridge...")
+        backoff = 10
         while self.running:
             try:
-                async with websockets.connect(self.url, ssl=ssl_context) as websocket:
+                async with websockets.connect(
+                    self.url,
+                    ssl=ssl_context,
+                    ping_interval=20,
+                    ping_timeout=20,
+                    close_timeout=10
+                ) as websocket:
                     subscribe_msg = {
                         "APIKey": AIS_STREAM_KEY,
                         "BoundingBoxes": BOUNDING_BOXES
                     }
                     await websocket.send(json.dumps(subscribe_msg))
+                    backoff = 10
 
                     async for message in websocket:
                         if not self.running: break
                         data = json.loads(message)
                         self._process_message(data)
+            except websockets.exceptions.ConnectionClosed as e:
+                if self.running:
+                    logger.warning(f"AIS satellite stream disconnected ({e}). Reconnecting in {backoff}s...")
+                    await asyncio.sleep(backoff)
+                    backoff = min(backoff * 2, 60)
             except Exception as e:
                 if self.running:
-                    logger.error(f"Live Bridge Connection Delay: {e}")
-                    await asyncio.sleep(10)
+                    logger.warning(f"AIS satellite stream connection delay: {e}. Retrying in {backoff}s...")
+                    await asyncio.sleep(backoff)
+                    backoff = min(backoff * 2, 60)
 
     def stop(self):
         self.running = False
