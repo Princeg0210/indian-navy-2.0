@@ -219,6 +219,16 @@ const Map = ({ vessels, alerts, historyData, selectedMmsi, onSelectVessel, activ
     return [lat + dist * Math.cos(r), lon + dist * Math.sin(r)];
   };
 
+  const [onlyMoving, setOnlyMoving] = React.useState(false);
+
+  const displayedVessels = useMemo(() => {
+    if (!onlyMoving) return vessels;
+    return vessels.filter(v => {
+      const sog = v.last_sog || v.sog || 0;
+      return sog > 0.5;
+    });
+  }, [vessels, onlyMoving]);
+
   const selectedVessel = useMemo(() => vessels.find(v => String(v.mmsi) === String(selectedMmsi)), [vessels, selectedMmsi]);
   
   const highlightCenter = useMemo(() => {
@@ -230,14 +240,25 @@ const Map = ({ vessels, alerts, historyData, selectedMmsi, onSelectVessel, activ
 
 
   return (
-    <MapContainer 
-      center={initialCenter} 
-      zoom={initialZoom} 
-      className="mda-map" 
-      zoomControl={false}
-      preferCanvas={true}
-    >
-      <TileLayer 
+    <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+      <div className="map-radar-control-panel">
+        <button 
+          className={`simple-vessel-filter-btn ${onlyMoving ? 'active' : ''}`}
+          onClick={() => setOnlyMoving(!onlyMoving)}
+          title="Filter to show active moving vessels"
+        >
+          {onlyMoving ? 'Filter: Moving Vessels Only' : 'Show: All Vessels'}
+        </button>
+      </div>
+
+      <MapContainer 
+        center={initialCenter} 
+        zoom={initialZoom} 
+        className="mda-map" 
+        zoomControl={false}
+        preferCanvas={true}
+      >
+        <TileLayer 
         url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
       />
@@ -297,7 +318,7 @@ const Map = ({ vessels, alerts, historyData, selectedMmsi, onSelectVessel, activ
         </React.Fragment>
       ))}
 
-      {vessels.map(v => {
+      {displayedVessels.map(v => {
         const lat = v.last_lat || v.lat || v.start_lat;
         const lon = v.last_lon || v.lon || v.start_lon;
         if (!lat || !lon) return null;
@@ -391,6 +412,7 @@ const Map = ({ vessels, alerts, historyData, selectedMmsi, onSelectVessel, activ
         );
       })}
     </MapContainer>
+    </div>
   );
 };
 

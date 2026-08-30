@@ -63,11 +63,13 @@ function LockScreen({ onUnlock, onOpenShipPortal }) {
         {/* Form */}
         <form onSubmit={handleSubmit} className="clean-form">
           <div className="form-field">
-            <label className="field-label">SECURITY ACCESS PASSWORD</label>
+            <label className="field-label">
+              SECURITY ACCESS PASSWORD <span className="password-hint">(0210)</span>
+            </label>
             <div className="clean-input-box">
               <input
                 type={showPassword ? 'text' : 'password'}
-                placeholder="Enter Security Access Password..."
+                placeholder="Enter Security Access Password (0210)..."
                 value={password}
                 onChange={(e) => {
                   setPassword(e.target.value);

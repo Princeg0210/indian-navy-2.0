@@ -153,12 +153,18 @@ def run_anomaly_scorer() -> List[Dict]:
         if v_type == "Fishing" and (loiter_flag or route_flag): risk_categories.append("IUU_Fishing")
         if v_flag in ["KP", "IR", "CN"] and dark_flag: risk_categories.append("Military_Affiliation")
 
-        if not anomaly_types: anomaly_types = ["NORMAL"]
+        has_real_anomalies = len(anomaly_types) > 0
+        if not anomaly_types:
+            anomaly_types = ["NORMAL"]
+
         severity = "NORMAL"
         if risk_score >= 75: severity = "CRITICAL"
         elif risk_score >= 50: severity = "HIGH"
-        elif risk_score >= 25: severity = "MEDIUM"
-        elif risk_score >= 10: severity = "LOW"
+        elif risk_score >= 30: severity = "MEDIUM"
+        elif risk_score >= 15: severity = "LOW"
+
+        # A vessel is marked anomalous if it has a specific anomaly type or elevated risk
+        is_anomalous_vessel = has_real_anomalies or severity in ["CRITICAL", "HIGH", "MEDIUM"]
 
         last_ping = sorted(pings, key=lambda x: x["timestamp"])[-1] if pings else {}
 
@@ -172,7 +178,7 @@ def run_anomaly_scorer() -> List[Dict]:
             "severity": severity,
             "anomaly_types": anomaly_types,
             "risk_categories": list(set(risk_categories)),
-            "is_anomalous": severity != "NORMAL",
+            "is_anomalous": is_anomalous_vessel,
             "last_lat": last_ping.get("lat"),
             "last_lon": last_ping.get("lon"),
             "loitering": loiter_flag,

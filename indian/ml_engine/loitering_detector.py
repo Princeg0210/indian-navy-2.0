@@ -71,6 +71,19 @@ def detect_loitering_track(pings: List[Dict]) -> Dict:
         if dist > max_dist:
             max_dist = dist
             
+    sogs = [p.get("sog", 0) for p in pings if isinstance(p.get("sog"), (int, float))]
+    avg_sog = float(np.mean(sogs)) if sogs else 0.0
+    
+    # Moving vessels in transit (avg SOG > 1.5 kn) are not loitering
+    if avg_sog > 1.5:
+        return {
+            "is_loitering": False,
+            "loiter_score": 0.0,
+            "radius_nm": round(max_dist, 3),
+            "duration_h": round(total_time_h, 2),
+            "centroid": {"lat": centroid_lat, "lon": centroid_lon}
+        }
+
     # Loitering Score: proportional to time and inversely proportional to radius
     # If max_dist for all pings is < 1nm over several hours, it's definitely loitering
     score = 0.0
@@ -80,7 +93,7 @@ def detect_loitering_track(pings: List[Dict]) -> Dict:
         time_bonus     = min(1.0, total_time_h / 12.0)
         score = radius_penalty * time_bonus * 100
         
-        if score > 50: # Threshold
+        if score > 70: # Higher threshold for true loitering anomaly
             is_loitering = True
 
     return {
