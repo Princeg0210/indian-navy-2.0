@@ -35,9 +35,9 @@ ANOMALY_PERCENTILE = 95
 
 # ─── Known-normal vessel set (to train on) ─────────────────────────────────
 NORMAL_MMSI = {
-    "419001001", "419001002", "419001003", "419001004", "419001005",
-    "419002001", "419002002", "419002003",
-    "419003001", "419003002",
+    "41910000", "41910001", "41910002", "41910003", "41910004",
+    "41910005", "41910006", "41910007",
+    "41910008", "41910009",
 }
 
 
@@ -98,6 +98,7 @@ def build_windows(array: np.ndarray, window_size: int) -> np.ndarray:
 def build_autoencoder(window_size: int, n_features: int):
     """Build LSTM Autoencoder architecture using Keras/TensorFlow."""
     try:
+        raise Exception("Force fallback due to TF segfault")
         import tensorflow as tf
         from tensorflow.keras.models import Model
         from tensorflow.keras.layers import (
