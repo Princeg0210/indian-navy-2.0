@@ -151,14 +151,6 @@ const AlertSidebar = ({ alerts = [], selectedMmsi, onSelectAlert, onClose }) => 
                       </div>
                     </div>
 
-                    {/* Risk progress gauge */}
-                    <div className="risk-gauge-container">
-                      <div
-                        className={`risk-gauge-fill ${severityClass}`}
-                        style={{ width: `${Math.min(100, Math.max(10, score))}%` }}
-                      ></div>
-                    </div>
-
                     {/* Tactical threat tags */}
                     <div className="alert-tags">
                       {(alert.anomaly_types || []).map(type => (
