@@ -5,9 +5,12 @@
   z-index: 0;
 }
 
-.custom-vessel-icon {
+.custom-vessel-icon,
+.leaflet-marker-icon.custom-vessel-icon {
   background: transparent !important;
   border: none !important;
+  transition: transform 1.4s cubic-bezier(0.25, 1, 0.5, 1) !important;
+  will-change: transform;
 }
 
 .vessel-marker-container {
