@@ -36,6 +36,7 @@ function App() {
   const [activeLayers, setActiveLayers] = useState(['shoreline', 'maritime_region']);
   const [searchTerm, setSearchTerm] = useState('');
   const [isCommsDrawerOpen, setIsCommsDrawerOpen] = useState(false);
+  const [activeIntercept, setActiveIntercept] = useState(null);
 
 
   const searchResults = React.useMemo(() => {
@@ -337,6 +338,7 @@ function App() {
                 onSelectVessel={(m) => { setSelectedMmsi(m); setIsDetailVisible(true); }}
                 activeLayers={activeLayers}
                 layerOpacity={layerOpacity}
+                activeIntercept={activeIntercept}
               />
 
               {/* Floating Restore Button - Only visible when tactical layers are hidden */}
@@ -506,6 +508,9 @@ function App() {
             isVisible={isDetailVisible}
             onToggleVisible={() => setIsDetailVisible(!isDetailVisible)}
             onClose={() => { setSelectedMmsi(null); setIsDetailVisible(false); }}
+            allVessels={Object.values(vessels || {})}
+            activeIntercept={activeIntercept}
+            onSetIntercept={setActiveIntercept}
           />
         )}
       </main>
