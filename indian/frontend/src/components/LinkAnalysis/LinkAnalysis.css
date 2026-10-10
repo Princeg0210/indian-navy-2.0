@@ -31,10 +31,7 @@
   margin: 0;
   font-size: 1.25rem;
   font-weight: 600;
-  background: linear-gradient(90deg, #38bdf8, #818cf8);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #38bdf8;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
