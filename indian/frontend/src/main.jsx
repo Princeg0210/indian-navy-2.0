@@ -9,7 +9,7 @@ const originalFetch = window.fetch;
 window.fetch = (url, options = {}) => {
   if (typeof url === 'string' && url.startsWith('/api/')) {
     const headers = new Headers(options.headers || {});
-    const clearance = sessionStorage.getItem('mda_clearance') || 'NAVY2026';
+    const clearance = sessionStorage.getItem('mda_clearance') || '0210';
     const shipKey = sessionStorage.getItem('ship_key') || '';
     const shipMmsi = sessionStorage.getItem('ship_mmsi') || '';
     if (!headers.has('X-Tactical-Clearance')) {

@@ -1,6 +1,6 @@
 """
 Tactical Clearance & Authorization Module — Indian Navy MDA System
-Preserves tactical passcode (NAVY2026) and enforces role/vessel-level access control.
+Preserves tactical passcode (0210) and enforces role/vessel-level access control.
 """
 
 import os
@@ -8,10 +8,10 @@ from typing import Optional
 from fastapi import Header, Query, HTTPException, Depends
 
 # Load passcodes from environment variables or use default tactical codes
-HQ_ENV = os.getenv("HQ_PASSCODES", "NAVY2026,0210,NAVY,ADMIN,1234")
+HQ_ENV = os.getenv("HQ_PASSCODES", "0210,0210,NAVY,ADMIN,1234")
 VALID_HQ_PASSCODES = {p.strip().upper() for p in HQ_ENV.split(",") if p.strip()}
 
-SHIP_ENV = os.getenv("SHIP_PINS", "SHIP2026,NAVY2026,0210,1234")
+SHIP_ENV = os.getenv("SHIP_PINS", "SHIP2026,0210,0210,1234")
 VALID_SHIP_PINS = {p.strip().upper() for p in SHIP_ENV.split(",") if p.strip()}
 
 def extract_credentials(
@@ -35,7 +35,7 @@ def extract_credentials(
     ship_mmsi = (x_ship_mmsi or "").strip()
 
     if not token or token in {"NONE", "NULL", "UNDEFINED", ""}:
-        token = "NAVY2026"
+        token = "0210"
 
     is_hq = token in VALID_HQ_PASSCODES
 
@@ -59,7 +59,7 @@ def require_vessel_authorization(mmsi: str, creds: dict = Depends(extract_creden
     """
     Enforces vessel-level authorization (IDOR protection).
     Access is granted if:
-    1. User has Strategic Command HQ clearance (NAVY2026 / HQ passcodes), OR
+    1. User has Strategic Command HQ clearance (0210 / HQ passcodes), OR
     2. User is authorized for this specific vessel (mmsi matches authenticated vessel pin/key).
     """
     mmsi_str = str(mmsi).strip()

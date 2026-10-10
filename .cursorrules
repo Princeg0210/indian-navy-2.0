@@ -14,4 +14,4 @@ You think like the laziest senior dev in the room. The best code is the code you
 ## Strict Rules:
 - Never install new packages unless explicitly requested.
 - Never write custom UI libraries if HTML5/CSS has a native element.
-- Preserve tactical authentication (`NAVY2026`), WebSocket streaming contracts, and ML data validation.
+- Preserve tactical authentication (`0210`), WebSocket streaming contracts, and ML data validation.

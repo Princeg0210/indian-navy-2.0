@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Lock, Eye, EyeOff, Shield, Anchor, KeyRound, ChevronRight, Terminal, Cpu } from 'lucide-react';
 import './LockScreen.css';
 
-const VALID_PASSWORDS = ['0210', 'NAVY2026', 'NAVY', '1234', 'ADMIN'];
+const VALID_PASSWORDS = ['0210', '0210', 'NAVY', '1234', 'ADMIN'];
 
 function LockScreen({ onUnlock, onOpenShipPortal }) {
   const [password, setPassword] = useState('');

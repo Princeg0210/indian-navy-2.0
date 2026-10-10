@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Anchor, Search, Lock, Eye, EyeOff, Shield, CheckCircle2, Ship } from 'lucide-react';
 import './ShipPortal.css';
 
-const DEFAULT_SHIP_PINS = ['SHIP2026', '0210', 'NAVY2026', '1234'];
+const DEFAULT_SHIP_PINS = ['SHIP2026', '0210', '0210', '1234'];
 
 function ShipLogin({ onLogin, onLoginSuccess, onSwitchToMain, onSwitchToMainCommand }) {
   const [selectedVessel, setSelectedVessel] = useState(null);
@@ -14,8 +14,8 @@ function ShipLogin({ onLogin, onLoginSuccess, onSwitchToMain, onSwitchToMainComm
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleBackToMain = onSwitchToMain || onSwitchToMainCommand || (() => {});
-  const handleSuccess = onLogin || onLoginSuccess || (() => {});
+  const handleBackToMain = onSwitchToMain || onSwitchToMainCommand || (() => { });
+  const handleSuccess = onLogin || onLoginSuccess || (() => { });
 
   useEffect(() => {
     fetch('/api/vessels')
@@ -42,7 +42,7 @@ function ShipLogin({ onLogin, onLoginSuccess, onSwitchToMain, onSwitchToMainComm
   const handleSubmit = (e) => {
     e.preventDefault();
     const activeMmsi = customMmsi.trim() || selectedVessel?.mmsi;
-    
+
     if (!activeMmsi) {
       setError('Please select or enter a valid vessel MMSI');
       return;
@@ -71,7 +71,7 @@ function ShipLogin({ onLogin, onLoginSuccess, onSwitchToMain, onSwitchToMainComm
     }, 350);
   };
 
-  const filteredVessels = vesselsList.filter(v => 
+  const filteredVessels = vesselsList.filter(v =>
     (v.name || '').toLowerCase().includes(searchQuery.toLowerCase()) ||
     (v.mmsi || '').toString().includes(searchQuery)
   );
@@ -97,12 +97,12 @@ function ShipLogin({ onLogin, onLoginSuccess, onSwitchToMain, onSwitchToMainComm
           {/* Step 1: Select Vessel Unit (Openly Displayed List) */}
           <div className="form-group">
             <label className="group-label">1. SELECT REGISTERED VESSEL UNIT ({vesselsList.length} UNITS)</label>
-            
+
             <div className="search-box">
               <Search size={14} color="#64748b" />
-              <input 
-                type="text" 
-                placeholder="Search naval unit by name or MMSI..." 
+              <input
+                type="text"
+                placeholder="Search naval unit by name or MMSI..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
@@ -112,8 +112,8 @@ function ShipLogin({ onLogin, onLoginSuccess, onSwitchToMain, onSwitchToMainComm
             <div className="vessels-select-list custom-scrollbar">
               {filteredVessels.length > 0 ? (
                 filteredVessels.map(v => (
-                  <div 
-                    key={v.mmsi} 
+                  <div
+                    key={v.mmsi}
                     className={`vessel-select-item ${selectedVessel?.mmsi === v.mmsi && !customMmsi ? 'selected' : ''}`}
                     onClick={() => {
                       setSelectedVessel(v);
@@ -136,8 +136,8 @@ function ShipLogin({ onLogin, onLoginSuccess, onSwitchToMain, onSwitchToMainComm
 
             <div className="or-divider"><span>OR ENTER CUSTOM MMSI</span></div>
 
-            <input 
-              type="text" 
+            <input
+              type="text"
               className="custom-mmsi-input"
               placeholder="Enter Custom MMSI..."
               value={customMmsi}

@@ -30,6 +30,6 @@ Before writing any new code or creating files, evaluate these 7 rungs in sequenc
 
 The Ponytail ladder promotes lazy solutions, but NEVER negligent code. The following safety and domain contracts MUST always be preserved:
 
-- **Authentication / Lock Screen**: Preserve the tactical clearance passcode (`NAVY2026`).
+- **Authentication / Lock Screen**: Preserve the tactical clearance passcode (`0210`).
 - **Telemetry & Safety**: Ensure non-null checks on vessel coordinates, AIS data streams, and WebSocket payload schemas.
 - **Error Handling**: Do not swallow exceptions silently; maintain proper FastAPI status codes and user-facing alert state.
